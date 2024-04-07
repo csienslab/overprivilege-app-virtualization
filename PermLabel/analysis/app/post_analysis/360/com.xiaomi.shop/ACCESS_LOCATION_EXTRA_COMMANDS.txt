@@ -1,0 +1,39 @@
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 5530 PermLabel 10126 AMS.checkPermission: Binder.getCallingPid() = 5530; uid = 10126; Binder.getCallingUid() = 10126; getNameForUid: com.xiaomi.shop; getPackagesForUid: [com.xiaomi.shop]; permName: android.permission.ACCESS_LOCATION_EXTRA_COMMANDS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:122)
+
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.sendExtraCommand(LocationManagerService.java:2510)
+
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 	at android.location.ILocationManager$Stub.onTransact(ILocationManager.java:657)
+
+06-26 11:42:43.678  1564  1711 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 5530 PermLabel 10126 ACCESS_LOCATION_EXTRA_COMMANDS sendExtraCommand provider= gps; command=force_xtra_injection; extras=null; res=null; stacktrace=java.lang.Exception
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$1.afterHookedMethod(hookLocationExtra_test.java:41)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at LSPHooker_.sendExtraCommand(Unknown Source:17)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at com.amap.api.col.2sl.g.g(GpsLocation.java:338)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at com.amap.api.col.2sl.g.a(GpsLocation.java:205)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at com.amap.api.col.2sl.d$a.handleMessage(AmapLocationManager.java:1736)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-26 11:42:43.684  5530  8593 I LSPosed-Bridge: 	at com.amap.api.col.2sl.d$b.run(AmapLocationManager.java:1580)

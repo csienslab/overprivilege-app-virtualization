@@ -1,0 +1,583 @@
+07-19 04:08:23.235  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 permission_group_mapping =android.permission.CAMERA Camera
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:100)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:100)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-19 04:08:23.252  5606  5606 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 permission_type_mapping =com.topgether.sixfoot.permission.PROCESS_PUSH_MSG 2; 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 permission_type_mapping =com.topgether.sixfoot.permission.PROCESS_PUSH_MSG 2; 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 permission_type_mapping =com.topgether.sixfoot.permission.PUSH_PROVIDER 2; 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 permission_type_mapping =com.topgether.sixfoot.permission.PUSH_PROVIDER 2; 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 all_declared permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_BACKGROUND_LOCATION android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.RECORD_AUDIO android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.SYSTEM_ALERT_WINDOW android.permission.KILL_BACKGROUND_PROCESSES android.permission.REQUEST_INSTALL_PACKAGES com.meizu.flyme.push.permission.RECEIVE com.tencent.qcloud.tim.tuikit.push.permission.MESSAGE com.meizu.c2dm.permission.RECEIVE com.tencent.qcloud.tim.tuikit.permission.C2D_MESSAGE android.permission.CHANGE_NETWORK_STATE android.permission.QUERY_ALL_PACKAGES android.permission.REORDER_TASKS android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE com.topgether.sixfoot.openadsdk.permission.TT_PANGOLIN com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.topgether.sixfoot.permission.JPUSH_MESSAGE android.permission.WRITE_SETTINGS com.huawei.android.launcher.permission.CHANGE_BADGE android.permission.GET_TASKS com.topgether.sixfoot.permission.MIPUSH_RECEIVE com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.meizu.flyme.permission.PUSH com.topgether.sixfoot.permission.PROCESS_PUSH_MSG com.topgether.sixfoot.permission.PUSH_PROVIDER com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 all_declared permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_BACKGROUND_LOCATION android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.RECORD_AUDIO android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.SYSTEM_ALERT_WINDOW android.permission.KILL_BACKGROUND_PROCESSES android.permission.REQUEST_INSTALL_PACKAGES com.meizu.flyme.push.permission.RECEIVE com.tencent.qcloud.tim.tuikit.push.permission.MESSAGE com.meizu.c2dm.permission.RECEIVE com.tencent.qcloud.tim.tuikit.permission.C2D_MESSAGE android.permission.CHANGE_NETWORK_STATE android.permission.QUERY_ALL_PACKAGES android.permission.REORDER_TASKS android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE com.topgether.sixfoot.openadsdk.permission.TT_PANGOLIN com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.topgether.sixfoot.permission.JPUSH_MESSAGE android.permission.WRITE_SETTINGS com.huawei.android.launcher.permission.CHANGE_BADGE android.permission.GET_TASKS com.topgether.sixfoot.permission.MIPUSH_RECEIVE com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.meizu.flyme.permission.PUSH com.topgether.sixfoot.permission.PROCESS_PUSH_MSG com.topgether.sixfoot.permission.PUSH_PROVIDER com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 declared normal_permissions =android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.KILL_BACKGROUND_PROCESSES android.permission.CHANGE_NETWORK_STATE android.permission.REORDER_TASKS android.permission.GET_TASKS com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 declared normal_permissions =android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.KILL_BACKGROUND_PROCESSES android.permission.CHANGE_NETWORK_STATE android.permission.REORDER_TASKS android.permission.GET_TASKS com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 declared dangerous_permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.RECORD_AUDIO android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE 
+
+07-19 04:08:23.252  5606  5606 I LSPosed-Bridge: 5606 PermLabel 10135 declared dangerous_permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.RECORD_AUDIO android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE 
+
+07-19 04:08:59.947  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 permission_group_mapping =android.permission.CAMERA Camera
+
+07-19 04:08:59.993  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 all_declared permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_BACKGROUND_LOCATION android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.RECORD_AUDIO android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.SYSTEM_ALERT_WINDOW android.permission.KILL_BACKGROUND_PROCESSES android.permission.REQUEST_INSTALL_PACKAGES com.meizu.flyme.push.permission.RECEIVE com.tencent.qcloud.tim.tuikit.push.permission.MESSAGE com.meizu.c2dm.permission.RECEIVE com.tencent.qcloud.tim.tuikit.permission.C2D_MESSAGE android.permission.CHANGE_NETWORK_STATE android.permission.QUERY_ALL_PACKAGES android.permission.REORDER_TASKS android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE com.topgether.sixfoot.openadsdk.permission.TT_PANGOLIN com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.topgether.sixfoot.permission.JPUSH_MESSAGE android.permission.WRITE_SETTINGS com.huawei.android.launcher.permission.CHANGE_BADGE android.permission.GET_TASKS com.topgether.sixfoot.permission.MIPUSH_RECEIVE com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.meizu.flyme.permission.PUSH com.topgether.sixfoot.permission.PROCESS_PUSH_MSG com.topgether.sixfoot.permission.PUSH_PROVIDER com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:08:59.993  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 all_declared permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_BACKGROUND_LOCATION android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.RECORD_AUDIO android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.SYSTEM_ALERT_WINDOW android.permission.KILL_BACKGROUND_PROCESSES android.permission.REQUEST_INSTALL_PACKAGES com.meizu.flyme.push.permission.RECEIVE com.tencent.qcloud.tim.tuikit.push.permission.MESSAGE com.meizu.c2dm.permission.RECEIVE com.tencent.qcloud.tim.tuikit.permission.C2D_MESSAGE android.permission.CHANGE_NETWORK_STATE android.permission.QUERY_ALL_PACKAGES android.permission.REORDER_TASKS android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE com.topgether.sixfoot.openadsdk.permission.TT_PANGOLIN com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.topgether.sixfoot.permission.JPUSH_MESSAGE android.permission.WRITE_SETTINGS com.huawei.android.launcher.permission.CHANGE_BADGE android.permission.GET_TASKS com.topgether.sixfoot.permission.MIPUSH_RECEIVE com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.meizu.flyme.permission.PUSH com.topgether.sixfoot.permission.PROCESS_PUSH_MSG com.topgether.sixfoot.permission.PUSH_PROVIDER com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:08:59.993  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 declared normal_permissions =android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.KILL_BACKGROUND_PROCESSES android.permission.CHANGE_NETWORK_STATE android.permission.REORDER_TASKS android.permission.GET_TASKS com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:08:59.993  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 declared normal_permissions =android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.KILL_BACKGROUND_PROCESSES android.permission.CHANGE_NETWORK_STATE android.permission.REORDER_TASKS android.permission.GET_TASKS com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:08:59.993  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 declared dangerous_permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.RECORD_AUDIO android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE 
+
+07-19 04:08:59.993  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 declared dangerous_permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.RECORD_AUDIO android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE 
+
+07-19 04:08:59.993  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 declared dangerous_group =Location Location Storage Camera Microphone Storage Telephone 
+
+07-19 04:08:59.993  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 declared dangerous_group =Location Location Storage Camera Microphone Storage Telephone 
+
+07-19 04:16:25.136 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 permission_group_mapping =android.permission.READ_EXTERNAL_STORAGE Storage
+
+07-19 04:16:25.136 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 permission_group_mapping =android.permission.CAMERA Camera
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 permission_type_mapping =com.topgether.sixfoot.permission.PUSH_PROVIDER 2; 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 permission_type_mapping =com.topgether.sixfoot.permission.PUSH_PROVIDER 2; 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 all_declared permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_BACKGROUND_LOCATION android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.RECORD_AUDIO android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.SYSTEM_ALERT_WINDOW android.permission.KILL_BACKGROUND_PROCESSES android.permission.REQUEST_INSTALL_PACKAGES com.meizu.flyme.push.permission.RECEIVE com.tencent.qcloud.tim.tuikit.push.permission.MESSAGE com.meizu.c2dm.permission.RECEIVE com.tencent.qcloud.tim.tuikit.permission.C2D_MESSAGE android.permission.CHANGE_NETWORK_STATE android.permission.QUERY_ALL_PACKAGES android.permission.REORDER_TASKS android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE com.topgether.sixfoot.openadsdk.permission.TT_PANGOLIN com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.topgether.sixfoot.permission.JPUSH_MESSAGE android.permission.WRITE_SETTINGS com.huawei.android.launcher.permission.CHANGE_BADGE android.permission.GET_TASKS com.topgether.sixfoot.permission.MIPUSH_RECEIVE com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.meizu.flyme.permission.PUSH com.topgether.sixfoot.permission.PROCESS_PUSH_MSG com.topgether.sixfoot.permission.PUSH_PROVIDER com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 all_declared permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_BACKGROUND_LOCATION android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.RECORD_AUDIO android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.SYSTEM_ALERT_WINDOW android.permission.KILL_BACKGROUND_PROCESSES android.permission.REQUEST_INSTALL_PACKAGES com.meizu.flyme.push.permission.RECEIVE com.tencent.qcloud.tim.tuikit.push.permission.MESSAGE com.meizu.c2dm.permission.RECEIVE com.tencent.qcloud.tim.tuikit.permission.C2D_MESSAGE android.permission.CHANGE_NETWORK_STATE android.permission.QUERY_ALL_PACKAGES android.permission.REORDER_TASKS android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE com.topgether.sixfoot.openadsdk.permission.TT_PANGOLIN com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.topgether.sixfoot.permission.JPUSH_MESSAGE android.permission.WRITE_SETTINGS com.huawei.android.launcher.permission.CHANGE_BADGE android.permission.GET_TASKS com.topgether.sixfoot.permission.MIPUSH_RECEIVE com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.meizu.flyme.permission.PUSH com.topgether.sixfoot.permission.PROCESS_PUSH_MSG com.topgether.sixfoot.permission.PUSH_PROVIDER com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 declared normal_permissions =android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.KILL_BACKGROUND_PROCESSES android.permission.CHANGE_NETWORK_STATE android.permission.REORDER_TASKS android.permission.GET_TASKS com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 declared normal_permissions =android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_NETWORK_STATE android.permission.WAKE_LOCK android.permission.ACCESS_LOCATION_EXTRA_COMMANDS android.permission.MODIFY_AUDIO_SETTINGS android.permission.FOREGROUND_SERVICE android.permission.RECEIVE_BOOT_COMPLETED android.permission.VIBRATE android.permission.FLASHLIGHT android.permission.KILL_BACKGROUND_PROCESSES android.permission.CHANGE_NETWORK_STATE android.permission.REORDER_TASKS android.permission.GET_TASKS com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 declared dangerous_permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.RECORD_AUDIO android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 declared dangerous_permissions =android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_EXTERNAL_STORAGE android.permission.CAMERA android.permission.RECORD_AUDIO android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 declared dangerous_group =Location Location Storage Camera Microphone Storage Telephone 
+
+07-19 04:16:25.145 23420 23420 I LSPosed-Bridge: 23420 PermLabel 10135 declared dangerous_group =Location Location Storage Camera Microphone Storage Telephone 
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 android.permission.CAMERA getCameraInfo args0: 0; args1: android.hardware.Camera$CameraInfo@23a6db4; res= null; stacktrace=java.lang.Exception
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at com.example.permlabel.hookCamera$1.afterHookedMethod(hookCamera.java:21)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at LSPHooker_.getCameraInfo(Unknown Source:15)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.hardware.Camera.open(Camera.java:476)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at LSPHooker_.open(Unknown Source:5)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.a(SourceFile:155)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.surfaceCreated(SourceFile:89)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView.updateSurface(SurfaceView.java:670)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView$2.onPreDraw(SurfaceView.java:143)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:977)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2480)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1465)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7205)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1004)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doCallbacks(Choreographer.java:816)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doFrame(Choreographer.java:751)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:990)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-19 04:24:44.000  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 android.permission.CAMERA getCameraInfo args0: 0; args1: android.hardware.Camera$CameraInfo@23a6db4; res= null; stacktrace=java.lang.Exception
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at com.example.permlabel.hookCamera$1.afterHookedMethod(hookCamera.java:21)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at LSPHooker_.getCameraInfo(Unknown Source:15)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.hardware.Camera.open(Camera.java:476)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at LSPHooker_.open(Unknown Source:5)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.a(SourceFile:155)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.surfaceCreated(SourceFile:89)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView.updateSurface(SurfaceView.java:670)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView$2.onPreDraw(SurfaceView.java:143)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:977)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2480)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1465)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7205)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1004)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doCallbacks(Choreographer.java:816)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doFrame(Choreographer.java:751)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:990)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-19 04:24:44.001  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-19 04:24:44.001  7534  7534 E libc    : Access denied finding property "vendor.camera.aux.packagelist"
+
+07-19 04:24:44.003  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.003  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.003  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.003  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.003  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.003  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.003  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.003   909 26503 W ServiceManager: Permission failure: android.permission.CAMERA from uid=10135 pid=7534
+
+07-19 04:24:44.003   909 26503 E CameraService: Permission Denial: can't use the camera pid=7534, uid=10135
+
+07-19 04:24:44.106  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.106  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.106  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.106  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.106  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.106  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.106  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.106   909 26503 W ServiceManager: Permission failure: android.permission.CAMERA from uid=10135 pid=7534
+
+07-19 04:24:44.106   909 26503 E CameraService: Permission Denial: can't use the camera pid=7534, uid=10135
+
+07-19 04:24:44.208  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.208  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.208  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.208  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.208  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.208  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.208  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.312  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.312  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.312  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.312  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.312  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.312  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.312  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.415  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.415  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.415  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.415  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.415  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.415  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.415  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.518  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.518  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.518  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.518  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.518  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.518  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.518  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.621  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.621  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.621  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.621  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.621  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.621  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.621  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.621   909 26503 W ServiceManager: Permission failure: android.permission.CAMERA from uid=10135 pid=7534
+
+07-19 04:24:44.621   909 26503 E CameraService: Permission Denial: can't use the camera pid=7534, uid=10135
+
+07-19 04:24:44.724  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.724  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.724  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.724  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.724  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.724  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.724  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.827  1566  6759 I LSPosed-Bridge: 7534 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 909; uid = 10135; Binder.getCallingUid() = 1047; getNameForUid: null; getPackagesForUid: null; permName: android.permission.CAMERA; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-19 04:24:44.827  1566  6759 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:141)
+
+07-19 04:24:44.827  1566  6759 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.827  1566  6759 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-19 04:24:44.827  1566  6759 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService$PermissionController.checkPermission(ActivityManagerService.java:9248)
+
+07-19 04:24:44.827  1566  6759 I LSPosed-Bridge: 	at android.os.IPermissionController$Stub.onTransact(IPermissionController.java:56)
+
+07-19 04:24:44.827  1566  6759 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-19 04:24:44.827   909 26503 W ServiceManager: Permission failure: android.permission.CAMERA from uid=10135 pid=7534
+
+07-19 04:24:44.827   909 26503 E CameraService: Permission Denial: can't use the camera pid=7534, uid=10135
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 android.permission.CAMERA open res= null; stacktrace=java.lang.Exception
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 android.permission.CAMERA open res= null; stacktrace=java.lang.Exception
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.example.permlabel.hookCamera$2.afterHookedMethod(hookCamera.java:41)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.example.permlabel.hookCamera$2.afterHookedMethod(hookCamera.java:41)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at LSPHooker_.open(Unknown Source:5)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at LSPHooker_.open(Unknown Source:5)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.a(SourceFile:155)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.a(SourceFile:155)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.surfaceCreated(SourceFile:89)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.surfaceCreated(SourceFile:89)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView.updateSurface(SurfaceView.java:670)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView.updateSurface(SurfaceView.java:670)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView$2.onPreDraw(SurfaceView.java:143)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView$2.onPreDraw(SurfaceView.java:143)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:977)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:977)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2480)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2480)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1465)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1465)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7205)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7205)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1004)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1004)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doCallbacks(Choreographer.java:816)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doCallbacks(Choreographer.java:816)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doFrame(Choreographer.java:751)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doFrame(Choreographer.java:751)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:990)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:990)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 android.permission.CAMERA open res= null; stacktrace=java.lang.Exception
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 7534 PermLabel 10135 android.permission.CAMERA open res= null; stacktrace=java.lang.Exception
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.example.permlabel.hookCamera$2.afterHookedMethod(hookCamera.java:41)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.example.permlabel.hookCamera$2.afterHookedMethod(hookCamera.java:41)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at LSPHooker_.open(Unknown Source:5)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at LSPHooker_.open(Unknown Source:5)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.a(SourceFile:155)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.a(SourceFile:155)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.surfaceCreated(SourceFile:89)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.topgether.sixfootPro.biz.torch.PreviewSurface.surfaceCreated(SourceFile:89)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView.updateSurface(SurfaceView.java:670)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView.updateSurface(SurfaceView.java:670)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView$2.onPreDraw(SurfaceView.java:143)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.SurfaceView$2.onPreDraw(SurfaceView.java:143)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:977)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:977)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2480)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2480)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1465)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1465)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7205)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7205)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1004)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1004)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doCallbacks(Choreographer.java:816)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doCallbacks(Choreographer.java:816)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doFrame(Choreographer.java:751)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer.doFrame(Choreographer.java:751)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:990)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:990)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-19 04:24:44.829  7534  7534 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-19 04:24:44.829  7534  7534 E PreviewSurface: Could not open Camerajava.lang.RuntimeException: Fail to connect to camera service
+
+07-19 04:24:44.829  7534  7534 E PreviewSurface: Could not open Camerajava.lang.RuntimeException: Fail to connect to camera service

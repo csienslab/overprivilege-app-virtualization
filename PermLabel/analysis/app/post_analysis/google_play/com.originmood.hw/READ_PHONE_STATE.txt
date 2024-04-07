@@ -1,0 +1,713 @@
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 5757 PermLabel 10118 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.originmood.hw; Result: -1; stacktrace=java.lang.Exception
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 5757 PermLabel hookBinder_test 10118 interfaceBinder =android.hardware.display.IDisplayManager; arg0 = 1; arg1 = android.os.Parcel@e5bc36b; arg2 = android.os.Parcel@ef12b47; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.hardware.display.IDisplayManager$Stub$Proxy.getDisplayInfo(IDisplayManager.java:404)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.hardware.display.DisplayManagerGlobal.getDisplayInfo(DisplayManagerGlobal.java:124)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.view.Display.updateDisplayInfoLocked(Display.java:1046)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.view.Display.getMetrics(Display.java:961)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.getScreenSize(VersionController.java:198)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:56:26.100  5757  5757 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:56:26.343  1568  4767 I LSPosed-Bridge: 5757 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:56:26.343  1568  4767 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:56:26.343  1568  4767 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:56:26.343  1568  4767 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:56:26.343  1568  4767 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:56:26.343  1568  4767 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:56:26.343  1568  4767 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:56:55.066  1568  1853 I LSPosed-Bridge: 5757 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:56:55.066  1568  1853 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:56:55.066  1568  1853 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:56:55.066  1568  1853 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:56:55.066  1568  1853 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:56:55.066  1568  1853 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:56:55.066  1568  1853 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 11562 PermLabel 10118 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.originmood.hw; Result: -1; stacktrace=java.lang.Exception
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:57:33.471 11562 11562 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:57:33.625  1568  1718 I LSPosed-Bridge: 11562 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:57:33.625  1568  1718 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:57:33.625  1568  1718 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:57:33.625  1568  1718 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:57:33.625  1568  1718 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:57:33.625  1568  1718 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:57:33.625  1568  1718 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 11562 PermLabel hookBinder_test 10118 interfaceBinder =android.view.accessibility.IAccessibilityInteractionConnectionCallback; arg0 = 2; arg1 = android.os.Parcel@cc70d9; arg2 = null; arg3 = 1; res = true; stacktrace=java.lang.Exception
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at android.view.accessibility.IAccessibilityInteractionConnectionCallback$Stub$Proxy.setFindAccessibilityNodeInfosResult(IAccessibilityInteractionConnectionCallback.java:146)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.updateInfosForViewportAndReturnFindNodeResult(AccessibilityInteractionController.java:869)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.findAccessibilityNodeInfoByAccessibilityIdUiThread(AccessibilityInteractionController.java:340)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.access$400(AccessibilityInteractionController.java:67)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController$PrivateHandler.handleMessage(AccessibilityInteractionController.java:1324)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:57:33.625 11562 11562 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 12109 PermLabel 10118 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.originmood.hw; Result: -1; stacktrace=java.lang.Exception
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:57:46.034 12109 12109 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:57:46.210  1568  1718 I LSPosed-Bridge: 12109 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:57:46.210  1568  1718 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:57:46.210  1568  1718 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:57:46.210  1568  1718 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:57:46.210  1568  1718 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:57:46.210  1568  1718 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:57:46.210  1568  1718 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 1884 PermLabel 1001 ContextImpl Binder.getCallingPid() = 12109; Binder.getCallingUid() = 10118; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:192)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at android.app.ContextImpl.enforcePermission(ContextImpl.java:1822)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:117)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:101)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkCallingOrSelfReadPhoneState(TelephonyPermissions.java:74)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at com.android.phone.PhoneInterfaceManager.getDeviceId(PhoneInterfaceManager.java:3490)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at com.android.internal.telephony.ITelephony$Stub.onTransact(ITelephony.java:1712)
+
+08-07 04:57:46.210  1884  7357 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 12537 PermLabel 10118 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.originmood.hw; Result: -1; stacktrace=java.lang.Exception
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:58:00.484 12537 12537 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:58:00.692   551   551 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-07 04:58:00.692  1568  2856 I LSPosed-Bridge: 12537 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:58:00.692  1568  2856 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:58:00.692  1568  2856 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:58:00.692  1568  2856 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:58:00.692  1568  2856 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:58:00.692  1568  2856 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:58:00.692  1568  2856 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 13635 PermLabel hookBinder_test 10118 interfaceBinder =android.content.pm.IPackageManager; arg0 = 19; arg1 = android.os.Parcel@f7a81f9; arg2 = android.os.Parcel@990d864; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.checkPermission(IPackageManager.java:3285)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.checkPermission(ApplicationPackageManager.java:581)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 13635 PermLabel 10118 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.originmood.hw; Result: -1; stacktrace=java.lang.Exception
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:58:24.598 13635 13635 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:58:24.678  1568  2094 I LSPosed-Bridge: 13635 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:58:24.678  1568  2094 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:58:24.678  1568  2094 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:58:24.678  1568  2094 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:58:24.678  1568  2094 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:58:24.678  1568  2094 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:58:24.678  1568  2094 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 15097 PermLabel hookBinder_test 10118 interfaceBinder =android.content.pm.IPackageManager; arg0 = 19; arg1 = android.os.Parcel@576c34f; arg2 = android.os.Parcel@afad54b; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.checkPermission(IPackageManager.java:3285)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.checkPermission(ApplicationPackageManager.java:581)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 15097 PermLabel 10118 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.originmood.hw; Result: -1; stacktrace=java.lang.Exception
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:59:07.998 15097 15097 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:59:08.117  1568  5883 I LSPosed-Bridge: 15097 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:59:08.117  1568  5883 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:59:08.117  1568  5883 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:08.117  1568  5883 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:59:08.117  1568  5883 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:59:08.117  1568  5883 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:59:08.117  1568  5883 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 15541 PermLabel 10118 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.originmood.hw; Result: -1; stacktrace=java.lang.Exception
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:59:20.299 15541 15541 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:59:20.468   551   551 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-07 04:59:20.468  1568  5887 I LSPosed-Bridge: 15541 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:59:20.468  1568  5887 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:59:20.468  1568  5887 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:20.468  1568  5887 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:59:20.468  1568  5887 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:59:20.468  1568  5887 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:59:20.468  1568  5887 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:59:20.468   551   551 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 16292 PermLabel 10118 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.originmood.hw; Result: -1; stacktrace=java.lang.Exception
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 16292 PermLabel hookBinder_test 10118 interfaceBinder =android.hardware.display.IDisplayManager; arg0 = 1; arg1 = android.os.Parcel@c6ac822; arg2 = android.os.Parcel@a9f7b27; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.hardware.display.IDisplayManager$Stub$Proxy.getDisplayInfo(IDisplayManager.java:404)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.hardware.display.DisplayManagerGlobal.getDisplayInfo(DisplayManagerGlobal.java:124)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.view.Display.updateDisplayInfoLocked(Display.java:1046)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.view.Display.getMetrics(Display.java:961)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.getScreenSize(VersionController.java:198)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.setDataToNative(Native Method)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.launcher.versioncontroller1_0.VersionController.sendData(VersionController.java:33)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:259)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.<init>(NativePlayer.java:84)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.c.a(NativePlayer.java:63)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at org.egret.egretnativeandroid.EgretNativeAndroid.initialize(EgretNativeAndroid.java:100)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at com.companyname.MainActivity$12.run(MainActivity.java:1092)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 04:59:38.814 16292 16292 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 04:59:39.132  1568  3455 I LSPosed-Bridge: 16292 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 1884; uid = 10118; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.telephonyservice, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.android.providers.telephony, com.android.phone, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qti.uim, com.qti.xdivert, com.android.mms.service, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.networksetting, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo, com.android.stk, com.qti.confuridialer, org.codeaurora.ims]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:59:39.132  1568  3455 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 04:59:39.132  1568  3455 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:39.132  1568  3455 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:59:39.132  1568  3455 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 04:59:39.132  1568  3455 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 04:59:39.132  1568  3455 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 1884 PermLabel 1001 ContextImpl Binder.getCallingPid() = 16292; Binder.getCallingUid() = 10118; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:192)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at android.app.ContextImpl.enforcePermission(ContextImpl.java:1822)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:117)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:101)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkCallingOrSelfReadPhoneState(TelephonyPermissions.java:74)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at com.android.phone.PhoneInterfaceManager.getDeviceId(PhoneInterfaceManager.java:3490)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at com.android.internal.telephony.ITelephony$Stub.onTransact(ITelephony.java:1712)
+
+08-07 04:59:39.132  1884  2243 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

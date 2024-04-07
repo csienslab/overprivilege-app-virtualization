@@ -1,0 +1,17 @@
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 5959 PermLabel 10131 AMS.checkPermission: Binder.getCallingPid() = 5959; uid = 10131; Binder.getCallingUid() = 10131; getNameForUid: com.zhiliaoapp.musically.go; getPackagesForUid: [com.zhiliaoapp.musically.go]; permName: android.permission.RECEIVE_BOOT_COMPLETED; type = 0; res = -1; stacktrace=java.lang.Exception
+
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:119)
+
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 	at com.android.server.job.JobSchedulerService$JobSchedulerStub.canPersistJobs(JobSchedulerService.java:2507)
+
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 	at com.android.server.job.JobSchedulerService$JobSchedulerStub.schedule(JobSchedulerService.java:2544)
+
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 	at android.app.job.IJobScheduler$Stub.onTransact(IJobScheduler.java:60)
+
+06-19 10:41:52.582  1569  3292 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

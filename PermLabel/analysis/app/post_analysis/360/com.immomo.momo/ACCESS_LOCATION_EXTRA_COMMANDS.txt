@@ -1,0 +1,203 @@
+07-02 10:55:19.107  5405  3771 I com.immomo.mom: Rejecting re-init on previously-failed class java.lang.Class<com.loc.ep$a>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/telephony/TelephonyManager$CellInfoCallback;
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.ef.a(android.content.Context) (Aps.java:-1)
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 5405 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 5405; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: com.immomo.momo; getPackagesForUid: [com.immomo.momo]; permName: android.permission.ACCESS_LOCATION_EXTRA_COMMANDS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:128)
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.sendExtraCommand(LocationManagerService.java:2510)
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 	at android.location.ILocationManager$Stub.onTransact(ILocationManager.java:657)
+
+07-02 10:55:19.107  1568  5695 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.a(com.loc.ef, com.loc.ee) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at com.loc.ek com.loc.d.b(com.loc.ef) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.o() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.p() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.e(com.loc.d) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d$a.handleMessage(android.os.Message) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.Looper.loop() (Looper.java:193)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.HandlerThread.run() (HandlerThread.java:65)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d$b.run() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.telephony.TelephonyManager$CellInfoCallback" on path: DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/com.google.android.maps.jar", zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.immomo.momo-tS750h_fEicreqS1zpAnoQ==/base.apk"],nativeLibraryDirectories=[/data/user/0/com.immomo.momo/app_mm_source/aliyun_auth, /data/user/0/com.immomo.momo/app_mm_source/qrcode_detect, /data/user/0/com.immomo.momo/app_mm_source/photo_spam, /data/user/0/com.immomo.momo/app_mm_source/game_source, /data/user/0/com.immomo.momo/app_mm_source/mgs, /data/user/0/com.immomo.momo/app_mm_source/media_effect, /data/user/0/com.immomo.momo/app_mm_source/quick_chat_video, /data/user/0/com.immomo.momo/app_mm_source/lua_source, /data/user/0/com.immomo.momo/app_mm_source/record_effects_video, /data/app/com.immomo.momo-tS750h_fEicreqS1zpAnoQ=
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:134)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.ef.a(android.content.Context) (Aps.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.a(com.loc.ef, com.loc.ee) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at com.loc.ek com.loc.d.b(com.loc.ef) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.o() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.p() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.e(com.loc.d) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d$a.handleMessage(android.os.Message) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.Looper.loop() (Looper.java:193)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.HandlerThread.run() (HandlerThread.java:65)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d$b.run() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom: 
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 5405 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 1568; uid = 10115; Binder.getCallingUid() = 1000; getNameForUid: android.uid.system:1000; getPackagesForUid: [com.android.keychain, com.qti.dpmserviceapp, com.asus.livedemoservice, com.asus.UpdateLauncher, com.asus.dm, com.android.location.fused, com.asus.sysdiagnostic, com.android.settings, com.caf.fmradio, com.android.providers.settings, com.qualcomm.qti.dynamicddsservice, com.qualcomm.location, com.log.logservice, com.asus.setupwizard, com.qualcomm.wfd.service, com.huaqin.CameraCalibration, com.qualcomm.qti.qtisystemservice, com.asus.maxxaudio, com.asus.smartreading, com.qualcomm.qti.auth.fidocryptoservice, com.qualcomm.qti.simsettings, com.android.wallpaperbackup, com.qualcomm.qti.uceShimService, com.qualcomm.qti.services.secureui, com.hq.mediafilepreset, com.qualcomm.qti.qmmi, com.android.server.telecom, com.android.inputdevices, android, com.quicinc.cne.CNEService, com.asus.loguploaderproxy]; permName: android.permission.ACCESS_FINE_LOCATION; type = 1; res = 0; stacktrace=java.lang.Exception
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:134)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.getAllowedResolutionLevel(LocationManagerService.java:1424)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.access$1100(LocationManagerService.java:118)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService$Receiver.<init>(LocationManagerService.java:813)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.getReceiverLocked(LocationManagerService.java:1972)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.checkListenerOrIntentLocked(LocationManagerService.java:2066)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.requestLocationUpdates(LocationManagerService.java:2102)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at android.location.ILocationManager$Stub.onTransact(ILocationManager.java:72)
+
+07-02 10:55:19.107  1568  8043 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom: Rejecting re-init on previously-failed class java.lang.Class<com.loc.ep$a>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/telephony/TelephonyManager$CellInfoCallback;
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.ef.a(android.content.Context) (Aps.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.a(com.loc.ef, com.loc.ee) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at com.loc.ek com.loc.d.b(com.loc.ef) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.o() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.p() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.e(com.loc.d) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d$a.handleMessage(android.os.Message) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.Looper.loop() (Looper.java:193)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.HandlerThread.run() (HandlerThread.java:65)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d$b.run() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.telephony.TelephonyManager$CellInfoCallback" on path: DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/com.google.android.maps.jar", zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.immomo.momo-tS750h_fEicreqS1zpAnoQ==/base.apk"],nativeLibraryDirectories=[/data/user/0/com.immomo.momo/app_mm_source/aliyun_auth, /data/user/0/com.immomo.momo/app_mm_source/qrcode_detect, /data/user/0/com.immomo.momo/app_mm_source/photo_spam, /data/user/0/com.immomo.momo/app_mm_source/game_source, /data/user/0/com.immomo.momo/app_mm_source/mgs, /data/user/0/com.immomo.momo/app_mm_source/media_effect, /data/user/0/com.immomo.momo/app_mm_source/quick_chat_video, /data/user/0/com.immomo.momo/app_mm_source/lua_source, /data/user/0/com.immomo.momo/app_mm_source/record_effects_video, /data/app/com.immomo.momo-tS750h_fEicreqS1zpAnoQ=
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:134)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.ef.a(android.content.Context) (Aps.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.a(com.loc.ef, com.loc.ee) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at com.loc.ek com.loc.d.b(com.loc.ef) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.o() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.p() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d.e(com.loc.d) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d$a.handleMessage(android.os.Message) (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.Looper.loop() (Looper.java:193)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void android.os.HandlerThread.run() (HandlerThread.java:65)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom:   at void com.loc.d$b.run() (AmapLocationManager.java:-1)
+
+07-02 10:55:19.107  5405  3771 I com.immomo.mom: 
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 5405 PermLabel 10115 ACCESS_LOCATION_EXTRA_COMMANDS sendExtraCommand provider= gps; command=force_xtra_injection; extras=null; res=null; stacktrace=java.lang.Exception
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$1.afterHookedMethod(hookLocationExtra_test.java:47)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at LSPHooker_.sendExtraCommand(Unknown Source:17)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at com.loc.g.g(Unknown Source:59)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at com.loc.g.a(Unknown Source:25)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at com.loc.d$a.handleMessage(Unknown Source:170)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-02 10:55:19.108  5405  3772 I LSPosed-Bridge: 	at com.loc.d$b.run(Unknown Source:0)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 5405 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 1568; uid = 10115; Binder.getCallingUid() = 1000; getNameForUid: android.uid.system:1000; getPackagesForUid: [com.android.keychain, com.qti.dpmserviceapp, com.asus.livedemoservice, com.asus.UpdateLauncher, com.asus.dm, com.android.location.fused, com.asus.sysdiagnostic, com.android.settings, com.caf.fmradio, com.android.providers.settings, com.qualcomm.qti.dynamicddsservice, com.qualcomm.location, com.log.logservice, com.asus.setupwizard, com.qualcomm.wfd.service, com.huaqin.CameraCalibration, com.qualcomm.qti.qtisystemservice, com.asus.maxxaudio, com.asus.smartreading, com.qualcomm.qti.auth.fidocryptoservice, com.qualcomm.qti.simsettings, com.android.wallpaperbackup, com.qualcomm.qti.uceShimService, com.qualcomm.qti.services.secureui, com.hq.mediafilepreset, com.qualcomm.qti.qmmi, com.android.server.telecom, com.android.inputdevices, android, com.quicinc.cne.CNEService, com.asus.loguploaderproxy]; permName: android.permission.ACCESS_FINE_LOCATION; type = 1; res = 0; stacktrace=java.lang.Exception
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:134)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.getAllowedResolutionLevel(LocationManagerService.java:1424)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.checkLocationAccess(LocationManagerService.java:1559)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.applyRequirementsLocked(LocationManagerService.java:1761)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.requestLocationUpdatesLocked(LocationManagerService.java:2142)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.requestLocationUpdates(LocationManagerService.java:2104)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at android.location.ILocationManager$Stub.onTransact(ILocationManager.java:72)
+
+07-02 10:55:19.108  1568  8043 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-02 10:55:19.108  1568  8043 I GnssLocationProvider: WakeLock acquired by sendMessage(SET_REQUEST, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4514c65)

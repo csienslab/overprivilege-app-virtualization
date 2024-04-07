@@ -1,0 +1,111 @@
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 5676 PermLabel 10131 AMS.checkPermission: Binder.getCallingPid() = 5676; uid = 10131; Binder.getCallingUid() = 10131; getNameForUid: com.huckleberry_labs.app; getPackagesForUid: [com.huckleberry_labs.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-16 00:37:16.010  1568  6098 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 5676 PermLabel hookBinder_test 10131 interfaceBinder =; arg0 = 1; arg1 = android.os.Parcel@c2d8640; arg2 = android.os.Parcel@77f1a99; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:68)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at android.os.ServiceManagerProxy.getService(ServiceManagerNative.java:125)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at android.os.ServiceManager.rawGetService(ServiceManager.java:253)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at android.os.ServiceManager.getService(ServiceManager.java:124)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at android.telephony.SubscriptionManager.getDefaultSubscriptionId(SubscriptionManager.java:1252)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at android.telephony.TelephonyManager.getSubId(TelephonyManager.java:4890)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at android.telephony.TelephonyManager.getNetworkOperatorName(TelephonyManager.java:1759)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at bo.app.l0.l(SourceFile:2)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at bo.app.l0.d(SourceFile:3)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at bo.app.l0.b(SourceFile:1)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at bo.app.q0.a(SourceFile:226)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at bo.app.q0.b(SourceFile:11)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at bo.app.q0.a(SourceFile:222)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at bo.app.q0$i.invokeSuspend(Unknown Source:11)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+
+08-16 00:37:16.010  5676  6052 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 5676 PermLabel hookBinder_test 10131 interfaceBinder =com.google.android.gms.ads.identifier.internal.IAdvertisingIdService; arg0 = 1; arg1 = android.os.Parcel@68f215e; arg2 = android.os.Parcel@121b630; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:68)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.google.android.gms.internal.ads_identifier.zza.zzb(com.google.android.gms:play-services-ads-identifier@@17.1.0:2)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.google.android.gms.internal.ads_identifier.zzd.zzc(com.google.android.gms:play-services-ads-identifier@@17.1.0:2)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.google.android.gms.ads.identifier.AdvertisingIdClient.zzd(com.google.android.gms:play-services-ads-identifier@@17.1.0:9)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.google.android.gms.ads.identifier.AdvertisingIdClient.getAdvertisingIdInfo(com.google.android.gms:play-services-ads-identifier@@17.1.0:4)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.facebook.internal.Utility.invokeMethodQuietly(Utility.kt:915)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.facebook.internal.AttributionIdentifiers$Companion.getAndroidIdViaReflection(AttributionIdentifiers.kt:111)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.facebook.internal.AttributionIdentifiers$Companion.getAndroidId(AttributionIdentifiers.kt:89)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.facebook.internal.AttributionIdentifiers$Companion.getAttributionIdentifiers(AttributionIdentifiers.kt:176)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.facebook.appevents.AppEventCollection.getSessionEventsState(AppEventCollection.kt:77)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.facebook.appevents.AppEventCollection.addEvent(AppEventCollection.kt:45)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at com.facebook.appevents.AppEventQueue$add$1.run(AppEventQueue.kt:79)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-16 00:37:16.010  5676  5833 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)

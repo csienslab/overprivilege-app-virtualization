@@ -1,0 +1,235 @@
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 5853 PermLabel hookBinder_test 10135 interfaceBinder =android.net.wifi.IWifiManager; arg0 = 26; arg1 = android.os.Parcel@6af3265; arg2 = android.os.Parcel@414916; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:68)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at android.net.wifi.IWifiManager$Stub$Proxy.getWifiEnabledState(IWifiManager.java:1482)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at android.net.wifi.WifiManager.getWifiState(WifiManager.java:1927)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at android.net.wifi.WifiManager.isWifiEnabled(WifiManager.java:1939)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.fq.b(TL:58)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu.b(TL:332)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu.a(TL:37)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu$1.run(TL:80)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-05 03:39:34.360  5853  6302 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.ACCESS_LOCATION_EXTRA_COMMANDS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.sendExtraCommand(LocationManagerService.java:2510)
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 	at android.location.ILocationManager$Stub.onTransact(ILocationManager.java:657)
+
+08-05 03:39:34.360  1559  8273 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 5853 PermLabel hookBinder_test 10135 interfaceBinder =android.net.wifi.IWifiManager; arg0 = 19; arg1 = android.os.Parcel@414916; arg2 = android.os.Parcel@6af3265; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:68)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.net.wifi.IWifiManager$Stub$Proxy.startScan(IWifiManager.java:1360)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.net.wifi.WifiManager.startScan(WifiManager.java:1745)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.net.wifi.WifiManager.startScan(WifiManager.java:1736)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at LSPHooker_.startScan(Unknown Source:8)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.fq.b(TL:102)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu.b(TL:335)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu.a(TL:37)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu$1.run(TL:80)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 5853 PermLabel 10135; permName: android.permission.ACCESS_LOCATION_EXTRA_COMMANDS sendExtraCommand provider= gps; command=force_xtra_injection; extras=Bundle[{}]; res=null; stacktrace=java.lang.Exception
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$1.afterHookedMethod(hookLocationExtra_test.java:56)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at LSPHooker_.sendExtraCommand(Unknown Source:17)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.eo.e(TL:203)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.eo.a(TL:114)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.ep.e(TL:474)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.ep.a(TL:413)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.ep.a(TL:344)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.ep.b(TL:397)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at com.tencent.map.geolocation.proxy.TencentLocationManagerProxy.requestSingleFreshLocation(TL:180)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at com.tencent.map.geolocation.TencentLocationManager.requestSingleFreshLocation(TCL:49)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at com.klook.location.internal.third.d.requestLocation(TencentLocationImpl.kt:36)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at com.klook.location.internal.LocationManager$f$a.invokeSuspend(LocationManager.kt:148)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.a.resumeWith(ContinuationImpl.kt:12)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.z0.run(DispatchedTask.kt:117)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.a.runSafely(CoroutineScheduler.kt:1)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.a$c.c(CoroutineScheduler.kt:15)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.a$c.i(CoroutineScheduler.kt:29)
+
+08-05 03:39:34.362  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.a$c.run(CoroutineScheduler.kt:1)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 5853 PermLabel 10135; permName: android.permission.CHANGE_WIFI_STATE; startScan res = null; stacktrace=java.lang.Exception
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$6.afterHookedMethod(hookLocationExtra_test.java:93)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at LSPHooker_.startScan(Unknown Source:8)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.fq.b(TL:102)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu.b(TL:335)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu.a(TL:37)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at c.t.m.g.eu$1.run(TL:80)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-05 03:39:34.362  5853  6302 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 5853 PermLabel hookBinder_test 10135 interfaceBinder =com.android.internal.telephony.ISub; arg0 = 18; arg1 = android.os.Parcel@3d63f5c; arg2 = android.os.Parcel@b27d8f9; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:68)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at com.android.internal.telephony.ISub$Stub$Proxy.getSlotIndex(ISub.java:812)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at android.telephony.SubscriptionManager.getSlotIndex(SubscriptionManager.java:1179)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at android.telephony.TelephonyManager.getSlotIndex(TelephonyManager.java:4947)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at android.telephony.TelephonyManager.getImei(TelephonyManager.java:1272)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at c.t.m.g.eb.a(TL:139)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at c.t.m.g.eb.a(TL:103)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at c.t.m.g.ed$2.run(TL:1467)
+
+08-05 03:39:34.362  5853  8341 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.ACCESS_LOCATION_EXTRA_COMMANDS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 	at com.android.server.LocationManagerService.sendExtraCommand(LocationManagerService.java:2510)
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 	at android.location.ILocationManager$Stub.onTransact(ILocationManager.java:657)
+
+08-05 03:39:38.549  1559  7477 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 5853 PermLabel 10135; permName: android.permission.ACCESS_LOCATION_EXTRA_COMMANDS sendExtraCommand provider= gps; command=force_xtra_injection; extras=Bundle[{}]; res=null; stacktrace=java.lang.Exception
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$1.afterHookedMethod(hookLocationExtra_test.java:56)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at LSPHooker_.sendExtraCommand(Unknown Source:17)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.eo.e(TL:203)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.eo.a(TL:114)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.ep.e(TL:474)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.ep.a(TL:413)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.ep.a(TL:344)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at c.t.m.g.ep.b(TL:397)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at com.tencent.map.geolocation.proxy.TencentLocationManagerProxy.requestSingleFreshLocation(TL:180)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at com.tencent.map.geolocation.TencentLocationManager.requestSingleFreshLocation(TCL:49)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at com.klook.location.internal.third.d.requestLocation(TencentLocationImpl.kt:36)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at com.klook.location.internal.LocationManager$f$a.invokeSuspend(LocationManager.kt:148)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.a.resumeWith(ContinuationImpl.kt:12)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.z0.run(DispatchedTask.kt:117)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.a.runSafely(CoroutineScheduler.kt:1)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.a$c.c(CoroutineScheduler.kt:15)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.a$c.i(CoroutineScheduler.kt:29)
+
+08-05 03:39:38.551  5853  6231 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.a$c.run(CoroutineScheduler.kt:1)

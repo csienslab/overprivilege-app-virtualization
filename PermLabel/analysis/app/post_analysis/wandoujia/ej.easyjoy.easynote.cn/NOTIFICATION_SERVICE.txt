@@ -1,0 +1,123 @@
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 5751 PermLabel 10137 requestPermissions (Activity): pid = 5751; permName: android.permission.NOTIFICATION_SERVICE; stacktrace=java.lang.Exception
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$3.beforeHookedMethod(requestPerm.java:241)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:79)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at LSPHooker_.requestPermissions(Unknown Source:18)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.core.app.a.requestPermissions(ActivityCompat.java:7)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.c.requestPermissionsFromFragment(FragmentActivity.java:5)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.c$a.a(FragmentActivity.java:3)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.requestPermissions(Fragment.java:2)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at e.c.a.h.a(PermissionFragment.java:20)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at e.c.a.h.b(PermissionFragment.java:29)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at e.c.a.h.onResume(PermissionFragment.java:4)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.performResume(Fragment.java:5)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.o.h(FragmentStateManager.java:3)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k.a(FragmentManager.java:110)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k.j(FragmentManager.java:1)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k.i(FragmentManager.java:4)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k.a(FragmentManager.java:158)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.a.f(BackStackRecord.java:32)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k.a(FragmentManager.java:246)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k.b(FragmentManager.java:39)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k.c(FragmentManager.java:28)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k.c(FragmentManager.java:13)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at androidx.fragment.app.k$d.run(FragmentManager.java:1)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 05:51:49.835  5751  5751 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 05:51:49.839  1515  5194 I LSPosed-Bridge: 5751 PermLabel 10137 startActivityAsUser permName: android.permission.WRITE_EXTERNAL_STORAGE
+
+07-26 05:51:49.839  1515  5194 I LSPosed-Bridge: 5751 PermLabel 10137 startActivityAsUser permName: android.permission.NOTIFICATION_SERVICE
+
+07-26 05:51:49.839  1515  5194 I ActivityManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.packageinstaller cmp=com.google.android.packageinstaller/com.android.packageinstaller.permission.ui.GrantPermissionsActivity (has extras)} from uid 10137
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 5751 PermLabel hookBinder_test 10137 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@5d3a562; arg2 = android.os.Parcel@19adc2d; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:69)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:190)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-573519621:15)
+
+07-26 05:52:43.918  5751  7118 I LSPosed-Bridge: 5751 PermLabel 10137 ContextImpl.checkPermission: askedperm = [android.permission.WRITE_EXTERNAL_STORAGE, android.permission.NOTIFICATION_SERVICE]; permName: android.permission.MODIFY_AUDIO_SETTINGS; android.os.Process.myPid() = 5751; type = 0
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 5751 PermLabel hookBinder_test 10137 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@5d3a562; arg2 = android.os.Parcel@19adc2d; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:69)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:190)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at il.c(chromium-Monochrome.aab-stable-573519621:5)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-573519621:29)
+
+07-26 05:52:43.925  5751  7118 I LSPosed-Bridge: 5751 PermLabel 10137 ContextImpl.checkPermission: askedperm = [android.permission.WRITE_EXTERNAL_STORAGE, android.permission.NOTIFICATION_SERVICE]; permName: android.permission.BLUETOOTH; android.os.Process.myPid() = 5751; type = 0

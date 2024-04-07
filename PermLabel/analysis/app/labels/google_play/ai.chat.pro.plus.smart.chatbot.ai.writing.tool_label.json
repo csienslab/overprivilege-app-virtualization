@@ -1,0 +1,54 @@
+{
+    "Declared": {
+        "Normal": [
+            6,
+            [
+                "android.permission.FOREGROUND_SERVICE",
+                "android.permission.INTERNET",
+                "android.permission.MODIFY_AUDIO_SETTINGS",
+                "android.permission.RECEIVE_BOOT_COMPLETED",
+                "android.permission.VIBRATE",
+                "com.android.vending.BILLING"
+            ]
+        ],
+        "Dangerous": [
+            1,
+            [
+                "android.permission.RECORD_AUDIO"
+            ]
+        ],
+        "All": [
+            11,
+            [
+                "android.permission.FOREGROUND_SERVICE",
+                "android.permission.INTERNET",
+                "android.permission.RECORD_AUDIO",
+                "android.permission.MODIFY_AUDIO_SETTINGS",
+                "android.permission.RECEIVE_BOOT_COMPLETED",
+                "android.permission.VIBRATE",
+                "android.permission.USE_FULL_SCREEN_INTENT",
+                "android.permission.SCHEDULE_EXACT_ALARM",
+                "android.permission.POST_NOTIFICATIONS",
+                "ai.chat.pro.plus.smart.chatbot.ai.writing.tool.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+                "com.android.vending.BILLING"
+            ]
+        ]
+    },
+    "Droidbot-obtained": {
+        "Normal": {
+            "android.permission.ACCESS_NETWORK_STATE": 1,
+            "android.permission.INTERNET": 0,
+            "android.permission.MODIFY_AUDIO_SETTINGS": 0,
+            "android.permission.BLUETOOTH": 1
+        },
+        "Dangerous": {},
+        "filter_normal_self": {
+            "android.permission.INTERNET": 0,
+            "android.permission.MODIFY_AUDIO_SETTINGS": 0
+        },
+        "filter_normal_self_strict": {},
+        "add_dangerous_request": {
+            "android.permission.RECORD_AUDIO": 0
+        }
+    }
+}

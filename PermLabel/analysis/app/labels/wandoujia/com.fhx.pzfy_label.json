@@ -1,0 +1,75 @@
+{
+    "Declared": {
+        "Normal": [
+            6,
+            [
+                "android.permission.INTERNET",
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.ACCESS_WIFI_STATE",
+                "android.permission.CHANGE_NETWORK_STATE",
+                "android.permission.REORDER_TASKS",
+                "android.permission.VIBRATE"
+            ]
+        ],
+        "Dangerous": [
+            4,
+            [
+                "android.permission.CAMERA",
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.RECORD_AUDIO"
+            ]
+        ],
+        "All": [
+            13,
+            [
+                "android.permission.INTERNET",
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.ACCESS_WIFI_STATE",
+                "android.permission.CAMERA",
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.RECORD_AUDIO",
+                "com.fhx.pzfy.openadsdk.permission.TT_PANGOLIN",
+                "com.asus.msa.SupplementaryDID.ACCESS",
+                "android.permission.REQUEST_INSTALL_PACKAGES",
+                "android.permission.CHANGE_NETWORK_STATE",
+                "android.permission.REORDER_TASKS",
+                "android.permission.VIBRATE"
+            ]
+        ]
+    },
+    "Droidbot-obtained": {
+        "Normal": {
+            "android.permission.INTERNET": 0,
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.MODIFY_AUDIO_SETTINGS": 1,
+            "android.permission.BLUETOOTH": 1,
+            "android.permission.GET_TASKS": 1,
+            "android.permission.ACCESS_WIFI_STATE": 0
+        },
+        "Dangerous": {
+            "android.permission.GET_ACCOUNTS": 3,
+            "android.permission.READ_PHONE_STATE": 3,
+            "android.permission.CAMERA": 0
+        },
+        "filter_normal_self": {
+            "android.permission.INTERNET": 0,
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.GET_TASKS": 1,
+            "android.permission.ACCESS_WIFI_STATE": 0
+        },
+        "filter_normal_self_strict": {
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.GET_TASKS": 1,
+            "android.permission.ACCESS_WIFI_STATE": 0
+        },
+        "add_dangerous_request": {
+            "android.permission.GET_ACCOUNTS": 3,
+            "android.permission.READ_PHONE_STATE": 3,
+            "android.permission.CAMERA": 0,
+            "android.permission.WRITE_EXTERNAL_STORAGE": 0,
+            "android.permission.RECORD_AUDIO": 0
+        }
+    }
+}

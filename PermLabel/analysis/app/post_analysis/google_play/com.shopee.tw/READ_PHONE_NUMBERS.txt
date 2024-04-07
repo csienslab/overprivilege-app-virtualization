@@ -1,0 +1,2481 @@
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 16; arg1 = android.os.Parcel@e69bc59; arg2 = android.os.Parcel@d758e1b; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getReceiverInfo(IPackageManager.java:3198)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getReceiverInfo(ApplicationPackageManager.java:442)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at com.google.android.gms.internal.gtm.zzfs.zzi(SourceFile:1)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at com.google.android.gms.internal.gtm.zzfi.zza(SourceFile:3)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at com.google.android.gms.internal.gtm.zzck.zzab(SourceFile:5)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at com.google.android.gms.internal.gtm.zzci.run(Unknown Source:26)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:23.418  5845  6290 I LSPosed-Bridge: 	at com.google.android.gms.analytics.zzq.run(SourceFile:2)
+
+08-07 05:58:23.418  5845  6290 W GAv4    : AnalyticsReceiver is not registered or is disabled. Register the receiver for reliable dispatching on non-Google Play devices. See http://goo.gl/8Rd3yj for instructions.
+
+08-07 05:58:23.418  1566  1674 I LSPosed-Bridge: 5845 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1885; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.lpa, com.qti.qualcomm.deviceinfo, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qualcomm.qti.uim, com.android.providers.telephony, com.android.mms.service, com.qualcomm.qti.ims, com.qualcomm.qti.telephonyservice, org.codeaurora.ims, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qcrilmsgtunnel, com.qti.confuridialer, com.android.stk, com.android.phone, com.qti.xdivert, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:23.418  1566  1674 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 05:58:23.418  1566  1674 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:23.418  1566  1674 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:23.418  1566  1674 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 05:58:23.418  1566  1674 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 05:58:23.418  1566  1674 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 5845 PermLabel 10116; permName: android.permissin.READ_SMSo, android.permissin.READ_PHONE_NUMBERS; getLine1Number res = null; stacktrace=java.lang.Exception
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$5.afterHookedMethod(hookLocationExtra_test.java:79)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at LSPHooker_.getLine1Number(Unknown Source:8)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uuuuvuwvw(Unknown Source:51)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uvuwvvuwu(Unknown Source:0)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.vwwvuwwuw(Unknown Source:5)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuuvv(Unknown Source:239)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuvwu(Native Method)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvwvuuw(Unknown Source:0)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.getEnvInfo(Unknown Source:16)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.af.AcMgr.getEnvInfo(Unknown Source:4)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at com.shopee.app.network.util.p$a.run(SourceFile:1)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:23.450  5845  6186 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =; arg0 = 1; arg1 = android.os.Parcel@a4985e8; arg2 = android.os.Parcel@56070f4; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at android.os.ServiceManagerProxy.getService(ServiceManagerNative.java:125)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at android.os.ServiceManager.rawGetService(ServiceManager.java:253)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at android.os.ServiceManager.getService(ServiceManager.java:124)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at android.telephony.SubscriptionManager.getDefaultSubscriptionId(SubscriptionManager.java:1252)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at android.telephony.TelephonyManager.getSubId(TelephonyManager.java:4890)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at android.telephony.TelephonyManager.getLine1Number(TelephonyManager.java:3077)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at LSPHooker_.getLine1Number(Unknown Source:8)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uuuuvuwvw(Unknown Source:51)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uvuwvvuwu(Unknown Source:0)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.vwwvuwwuw(Unknown Source:5)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuuvv(Unknown Source:239)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuvwu(Native Method)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvwvuuw(Unknown Source:0)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.getEnvInfo(Unknown Source:16)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.af.AcMgr.getEnvInfo(Unknown Source:4)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.a.intercept(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.q.intercept(SourceFile:4)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.b.intercept(SourceFile:7)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.a.intercept(SourceFile:7)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.useragent.a.intercept(SourceFile:5)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.f.intercept(SourceFile:8)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(SourceFile:7)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.cache.CacheInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.BridgeInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(SourceFile:9)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.b.intercept(SourceFile:3)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.g.intercept(SourceFile:2)
+
+08-07 05:58:23.817  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealIntercepto
+
+08-07 05:58:23.817  1566  1579 I LSPosed-Bridge: 5845 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1885; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.lpa, com.qti.qualcomm.deviceinfo, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qualcomm.qti.uim, com.android.providers.telephony, com.android.mms.service, com.qualcomm.qti.ims, com.qualcomm.qti.telephonyservice, org.codeaurora.ims, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qcrilmsgtunnel, com.qti.confuridialer, com.android.stk, com.android.phone, com.qti.xdivert, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:23.817  1566  1579 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 05:58:23.817  1566  1579 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:23.817  1566  1579 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:23.817  1566  1579 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 05:58:23.817  1566  1579 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 05:58:23.817  1566  1579 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 5845 PermLabel 10116; permName: android.permissin.READ_SMSo, android.permissin.READ_PHONE_NUMBERS; getLine1Number res = null; stacktrace=java.lang.Exception
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$5.afterHookedMethod(hookLocationExtra_test.java:79)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at LSPHooker_.getLine1Number(Unknown Source:8)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uuuuvuwvw(Unknown Source:51)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uvuwvvuwu(Unknown Source:0)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.vwwvuwwuw(Unknown Source:5)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuuvv(Unknown Source:239)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuvwu(Native Method)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvwvuuw(Unknown Source:0)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.getEnvInfo(Unknown Source:16)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.af.AcMgr.getEnvInfo(Unknown Source:4)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.a.intercept(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.q.intercept(SourceFile:4)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.b.intercept(SourceFile:7)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.a.intercept(SourceFile:7)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.useragent.a.intercept(SourceFile:5)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.f.intercept(SourceFile:8)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(SourceFile:7)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.cache.CacheInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.BridgeInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(SourceFile:9)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.b.intercept(SourceFile:3)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.g.intercept(SourceFile:2)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.captcha.e.intercept(SourceFile:6)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.831  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network
+
+08-07 05:58:23.841   520  6390 I WVCdm   : [(0):] Level3 Library 7283 Apr 20 2019 10:13:27
+
+08-07 05:58:23.841  1566  5128 I LSPosed-Bridge: 5845 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1885; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.lpa, com.qti.qualcomm.deviceinfo, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qualcomm.qti.uim, com.android.providers.telephony, com.android.mms.service, com.qualcomm.qti.ims, com.qualcomm.qti.telephonyservice, org.codeaurora.ims, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qcrilmsgtunnel, com.qti.confuridialer, com.android.stk, com.android.phone, com.qti.xdivert, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:23.841  1566  5128 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 05:58:23.841  1566  5128 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:23.841  1566  5128 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:23.841  1566  5128 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 05:58:23.841  1566  5128 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 05:58:23.841  1566  5128 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 5845 PermLabel 10116; permName: android.permissin.READ_SMSo, android.permissin.READ_PHONE_NUMBERS; getLine1Number res = null; stacktrace=java.lang.Exception
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$5.afterHookedMethod(hookLocationExtra_test.java:79)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at LSPHooker_.getLine1Number(Unknown Source:8)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uuuuvuwvw(Unknown Source:51)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uvuwvvuwu(Unknown Source:0)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.vwwvuwwuw(Unknown Source:5)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuuvv(Unknown Source:239)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuvwu(Native Method)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvwvuuw(Unknown Source:0)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.getEnvInfo(Unknown Source:16)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.af.AcMgr.getEnvInfo(Unknown Source:4)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.a.intercept(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.q.intercept(SourceFile:4)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.b.intercept(SourceFile:7)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.a.intercept(SourceFile:7)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.useragent.a.intercept(SourceFile:5)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.f.intercept(SourceFile:8)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(SourceFile:7)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.cache.CacheInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.BridgeInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(SourceFile:9)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.b.intercept(SourceFile:3)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.g.intercept(SourceFile:2)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.captcha.e.intercept(SourceFile:6)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:23.859  5845  6283 I LSPosed-Bridge: 	at com.shopee.app.network
+
+08-07 05:58:24.272  1566  2371 I LSPosed-Bridge: 5845 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1885; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.lpa, com.qti.qualcomm.deviceinfo, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qualcomm.qti.uim, com.android.providers.telephony, com.android.mms.service, com.qualcomm.qti.ims, com.qualcomm.qti.telephonyservice, org.codeaurora.ims, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qcrilmsgtunnel, com.qti.confuridialer, com.android.stk, com.android.phone, com.qti.xdivert, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:24.272  1566  2371 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 05:58:24.272  1566  2371 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:24.272  1566  2371 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:24.272  1566  2371 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 05:58:24.272  1566  2371 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 05:58:24.272  1566  2371 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 3; arg1 = android.os.Parcel@36158e8; arg2 = android.os.Parcel@e24b20b; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPackageInfo(IPackageManager.java:2876)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:174)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:152)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vvvvuuvwv.vuvvuvuuw(Unknown Source:55)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.uwwvvuwww.uwuwvvwwu.wuwvvvuuw.wwvuuvvwv(Unknown Source:82)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.uwwvvuwww.uwuwvvwwu.wuwvvvuuw.wwuvwwuuw(Unknown Source:0)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vwuuvwvww.vuwvvwuww(Unknown Source:4)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vwuuvwvww.a(Unknown Source:0)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.app.pushnotification.batchdelete.a.run(Unknown Source:18)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vvwuvuvvv.vwuvvuwvw(Unknown Source:0)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vvwuvuvvv.c(Unknown Source:0)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.c.onDoTask(Unknown Source:2)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.threadpool.d.run(SourceFile:8)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:24.272  5845  6351 I LSPosed-Bridge: 	at com.shopee.threadpool.b$a.run(SourceFile:1)
+
+08-07 05:58:24.325  3685  4525 I awcn.ThreadPoolExecutorFactory:  thread created! name:AWCN Worker(M)4
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 5845 PermLabel 10116; permName: android.permissin.READ_SMSo, android.permissin.READ_PHONE_NUMBERS; getLine1Number res = null; stacktrace=java.lang.Exception
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$5.afterHookedMethod(hookLocationExtra_test.java:79)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at LSPHooker_.getLine1Number(Unknown Source:8)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uuuuvuwvw(Unknown Source:51)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uvuwvvuwu(Unknown Source:0)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.vwwvuwwuw(Unknown Source:5)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuuvv(Unknown Source:239)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuvwu(Native Method)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvwvuuw(Unknown Source:0)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.getEnvInfo(Unknown Source:16)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.af.AcMgr.getEnvInfo(Unknown Source:4)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.a.intercept(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.useragent.a.intercept(SourceFile:5)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(SourceFile:7)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.cache.CacheInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.BridgeInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(SourceFile:9)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.b.intercept(SourceFile:3)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.facebook.react.modules.network.ReactNativeDelegateInterceptor.intercept(SourceFile:4)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.g.intercept(SourceFile:2)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.captcha.e.intercept(SourceFile:6)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.arch.network.http.plugin.a.intercept(SourceFile:4)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.325  5845  6411 I LSPosed-Bridge: 	at okhttp3.internal.ht
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 3; arg1 = android.os.Parcel@458918a; arg2 = android.os.Parcel@9bcbff5; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPackageInfo(IPackageManager.java:2876)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:174)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:152)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vvvvuuvwv.vuvvuvuuw(Unknown Source:55)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.uwwvvuwww.uwuwvvwwu.wuwvvvuuw.wwvuuvvwv(Unknown Source:82)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.uwwvvuwww.uwuwvvwwu.wuwvvvuuw.wwuvwwuuw(Unknown Source:0)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vwuuvwvww.vuwvvwuww(Unknown Source:4)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vwuuvwvww.a(Unknown Source:0)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.app.pushnotification.batchdelete.a.run(Unknown Source:18)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vvwuvuvvv.vwuvvuwvw(Unknown Source:0)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.vvwuvuvvv.c(Unknown Source:0)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.shpssdk.vuvwvwvvu.c.onDoTask(Unknown Source:2)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.threadpool.d.run(SourceFile:8)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:24.325  5845  6351 I LSPosed-Bridge: 	at com.shopee.threadpool.b$a.run(SourceFile:1)
+
+08-07 05:58:24.368  1566  2371 I LSPosed-Bridge: 5845 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1885; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.lpa, com.qti.qualcomm.deviceinfo, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qualcomm.qti.uim, com.android.providers.telephony, com.android.mms.service, com.qualcomm.qti.ims, com.qualcomm.qti.telephonyservice, org.codeaurora.ims, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qcrilmsgtunnel, com.qti.confuridialer, com.android.stk, com.android.phone, com.qti.xdivert, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:24.368  1566  2371 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 05:58:24.368  1566  2371 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:24.368  1566  2371 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:24.368  1566  2371 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 05:58:24.368  1566  2371 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 05:58:24.368  1566  2371 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 05:58:24.373  5845  6273 I MMKV    : <MemoryFile.cpp:97::open> open fd[0xe0], /data/user/0/com.shopee.tw/files/mmkv/noti_page_store_0
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 5845 PermLabel 10116; permName: android.permissin.READ_SMSo, android.permissin.READ_PHONE_NUMBERS; getLine1Number res = null; stacktrace=java.lang.Exception
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$5.afterHookedMethod(hookLocationExtra_test.java:79)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at LSPHooker_.getLine1Number(Unknown Source:8)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uuuuvuwvw(Unknown Source:51)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uvuwvvuwu(Unknown Source:0)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.vwwvuwwuw(Unknown Source:5)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuuvv(Unknown Source:239)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuvwu(Native Method)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvwvuuw(Unknown Source:0)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvuvwwu(Unknown Source:0)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK$FullDataCollectTask.wvvwwuwvw(Unknown Source:5)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK$FullDataCollectTask.doInBackground(Unknown Source:8)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:245)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:24.373  5845  6415 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.location.ILocationManager; arg0 = 31; arg1 = android.os.Parcel@146603c; arg2 = android.os.Parcel@e0d730b; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at android.location.ILocationManager$Stub$Proxy.isProviderEnabledForUser(ILocationManager.java:1381)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at android.location.LocationManager.isProviderEnabledForUser(LocationManager.java:1353)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at android.location.LocationManager.isProviderEnabled(LocationManager.java:1323)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuvwu(Native Method)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvwvuuw(Unknown Source:0)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.getEnvInfo(Unknown Source:16)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.af.AcMgr.getEnvInfo(Unknown Source:4)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.a.intercept(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.q.intercept(SourceFile:4)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.b.intercept(SourceFile:7)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.a.intercept(SourceFile:7)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.useragent.a.intercept(SourceFile:5)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.f.intercept(SourceFile:8)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(SourceFile:7)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.cache.CacheInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.BridgeInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(SourceFile:9)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.b.intercept(SourceFile:3)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.g.intercept(SourceFile:2)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.captcha.e.intercept(SourceFile:6)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:24.373  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proce
+
+08-07 05:58:25.174  1566  1579 I LSPosed-Bridge: 5845 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1885; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qti.lpa, com.qti.qualcomm.deviceinfo, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qualcomm.qti.uim, com.android.providers.telephony, com.android.mms.service, com.qualcomm.qti.ims, com.qualcomm.qti.telephonyservice, org.codeaurora.ims, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qcrilmsgtunnel, com.qti.confuridialer, com.android.stk, com.android.phone, com.qti.xdivert, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:25.174  1566  1579 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:136)
+
+08-07 05:58:25.174  1566  1579 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.174  1566  1579 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:25.174  1566  1579 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+08-07 05:58:25.174  1566  1579 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-07 05:58:25.174  1566  1579 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 3; arg1 = android.os.Parcel@87b76d8; arg2 = android.os.Parcel@78862f0; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPackageInfo(IPackageManager.java:2876)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:174)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:152)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at com.android.installreferrer.api.InstallReferrerClientImpl.startConnection(SourceFile:20)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at com.shopee.app.ui.home.e.onResume(SourceFile:31)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1413)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at com.shopee.luban.module.launch2.lifecycle.c.callActivityOnResume(SourceFile:3)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.Activity.performResume(Activity.java:7292)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3777)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3817)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 05:58:25.174  5845  5845 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 5845 PermLabel 10116; permName: android.permissin.READ_SMSo, android.permissin.READ_PHONE_NUMBERS; getLine1Number res = null; stacktrace=java.lang.Exception
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$5.afterHookedMethod(hookLocationExtra_test.java:79)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at LSPHooker_.getLine1Number(Unknown Source:8)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uuuuvuwvw(Unknown Source:51)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.uvuwvvuwu(Unknown Source:0)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuuvwv.uvuvvwvwv.vwwvuwwuw(Unknown Source:5)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuuvv(Unknown Source:239)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.wvvvuwwu.vuwuuvwu(Native Method)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.wuvvwvuuw(Unknown Source:0)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.shpssdk.SHPSSDK.getEnvInfo(Unknown Source:16)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.af.AcMgr.getEnvInfo(Unknown Source:4)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.a.intercept(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.q.intercept(SourceFile:4)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.b.intercept(SourceFile:7)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.antifraud.a.intercept(SourceFile:7)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.useragent.a.intercept(SourceFile:5)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.f.intercept(SourceFile:7)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(SourceFile:7)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.cache.CacheInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.BridgeInterceptor.intercept(SourceFile:22)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(SourceFile:9)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.b.intercept(SourceFile:3)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.g.intercept(SourceFile:2)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.captcha.e.intercept(SourceFile:6)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network.cronet.interceptor.c.intercept(SourceFile:4)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:19)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at okhttp3.internal.http.RealInterceptorChain.proceed(SourceFile:1)
+
+08-07 05:58:25.183  5845  6320 I LSPosed-Bridge: 	at com.shopee.app.network
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@b544621; arg2 = android.os.Parcel@cf09c88; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:25.512  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: askedperm = []; permName: android.permission.READ_PHONE_NUMBERS; android.os.Process.myPid() = 5845; type = 1
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; Binder.getCallingPid() =5845; Binder.getCallingUid() = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; Binder.getCallingPid() =5845; Binder.getCallingUid() = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:199)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:199)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:25.520  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at com.shopee.app.util.a0$b.invokeSuspend(SourceFile:3)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.a.resumeWith(SourceFile:3)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at kotlinx.coroutines.DispatchedTask.run(SourceFile:18)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(SourceFile:1)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(SourceFile:4)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(SourceFile:4)
+
+08-07 05:58:27.999  5845  6586 I LSPosed-Bridge: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(Unknown Source:24)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.net.IConnectivityManager; arg0 = 6; arg1 = android.os.Parcel@a830c6e; arg2 = android.os.Parcel@96059a0; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub$Proxy.getNetworkInfoForUid(IConnectivityManager.java:1284)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at android.net.ConnectivityManager.getNetworkInfoForUid(ConnectivityManager.java:1078)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at android.net.ConnectivityManager.getNetworkInfo(ConnectivityManager.java:1072)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at com.appsflyer.internal.AFa1gSDK.AFInAppEventParameterName(SourceFile:4)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at com.appsflyer.internal.AFa1aSDK.AFInAppEventParameterName(SourceFile:96)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at com.appsflyer.internal.AFd1vSDK.AFInAppEventType(SourceFile:18)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at com.appsflyer.internal.AFd1uSDK.AFInAppEventParameterName(SourceFile:1)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at com.appsflyer.internal.AFc1hSDK.AFInAppEventParameterName(SourceFile:8)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at com.appsflyer.internal.AFc1nSDK.AFLogger(SourceFile:5)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at com.appsflyer.internal.AFc1lSDK.run(SourceFile:18)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:27.999  5845  6222 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.deviceinfo.p1.d.<init>(SourceFile:7)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.base.triggerSource.m.a(SourceFile:42)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.DataPointService$a.run(SourceFile:1)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at org.androidannotations.api.a$b.execute(Unknown Source:2)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at org.androidannotations.api.a$c.run(SourceFile:5)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:37.603  5845  6791 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.view.accessibility.IAccessibilityInteractionConnectionCallback; arg0 = 2; arg1 = android.os.Parcel@ddc2f34; arg2 = null; arg3 = 1; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at android.view.accessibility.IAccessibilityInteractionConnectionCallback$Stub$Proxy.setFindAccessibilityNodeInfosResult(IAccessibilityInteractionConnectionCallback.java:146)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.updateInfosForViewportAndReturnFindNodeResult(AccessibilityInteractionController.java:869)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.findAccessibilityNodeInfoByAccessibilityIdUiThread(AccessibilityInteractionController.java:340)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.access$400(AccessibilityInteractionController.java:67)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController$PrivateHandler.handleMessage(AccessibilityInteractionController.java:1324)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 05:58:37.603  5845  5845 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@4350b16; arg2 = android.os.Parcel@e72b88f; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.deviceinfo.p1.d.c(SourceFile:5)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.base.triggerSource.k.z(SourceFile:5)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.base.common.e.b(SourceFile:41)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.google.android.exoplayer2.s2.run(SourceFile:10)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.deviceinfo.p1.d.c(SourceFile:5)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.base.triggerSource.k.z(SourceFile:5)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.base.common.e.b(SourceFile:41)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at com.google.android.exoplayer2.s2.run(SourceFile:10)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:37.687  5845  6570 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.util.datapoint.deviceinfo.p1.d.<init>(SourceFile:7)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.util.f.b(SourceFile:142)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a.c(SourceFile:5)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a$a.execute(SourceFile:2)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at org.androidannotations.api.a$c.run(SourceFile:5)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:38.188  5845  6061 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:38.188  1885  2027 E PhoneInterfaceManager: [PhoneIntfMgr] checkCarrierPrivilegesForPackage: No UICC
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@3319f0e; arg2 = android.os.Parcel@c063ac3; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.util.f.b(SourceFile:190)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a.c(SourceFile:5)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a$a.execute(SourceFile:2)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at org.androidannotations.api.a$c.run(SourceFile:5)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.util.f.b(SourceFile:190)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a.c(SourceFile:5)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a$a.execute(SourceFile:2)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at org.androidannotations.api.a$c.run(SourceFile:5)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:38.433  5845  6061 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:38.433   555   555 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.tracking.splogger.entity.CXIData$DeviceInfo.<init>(SourceFile:19)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.util.f.b(SourceFile:228)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a.c(SourceFile:5)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a$a.execute(SourceFile:2)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at org.androidannotations.api.a$c.run(SourceFile:5)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:39.639  5845  6061 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.tracking.splogger.entity.CXIData$NetworkInfo.<init>(SourceFile:3)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.util.f.b(SourceFile:232)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a.c(SourceFile:5)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at com.shopee.app.domain.interactor.base.a$a.execute(SourceFile:2)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at org.androidannotations.api.a$c.run(SourceFile:5)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 05:58:39.653  5845  6061 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 05:58:39.653  7706  7706 I Input   : injectMotionEvent: MotionEvent { action=ACTION_MOVE, actionButton=0, id[0]=0, x[0]=360.0, y[0]=192.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=68491, downTime=68491, deviceId=5, source=0x1002 }
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@2de4912; arg2 = android.os.Parcel@b37160b; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:01:11.349  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:03:43.572  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@72f0008; arg2 = android.os.Parcel@f35a3a1; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:06:15.613  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:08:48.629  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:08:48.629   555   555 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-07 06:11:20.616   555   555 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@fa4eca0; arg2 = android.os.Parcel@d73bb93; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:11:20.616  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:11:20.616   555   555 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.app.IActivityManager; arg0 = 49; arg1 = android.os.Parcel@ed9542b; arg2 = android.os.Parcel@3c8cb55; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.checkPermission(IActivityManager.java:4722)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:11)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:13:52.526  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@ec73e6; arg2 = android.os.Parcel@781c36f; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:16:24.773  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.view.accessibility.IAccessibilityInteractionConnectionCallback; arg0 = 2; arg1 = android.os.Parcel@e2e68f3; arg2 = null; arg3 = 1; res = true; stacktrace=java.lang.Exception
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at android.view.accessibility.IAccessibilityInteractionConnectionCallback$Stub$Proxy.setFindAccessibilityNodeInfosResult(IAccessibilityInteractionConnectionCallback.java:146)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.updateInfosForViewportAndReturnFindNodeResult(AccessibilityInteractionController.java:869)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.findAccessibilityNodeInfoByAccessibilityIdUiThread(AccessibilityInteractionController.java:340)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.access$400(AccessibilityInteractionController.java:67)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController$PrivateHandler.handleMessage(AccessibilityInteractionController.java:1324)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 06:18:56.864  5845  5845 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@b3a0ff6; arg2 = android.os.Parcel@3e601ad; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:18:56.864  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:21:28.846  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:24:02.317  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.view.accessibility.IAccessibilityInteractionConnectionCallback; arg0 = 2; arg1 = android.os.Parcel@810e12a; arg2 = null; arg3 = 1; res = true; stacktrace=java.lang.Exception
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at android.view.accessibility.IAccessibilityInteractionConnectionCallback$Stub$Proxy.setFindAccessibilityNodeInfosResult(IAccessibilityInteractionConnectionCallback.java:146)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.updateInfosForViewportAndReturnFindNodeResult(AccessibilityInteractionController.java:869)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.findAccessibilityNodeInfoByAccessibilityIdUiThread(AccessibilityInteractionController.java:340)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController.access$400(AccessibilityInteractionController.java:67)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at android.view.AccessibilityInteractionController$PrivateHandler.handleMessage(AccessibilityInteractionController.java:1324)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-07 06:24:02.317  5845  5845 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 5845 PermLabel hookBinder_test 10116 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@8d4bf76; arg2 = android.os.Parcel@abdbe9b; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:61)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:182)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 5845 PermLabel 10116 ContextImpl.checkPermission: pid = 5845; uid = 10116; permName: android.permission.READ_PHONE_NUMBERS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at androidx.core.content.a.a(SourceFile:2)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.google.android.play.core.appupdate.k.a(SourceFile:3)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.common.v1.d.<init>(SourceFile:18)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.libdeviceinfo.a.c(Unknown Source:9)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.util.a0.a(SourceFile:6)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.k.i(SourceFile:52)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.shopee.app.network.processors.b.d(SourceFile:17)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at com.beetalklib.network.app.support.c$c.run(SourceFile:1)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-07 06:26:34.494  5845  6667 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)

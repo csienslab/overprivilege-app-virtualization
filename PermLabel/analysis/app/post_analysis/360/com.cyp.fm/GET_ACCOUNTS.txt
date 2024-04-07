@@ -1,0 +1,13 @@
+09-02 16:14:35.105  1568  1856 I LSPosed-Bridge: 6653 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 2252; uid = 10133; Binder.getCallingUid() = 10010; getNameForUid: com.google.uid.shared:10010; getPackagesForUid: [com.google.android.gms, com.google.android.gsf, com.google.android.backuptransport]; permName: android.permission.GET_ACCOUNTS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+09-02 16:14:35.105  1568  1856 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:130)
+
+09-02 16:14:35.105  1568  1856 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 16:14:35.105  1568  1856 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 16:14:35.105  1568  1856 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+09-02 16:14:35.105  1568  1856 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+09-02 16:14:35.105  1568  1856 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

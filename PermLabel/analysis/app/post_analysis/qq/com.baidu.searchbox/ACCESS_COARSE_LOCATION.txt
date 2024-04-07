@@ -1,0 +1,1195 @@
+06-12 21:25:55.501  5440  5440 I LSPosed-Bridge: 5440 PermLabel 10116 permission_group_mapping =android.permission.ACCESS_COARSE_LOCATION Location
+
+06-12 21:25:55.582  5440  5440 W System.err: android.content.pm.PackageManager$NameNotFoundException: freemme.permission.msa
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:85)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:25:55.582  5440  5440 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:25:55.582  5440  5440 I LSPosed-Bridge: 5440 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:25:55.583  5440  5440 I LSPosed-Bridge: 5440 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:25:55.583  5440  5440 I LSPosed-Bridge: 5440 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:25:55.583  5440  5440 I LSPosed-Bridge: 5440 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: askedperm = [android.permission.READ_PHONE_STATE]; permName: android.permission.ACCESS_COARSE_LOCATION; android.os.Process.myPid() = 5440; type = 1
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: askedperm = [android.permission.READ_PHONE_STATE]; permName: android.permission.ACCESS_COARSE_LOCATION; android.os.Process.myPid() = 5440; type = 1
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; Binder.getCallingPid() =5440; Binder.getCallingUid() = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; Binder.getCallingPid() =5440; Binder.getCallingUid() = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:188)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:188)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiUtils.checkRequestPermission(SearchBox:110012)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiUtils.checkRequestPermission(SearchBox:110012)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiUtils.getWifiInfo(SearchBox:175104)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiUtils.getWifiInfo(SearchBox:175104)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiDeviceInfo.buildDeviceTokens(SearchBox:115453)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiDeviceInfo.buildDeviceTokens(SearchBox:115453)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiDeviceInfo.getDeviceInfo(SearchBox:125004)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiDeviceInfo.getDeviceInfo(SearchBox:125004)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.SapiCache.reportDi(SearchBox:105006)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.SapiCache.reportDi(SearchBox:105006)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.SapiCache$3.onSuccess(SearchBox:105068)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.SapiCache$3.onSuccess(SearchBox:105068)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.httpwrap.HttpClientWrap$4.onSuccess(SearchBox:120006)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.httpwrap.HttpClientWrap$4.onSuccess(SearchBox:120006)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.HttpResponseHandler.c(SearchBox:135018)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.HttpResponseHandler.c(SearchBox:135018)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.HttpResponseHandler.b(SearchBox:125008)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.HttpResponseHandler.b(SearchBox:125008)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.b.a(SearchBox:170174)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.b.a(SearchBox:170174)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.PassHttpClientRequest.run(SearchBox:125029)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.PassHttpClientRequest.run(SearchBox:125029)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-12 21:27:05.479  5440  9762 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:205)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiUtils.checkRequestPermission(SearchBox:110012)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiUtils.getWifiInfo(SearchBox:175104)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiDeviceInfo.buildDeviceTokens(SearchBox:115453)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.utils.SapiDeviceInfo.getDeviceInfo(SearchBox:125004)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.SapiCache.reportDi(SearchBox:105006)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.SapiCache$3.onSuccess(SearchBox:105068)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.sapi2.httpwrap.HttpClientWrap$4.onSuccess(SearchBox:120006)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.HttpResponseHandler.c(SearchBox:135018)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.HttpResponseHandler.b(SearchBox:125008)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.b.a(SearchBox:170174)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at com.baidu.pass.http.PassHttpClientRequest.run(SearchBox:125029)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+06-12 21:27:05.480  5440  9762 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-12 21:27:11.411 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 permission_group_mapping =android.permission.ACCESS_COARSE_LOCATION Location
+
+06-12 21:27:11.411 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 permission_group_mapping =android.permission.ACCESS_FINE_LOCATION Location
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:11.462 10315 10315 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:11.462 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:11.462 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:11.462 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:27:11.462 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:27:11.462 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:27:11.462 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:27:11.462 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:27:11.462 10315 10315 I LSPosed-Bridge: 10315 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:27:13.894 10523 10523 I LSPosed-Bridge: 10523 PermLabel 10116 permission_group_mapping =android.permission.ACCESS_COARSE_LOCATION Location
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:85)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:14.009 10523 10523 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:14.009 10523 10523 I LSPosed-Bridge: 10523 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:14.010 10523 10523 I LSPosed-Bridge: 10523 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:27:14.010 10523 10523 I LSPosed-Bridge: 10523 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:27:14.010 10523 10523 I LSPosed-Bridge: 10523 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:27:19.231 10943 10943 I LSPosed-Bridge: 10943 PermLabel 10116 permission_group_mapping =android.permission.ACCESS_COARSE_LOCATION Location
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:85)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:19.329 10943 10943 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:19.329 10943 10943 I LSPosed-Bridge: 10943 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:19.330 10943 10943 I LSPosed-Bridge: 10943 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:27:19.330 10943 10943 I LSPosed-Bridge: 10943 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:27:19.330 10943 10943 I LSPosed-Bridge: 10943 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:27:24.211  1569  4816 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:24.211  1569  4816 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:24.211  1569  4816 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.211  1569  4816 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:24.211  1569  4816 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:24.211  1569  4816 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:24.211  1569  4816 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116; permName: android.permission.ACCESS_COARSE_LOCATION; getAllCellInfo res = null; stacktrace=java.lang.Exception
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$4.afterHookedMethod(hookLocationExtra_test.java:62)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.getAllCellInfo(Unknown Source:8)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at sp.b.x(Unknown Source:30)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at sp.b.w(Unknown Source:4)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at sp.b.r(Unknown Source:26)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at qp.i.i(Unknown Source:8)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:70)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:24.215  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:24.218  1569  4816 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:24.218  1569  4816 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:24.218  1569  4816 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.218  1569  4816 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:24.218  1569  4816 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:24.218  1569  4816 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:24.218  1569  4816 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116; permName: android.permission.ACCESS_COARSE_LOCATION; getCellLocation res = null; stacktrace=java.lang.Exception
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$3.afterHookedMethod(hookLocationExtra_test.java:55)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.getCellLocation(Unknown Source:8)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at sp.b.w(Unknown Source:23)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at sp.b.r(Unknown Source:26)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at qp.i.i(Unknown Source:8)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:70)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:24.222  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:24.261  1569  1677 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:24.261  1569  1677 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:24.261  1569  1677 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.261  1569  1677 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:24.261  1569  1677 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:24.261  1569  1677 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:24.261  1569  1677 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116; permName: android.permission.ACCESS_COARSE_LOCATION; getAllCellInfo res = null; stacktrace=java.lang.Exception
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$4.afterHookedMethod(hookLocationExtra_test.java:62)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.getAllCellInfo(Unknown Source:8)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at sp.b.x(Unknown Source:30)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at sp.b.w(Unknown Source:4)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at sp.b.r(Unknown Source:26)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at qp.g.a(Unknown Source:18)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:197)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:24.264  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:24.270  1569  4816 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:24.270  1569  4816 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:24.270  1569  4816 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.270  1569  4816 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:24.270  1569  4816 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:24.270  1569  4816 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:24.270  1569  4816 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 5440; uid = 10116; Binder.getCallingUid() = 10116; getNameForUid: com.baidu.searchbox; getPackagesForUid: [com.baidu.searchbox]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:120)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getActiveNetworkInfo(ConnectivityService.java:1178)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:85)
+
+06-12 21:27:24.270  1569  1677 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116; permName: android.permission.ACCESS_COARSE_LOCATION; getCellLocation res = null; stacktrace=java.lang.Exception
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$3.afterHookedMethod(hookLocationExtra_test.java:55)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.getCellLocation(Unknown Source:8)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at sp.b.w(Unknown Source:23)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at sp.b.r(Unknown Source:26)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at qp.g.a(Unknown Source:18)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:197)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:24.283  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:205)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at tp.h.b(Unknown Source:14)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at tp.h.o(Unknown Source:6)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at qp.i.B(Unknown Source:44)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:214)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:24.300  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 5440; uid = 10116; Binder.getCallingUid() = 10116; getNameForUid: com.baidu.searchbox; getPackagesForUid: [com.baidu.searchbox]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:120)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getActiveNetworkInfo(ConnectivityService.java:1178)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:85)
+
+06-12 21:27:24.897  1569  1582 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:205)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at com.baidu.searchbox.location.SearchBoxLocationManager.isCoarseLocationPermissionGranted(SearchBox:105017)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at com.baidu.searchbox.location.SearchBoxLocationManager.logAndNotifyError(SearchBox:170100)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at com.baidu.searchbox.location.SearchBoxLocationManager$a.onReceiveLocation(SearchBox:125291)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at pp.d.o(Unknown Source:73)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at pp.d.q(Unknown Source:132)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at pp.d.j(Unknown Source:0)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at pp.d$b.handleMessage(Unknown Source:238)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:24.897  5440  5440 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:25.899 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 permission_group_mapping =android.permission.ACCESS_COARSE_LOCATION Location
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:85)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:85)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:25.944 11554 11554 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:25.944 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:25.944 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:25.944 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:27:25.944 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:27:25.944 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:27:25.944 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:27:25.944 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:27:25.944 11554 11554 I LSPosed-Bridge: 11554 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.READ_PHONE_STATE; type = 1; res = 0; stacktrace=java.lang.Exception
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.READ_PHONE_STATE; type = 1; res = 0; stacktrace=java.lang.Exception
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:25.944  1569  1583 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:205)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(SearchBox:110010)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at com.baidu.android.common.PermissionManager.statisticLocationPermissionState(SearchBox:130032)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at com.baidu.android.common.PermissionManager.statisticPermissionState(SearchBox:130051)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at com.baidu.searchbox.taskmanager.AsyncLaunchTaskManager$t1.c(SearchBox:110006)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at com.baidu.searchbox.launch.k.run(SearchBox:150059)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at u5.a$e.a(SearchBox:115044)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at u5.a$e.doInBackground(SearchBox:110002)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:245)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+06-12 21:27:26.338  5440 11503 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-12 21:27:35.434  1569  4816 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:35.434  1569  4816 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:35.434  1569  4816 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.434  1569  4816 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:35.434  1569  4816 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:35.434  1569  4816 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:35.434  1569  4816 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116; permName: android.permission.ACCESS_COARSE_LOCATION; getAllCellInfo res = null; stacktrace=java.lang.Exception
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$4.afterHookedMethod(hookLocationExtra_test.java:62)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.getAllCellInfo(Unknown Source:8)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at sp.b.x(Unknown Source:30)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at sp.b.w(Unknown Source:4)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at sp.b.r(Unknown Source:26)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at qp.i.i(Unknown Source:8)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:70)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:35.452  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:35.454  1569  3449 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:35.454  1569  3449 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:35.454  1569  3449 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.454  1569  3449 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:35.454  1569  3449 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:35.454  1569  3449 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:35.454  1569  3449 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116; permName: android.permission.ACCESS_COARSE_LOCATION; getCellLocation res = null; stacktrace=java.lang.Exception
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$3.afterHookedMethod(hookLocationExtra_test.java:55)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.getCellLocation(Unknown Source:8)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at sp.b.w(Unknown Source:23)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at sp.b.r(Unknown Source:26)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at qp.i.i(Unknown Source:8)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:70)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:35.461  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:35.469  1569  4816 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:35.469  1569  4816 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:35.469  1569  4816 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.469  1569  4816 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:35.469  1569  4816 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:35.469  1569  4816 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:35.469  1569  4816 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 1908 PermLabel 1001 ContextImpl.checkPermission: pid = 5440; uid = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:205)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at android.app.ContextImpl.enforcePermission(ContextImpl.java:1822)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at android.telephony.LocationAccessPolicy.canAccessCellLocation(LocationAccessPolicy.java:71)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at com.android.phone.PhoneInterfaceManager.getAllCellInfo(PhoneInterfaceManager.java:1808)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at com.android.internal.telephony.ITelephony$Stub.onTransact(ITelephony.java:936)
+
+06-12 21:27:35.469  1908  2069 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116; permName: android.permission.ACCESS_COARSE_LOCATION; getAllCellInfo res = null; stacktrace=java.lang.Exception
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$4.afterHookedMethod(hookLocationExtra_test.java:62)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.getAllCellInfo(Unknown Source:8)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at sp.b.x(Unknown Source:30)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at sp.b.w(Unknown Source:4)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at sp.b.r(Unknown Source:26)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at qp.g.a(Unknown Source:18)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:197)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:35.471  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:35.487  1569  4585 I LSPosed-Bridge: 5440 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 1908; uid = 10116; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.android.providers.telephony, org.codeaurora.ims, com.qualcomm.qti.autoregistration, com.qti.xdivert, com.qualcomm.qcrilmsgtunnel, com.android.mms.service, com.android.phone, com.android.stk, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.networksetting, com.qti.qualcomm.datastatusnotification, com.qualcomm.qti.ims, com.qualcomm.qti.uim, com.qualcomm.qti.telephonyservice, com.qualcomm.simcontacts, com.qti.confuridialer, com.qualcomm.qti.lpa]; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:35.487  1569  4585 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:126)
+
+06-12 21:27:35.487  1569  4585 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.487  1569  4585 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:35.487  1569  4585 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-12 21:27:35.487  1569  4585 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-12 21:27:35.487  1569  4585 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-12 21:27:35.487 12561 12603 W AppInitScheduler|Run: Running VoltronMetadataInitializer
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116; permName: android.permission.ACCESS_COARSE_LOCATION; getCellLocation res = null; stacktrace=java.lang.Exception
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.hookLocationExtra_test$3.afterHookedMethod(hookLocationExtra_test.java:55)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.getCellLocation(Unknown Source:8)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at sp.b.w(Unknown Source:23)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at sp.b.r(Unknown Source:26)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at qp.g.a(Unknown Source:18)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:197)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:35.505  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:205)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at tp.h.b(Unknown Source:14)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at tp.h.o(Unknown Source:6)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at qp.i.B(Unknown Source:44)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at qp.i.z(Unknown Source:214)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at qp.i.x(Unknown Source:34)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at qp.i.t(Unknown Source:25)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at qp.i.q(Unknown Source:96)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at qp.i.k(Unknown Source:9)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at com.baidu.location.d.a$b.handleMessage(Unknown Source:115)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:35.513  5440 10157 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:205)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at com.baidu.searchbox.location.SearchBoxLocationManager.isCoarseLocationPermissionGranted(SearchBox:105017)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at com.baidu.searchbox.location.SearchBoxLocationManager.logAndNotifyError(SearchBox:170100)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at com.baidu.searchbox.location.SearchBoxLocationManager$a.onReceiveLocation(SearchBox:125291)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at pp.d.o(Unknown Source:73)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at pp.d.q(Unknown Source:132)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at pp.d.j(Unknown Source:0)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at pp.d$b.handleMessage(Unknown Source:238)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:35.617  5440  5440 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:39.265 12968 12968 I LSPosed-Bridge: 12968 PermLabel 10116 permission_group_mapping =android.permission.ACCESS_COARSE_LOCATION Location
+
+06-12 21:27:39.316 12968 12968 I LSPosed-Bridge: 12968 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:44.953 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 permission_group_mapping =android.permission.ACCESS_COARSE_LOCATION Location
+
+06-12 21:27:45.003 13596 13596 W System.err: android.content.pm.PackageManager$NameNotFoundException: freemme.permission.msa
+
+06-12 21:27:45.003 13596 13596 W System.err: android.content.pm.PackageManager$NameNotFoundException: freemme.permission.msa
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:85)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:85)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:45.003 13596 13596 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+06-12 21:27:45.003 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:45.003 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 all_declared permissions =android.permission.FOREGROUND_SERVICE android.permission.CAMERA android.permission.FLASHLIGHT com.baidu.searchbox.permission.DOWNLOAD_STORY com.baidu.searchbox.permission.APS_INSTALL android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.READ_PHONE_STATE android.permission.INTERNET android.permission.RECORD_AUDIO android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT com.android.launcher.permission.READ_SETTINGS com.android.launcher2.permission.READ_SETTINGS com.android.launcher3.permission.READ_SETTINGS com.oppo.launcher.permission.READ_SETTINGS com.huawei.android.launcher.permission.READ_SETTINGS com.meizu.flyme.launcher.permission.READ_SETTINGS com.lenovo.launcher.permission.READ_SETTINGS com.htc.launcher.permission.READ_SETTINGS com.qiku.launcher.permission.READ_SETTINGS com.zte.mifavor.launcher.permission.READ_SETTINGS com.bbk.launcher2.permission.READ_SETTINGS android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.SYSTEM_ALERT_WINDOW android.permission.DISABLE_KEYGUARD android.permission.REQUEST_INSTALL_PACKAGES android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.WRITE_SETTINGS android.permission.GET_ACCOUNTS android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC com.huawei.android.launcher.permission.CHANGE_BADGE com.sec.android.provider.badge.permission.READ com.sec.android.provider.badge.permission.WRITE android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.READ_EXTERNAL_STORAGE com.baidu.appsearch.permission.LAUNCH android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.QUERY_ALL_PACKAGES android.permission.USE_FINGERPRINT com.baidu.searchbox.permission.MATRIX_PRODUCT_CONFIG android.permission.READ_PRIVILEGED_PHONE_STATE android.permission.BLUETOOTH_CONNECT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SYSTEM_OVERLAY_WINDOW android.permission.SET_WALLPAPER android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR com.miui.home.launcher.permission.INSTALL_WIDGET android.permission.PACKAGE_USAGE_STATS com.vivo.notification.permission.BADGE_ICON android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.MOUNT_UNMOUNT_FILESYSTEMS android.permission.MODIFY_PHONE_STATE android.hardware.camera org.fidoalliance.uaf.permissions.FIDO_CLIENT com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER com.sec.feature.fingerprint_manager_service android.permission.POST_NOTIFICATIONS com.baidu.searchbox.permission.MIPUSH_RECEIVE com.meizu.flyme.permission.PUSH android.permission.INTERACT_ACROSS_USERS_FULL android.permission.INTERACT_ACROSS_USERS android.permission.MANAGE_USERS com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.searchbox com.vivo.abe.permission.launcher.notification.num com.baidu.searchbox.permission.sofire.RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa 
+
+06-12 21:27:45.003 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:27:45.003 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 declared normal_permissions =android.permission.FOREGROUND_SERVICE android.permission.FLASHLIGHT android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.ACCESS_WIFI_STATE android.permission.WAKE_LOCK com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.GET_TASKS android.permission.CHANGE_WIFI_STATE android.permission.DISABLE_KEYGUARD android.permission.RECEIVE_BOOT_COMPLETED android.permission.BROADCAST_STICKY android.permission.USE_CREDENTIALS android.permission.MANAGE_ACCOUNTS android.permission.CHANGE_NETWORK_STATE android.permission.NFC android.permission.VIBRATE android.permission.EXPAND_STATUS_BAR android.permission.MODIFY_AUDIO_SETTINGS android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS android.permission.RESTART_PACKAGES android.permission.BLUETOOTH_ADMIN android.permission.USE_FINGERPRINT android.permission.KILL_BACKGROUND_PROCESSES android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.READ_SYNC_SETTINGS android.permission.WRITE_SYNC_SETTINGS android.permission.GET_PACKAGE_SIZE android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 
+
+06-12 21:27:45.003 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:27:45.003 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_CONTACTS android.permission.WRITE_EXTERNAL_STORAGE android.permission.GET_ACCOUNTS android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR 
+
+06-12 21:27:45.003 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:27:45.003 13596 13596 I LSPosed-Bridge: 13596 PermLabel 10116 declared dangerous_group =Camera Telephone Microphone Location Location Contacts Storage Contacts Storage Calendar Calendar 
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 5440 PermLabel 10116 ContextImpl.checkPermission: pid = 5440; uid = 10116; permName: android.permission.ACCESS_COARSE_LOCATION; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:205)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.support.v4.hardware.refios.AbsActionBarView.setFactory(Unknown Source:17)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.support.v4.hardware.refios.NestedScrollingChild.getChoices(Unknown Source:78)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.support.v4.hardware.refios.NestedScrollingChild.setFactory(Unknown Source:6)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at com.baidu.sofire.x0.EngineImpl.fgwl(Unknown Source:6)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at com.baidu.protect.sdk.A00ce4d3ab5685be3a958d7c530f11c94f9204a99.v(Native Method)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.support.v4.hardware.refios.VerticalGridView.setSubtitle(Unknown Source:3)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at com.baidu.protect.sdk.A00ce4d3ab5685be3a958d7c530f11c94f9204a99.l(Native Method)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.support.v4.hardware.refios.VerticalGridView.getChoices(Unknown Source:3)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at com.baidu.protect.sdk.A00ce4d3ab5685be3a958d7c530f11c94f9204a99.v(Native Method)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.support.v4.hardware.refios.EdgeEffectCompatIcs.getChoices(Unknown Source:3)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.support.v4.hardware.refios.TestActivity$DrawerLayout.setFactory(Unknown Source:65)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at android.support.v4.hardware.refios.SortedList.run(Unknown Source:0)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+06-12 21:28:01.199  5440 14383 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)

@@ -1,0 +1,325 @@
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-05 03:39:08.547  1559  1696 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 5853 PermLabel hookBinder_test 10135 interfaceBinder =android.content.pm.IPackageManager; arg0 = 90; arg1 = android.os.Parcel@b2cf29c; arg2 = android.os.Parcel@ffe52c9; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:68)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.setComponentEnabledSetting(IPackageManager.java:4907)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.setComponentEnabledSetting(ApplicationPackageManager.java:2319)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at androidx.work.impl.utils.PackageManagerHelper.setComponentEnabled(PackageManagerHelper.java:26)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at androidx.work.impl.utils.EnqueueRunnable.run(EnqueueRunnable.java:28)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at androidx.work.impl.utils.SerialExecutor$Task.run(SerialExecutor.java:3)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-05 03:39:10.853  5853  6289 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-05 03:39:10.853  1559  1661 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-05 03:39:14.337  1559  6562 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.safe.SafeWebView.setOverScrollMode(int) (AppStore:1)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.view.View.<init>(android.content.Context) (View.java:4807)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int) (View.java:4948)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.view.ViewGroup.<init>(android.content.Context, android.util.AttributeSet, int, int) (ViewGroup.java:659)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.widget.AbsoluteLayout.<init>(android.content.Context, android.util.AttributeSet, int, int) (AbsoluteLayout.java:55)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.<init>(android.content.Context, android.util.AttributeSet, int, int, java.util.Map, boolean) (WebView.java:659)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.<init>(android.content.Context, android.util.AttributeSet, int, int) (WebView.java:604)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.<init>(android.content.Context, android.util.AttributeSet, int) (WebView.java:587)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.<init>(android.content.Context, android.util.AttributeSet) (WebView.java:574)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.safe.SafeWebView.<init>(android.content.Context, android.util.AttributeSet) (AppStore:2)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.webview.AppStoreWebView.<init>(android.content.Context) (AppStore:1)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at com.qihoo.appstore.webview.AppStoreWebView com.qihoo.appstore.webview.AppStoreWebView.a() (AppStore:8)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at com.qihoo.appstore.webview.AppStoreWebView com.qihoo.appstore.webview.pool.e.a() (AppStore:2)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Object com.qihoo.appstore.webview.pool.e.a() (AppStore:1)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.webview.pool.c.a() (AppStore:2)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.webview.pool.c.<init>(com.qihoo.appstore.webview.pool.b, com.qihoo.appstore.webview.pool.d) (AppStore:6)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.webview.pool.WebViewCenter.b() (AppStore:3)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.base.AppStoreApplication.h() (AppStore:6)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.base.AppStoreApplication.i() (AppStore:6)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.base.AppStoreApplication.onCreate() (AppStore:27)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.Instrumentation.callApplicationOnCreate(android.app.Application) (Instrumentation.java:1155)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5885)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.ActivityThread.access$1100(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:200)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1651)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-05 03:39:16.539  1559  3081 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.os.Looper.loop() (Looper.java:193)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6692)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 5853 PermLabel hookBinder_test 10135 interfaceBinder =android.app.IActivityManager; arg0 = 35; arg1 = android.os.Parcel@d0646eb; arg2 = android.os.Parcel@c003bd2; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:68)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.activityResumed(IActivityManager.java:4417)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at android.app.servertransaction.ResumeActivityItem.postExecute(ResumeActivityItem.java:61)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:146)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-05 03:39:16.539  5853  5853 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:493)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:858)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.webkit.PacProcessor" on path: DexPathList[[zip file "/data/app/com.android.chrome-2ntWflrQRroS2eHr74uk9A==/base.apk"],nativeLibraryDirectories=[/data/app/com.android.chrome-2ntWflrQRroS2eHr74uk9A==/lib/arm, /data/app/com.android.chrome-2ntWflrQRroS2eHr74uk9A==/base.apk!/lib/armeabi-v7a, /system/lib, /vendor/lib]]
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:134)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Class java.lang.Class.classForName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:453)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Class android.webkit.WebViewFactory.getWebViewProviderClass(java.lang.ClassLoader) (WebViewFactory.java:176)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Class android.webkit.WebViewFactory.getProviderClass() (WebViewFactory.java:459)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at android.webkit.WebViewFactoryProvider android.webkit.WebViewFactory.getProvider() (WebViewFactory.java:251)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at android.webkit.WebViewFactoryProvider android.webkit.WebView.getFactory() (WebView.java:2681)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.ensureProviderCreated() (WebView.java:2676)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.setOverScrollMode(int) (WebView.java:2741)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.safe.SafeWebView.setOverScrollMode(int) (AppStore:1)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.view.View.<init>(android.content.Context) (View.java:4807)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int) (View.java:4948)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.view.ViewGroup.<init>(android.content.Context, android.util.AttributeSet, int, int) (ViewGroup.java:659)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.widget.AbsoluteLayout.<init>(android.content.Context, android.util.AttributeSet, int, int) (AbsoluteLayout.java:55)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.<init>(android.content.Context, android.util.AttributeSet, int, int, java.util.Map, boolean) (WebView.java:659)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.<init>(android.content.Context, android.util.AttributeSet, int, int) (WebView.java:604)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.<init>(android.content.Context, android.util.AttributeSet, int) (WebView.java:587)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.WebView.<init>(android.content.Context, android.util.AttributeSet) (WebView.java:574)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.webkit.safe.SafeWebView.<init>(android.content.Context, android.util.AttributeSet) (AppStore:2)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.webview.AppStoreWebView.<init>(android.content.Context) (AppStore:1)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at com.qihoo.appstore.webview.AppStoreWebView com.qihoo.appstore.webview.AppStoreWebView.a() (AppStore:8)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at com.qihoo.appstore.webview.AppStoreWebView com.qihoo.appstore.webview.pool.e.a() (AppStore:2)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Object com.qihoo.appstore.webview.pool.e.a() (AppStore:1)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.webview.pool.c.a() (AppStore:2)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.webview.pool.c.<init>(com.qihoo.appstore.webview.pool.b, com.qihoo.appstore.webview.pool.d) (AppStore:6)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.webview.pool.WebViewCenter.b() (AppStore:3)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.base.AppStoreApplication.h() (AppStore:6)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.base.AppStoreApplication.i() (AppStore:6)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.qihoo.appstore.base.AppStoreApplication.onCreate() (AppStore:27)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.Instrumentation.callApplicationOnCreate(android.app.Application) (Instrumentation.java:1155)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5885)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.ActivityThread.access$1100(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:200)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1651)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.os.Looper.loop() (Looper.java:193)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6692)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:493)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:858)
+
+08-05 03:39:16.539  6832  6832 I .qihoo.appstor: 
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-05 03:39:18.909  1559  4772 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-05 03:40:29.482  1559  7768 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 5853 PermLabel 10135 AMS.checkPermission: Binder.getCallingPid() = 5853; uid = 10135; Binder.getCallingUid() = 10135; getNameForUid: com.klook; getPackagesForUid: [com.klook]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-05 03:44:47.856  1559  1696 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

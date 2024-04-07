@@ -1,0 +1,75 @@
+{
+    "Declared": {
+        "Normal": [
+            9,
+            [
+                "com.android.vending.BILLING",
+                "android.permission.FOREGROUND_SERVICE",
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.INTERNET",
+                "android.permission.WAKE_LOCK",
+                "com.google.android.c2dm.permission.RECEIVE",
+                "com.google.android.gms.permission.AD_ID",
+                "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+                "android.permission.RECEIVE_BOOT_COMPLETED"
+            ]
+        ],
+        "Dangerous": [
+            3,
+            [
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.CAMERA"
+            ]
+        ],
+        "All": [
+            14,
+            [
+                "com.android.vending.BILLING",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.FOREGROUND_SERVICE",
+                "android.permission.READ_MEDIA_IMAGES",
+                "android.permission.CAMERA",
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.INTERNET",
+                "android.permission.POST_NOTIFICATIONS",
+                "android.permission.WAKE_LOCK",
+                "com.google.android.c2dm.permission.RECEIVE",
+                "com.google.android.gms.permission.AD_ID",
+                "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+                "android.permission.RECEIVE_BOOT_COMPLETED"
+            ]
+        ]
+    },
+    "Droidbot-obtained": {
+        "Normal": {
+            "android.permission.WAKE_LOCK": 0,
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "com.google.android.providers.gsf.permission.READ_GSERVICES": 1,
+            "android.permission.INTERNET": 0,
+            "com.google.android.gms.permission.AD_ID": 0,
+            "android.permission.GET_TASKS": 1,
+            "android.permission.MODIFY_AUDIO_SETTINGS": 1,
+            "android.permission.BLUETOOTH": 1
+        },
+        "Dangerous": {
+            "android.permission.CAMERA": 0
+        },
+        "filter_normal_self": {
+            "android.permission.WAKE_LOCK": 0,
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.INTERNET": 0,
+            "com.google.android.gms.permission.AD_ID": 0,
+            "android.permission.GET_TASKS": 1
+        },
+        "filter_normal_self_strict": {
+            "android.permission.WAKE_LOCK": 0,
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.GET_TASKS": 1
+        },
+        "add_dangerous_request": {
+            "android.permission.CAMERA": 0
+        }
+    }
+}

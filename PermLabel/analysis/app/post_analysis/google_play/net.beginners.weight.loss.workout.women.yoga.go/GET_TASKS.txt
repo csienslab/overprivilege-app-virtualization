@@ -1,0 +1,395 @@
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:47:51.608  1515  1866 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:47:51.608  5826  5921 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:89 and remote module com.google.android.gms.measurement.dynamite:93
+
+08-12 05:47:51.608  5826  5921 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 93
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:48:11.574  1515  1583 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:48:11.574   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 5826 PermLabel hookBinder_test 10118 interfaceBinder =android.content.pm.IPackageManager; arg0 = 3; arg1 = android.os.Parcel@5b2aac2; arg2 = android.os.Parcel@321df32; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:62)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPackageInfo(IPackageManager.java:2876)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:174)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:152)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at com.appsflyer.internal.AFa1fSDK.AFInAppEventType(Unknown Source:2)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at com.appsflyer.internal.AFb1hSDK.AFInAppEventParameterName(Unknown Source:31)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at com.appsflyer.internal.AFb1hSDK$5.call(Unknown Source:2)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-12 05:48:11.619  5826  6010 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:48:11.619  1515  6510 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:48:25.635  1515  1675 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:48:26.523  1515  1584 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:48:32.399  1515  4937 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getNetworkCapabilities(ConnectivityService.java:1424)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:268)
+
+08-12 05:48:32.399  1515  1720 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getActiveNetwork(ConnectivityService.java:1188)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:53)
+
+08-12 05:49:23.439  1515  4937 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai: Rejecting re-init on previously-failed class java.lang.Class<com.alibaba.wireless.security.open.securityguardaccsadapter.WindvaneListener>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/taobao/windvane/extra/uc/IOnSgHttpRequestCallback;
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.classForName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:453)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.forName(java.lang.String) (Class.java:378)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at int com.taobao.wireless.security.adapter.datareport.DataReportJniBridge.windVaneCallBackAvailableBridge() (:-1)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at int com.taobao.wireless.security.adapter.datareport.DataReportJniBridge.registerWindVaneListenerBridge() (:-1)
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:49:23.439  1515  6510 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.taobao.windvane.extra.uc.IOnSgHttpRequestCallback" on path: DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/com.wandoujia.phoenix2-9T35wlNAJiFqnCqEMPAefQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.wandoujia.phoenix2-9T35wlNAJiFqnCqEMPAefQ==/lib/arm64, /data/app/com.wandoujia.phoenix2-9T35wlNAJiFqnCqEMPAefQ==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:134)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.classForName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:453)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.forName(java.lang.String) (Class.java:378)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at int com.taobao.wireless.security.adapter.datareport.DataReportJniBridge.windVaneCallBackAvailableBridge() (:-1)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at int com.taobao.wireless.security.adapter.datareport.DataReportJniBridge.registerWindVaneListenerBridge() (:-1)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai: 
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai: Rejecting re-init on previously-failed class java.lang.Class<com.alibaba.wireless.security.open.securityguardaccsadapter.WindvaneListener>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/taobao/windvane/extra/uc/IOnSgHttpRequestCallback;
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 5826 PermLabel hookBinder_test 10118 interfaceBinder =android.net.IConnectivityManager; arg0 = 1; arg1 = android.os.Parcel@3f6d3ff; arg2 = android.os.Parcel@57b4a86; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:62)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub$Proxy.getActiveNetwork(IConnectivityManager.java:1160)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at android.net.ConnectivityManager.getActiveNetwork(ConnectivityManager.java:909)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at ph.b.c(Unknown Source:49)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at ph.b$a$b.a(Unknown Source:12)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at nr.o0$a.a(Unknown Source:56)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at or.w$a.Q(Unknown Source:4)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at or.v.p(Unknown Source:137)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at or.v.a(Unknown Source:0)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at o0.e3.m(Unknown Source:326)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at mq.a.q(Unknown Source:8)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at kr.w0.run(Unknown Source:111)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at androidx.compose.ui.platform.c1.L0(Unknown Source:22)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at androidx.compose.ui.platform.d1.run(Unknown Source:2)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-12 05:49:23.439  5826  5826 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.classForName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:453)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.forName(java.lang.String) (Class.java:378)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at int com.taobao.wireless.security.adapter.datareport.DataReportJniBridge.windVaneCallBackAvailableBridge() (:-1)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at int com.taobao.wireless.security.adapter.datareport.DataReportJniBridge.registerWindVaneListenerBridge() (:-1)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.taobao.windvane.extra.uc.IOnSgHttpRequestCallback" on path: DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/com.wandoujia.phoenix2-9T35wlNAJiFqnCqEMPAefQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.wandoujia.phoenix2-9T35wlNAJiFqnCqEMPAefQ==/lib/arm64, /data/app/com.wandoujia.phoenix2-9T35wlNAJiFqnCqEMPAefQ==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:134)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.classForName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:453)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at java.lang.Class java.lang.Class.forName(java.lang.String) (Class.java:378)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at int com.taobao.wireless.security.adapter.datareport.DataReportJniBridge.windVaneCallBackAvailableBridge() (:-1)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai:   at int com.taobao.wireless.security.adapter.datareport.DataReportJniBridge.registerWindVaneListenerBridge() (:-1)
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai: 
+
+08-12 05:49:23.439  9851  9935 I ia.phoenix2:ai: Rejecting re-init on previously-failed class java.lang.Class<com.alibaba.wireless.security.open.securityguardaccsadapter.WindvaneListener>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/taobao/windvane/extra/uc/IOnSgHttpRequestCallback;
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:49:53.713  1515  1863 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:49:53.713   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:49:57.261  1515  1676 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getNetworkCapabilities(ConnectivityService.java:1424)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:268)
+
+08-12 05:50:00.561  1515  6510 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 5826 PermLabel 10118 AMS.checkPermission: Binder.getCallingPid() = 5826; uid = 10118; Binder.getCallingUid() = 10118; getNameForUid: net.beginners.weight.loss.workout.women.yoga.go; getPackagesForUid: [net.beginners.weight.loss.workout.women.yoga.go]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 05:50:00.561  1515  4821 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

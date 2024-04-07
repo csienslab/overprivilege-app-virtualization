@@ -1,0 +1,53 @@
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 5785 PermLabel 10130 AMS.checkPermission: Binder.getCallingPid() = 5785; uid = 10130; Binder.getCallingUid() = 10130; getNameForUid: com.intsig.BizCardReader; getPackagesForUid: [com.intsig.BizCardReader]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:127)
+
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+09-03 07:41:29.017  1563  6876 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 5785 PermLabel 10130 AMS.checkPermission: Binder.getCallingPid() = 5785; uid = 10130; Binder.getCallingUid() = 10130; getNameForUid: com.intsig.BizCardReader; getPackagesForUid: [com.intsig.BizCardReader]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:127)
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getServices(ActivityManagerService.java:20573)
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1064)
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+09-03 07:41:30.212  1563  6876 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 5785 PermLabel 10130 AMS.checkPermission: Binder.getCallingPid() = 5785; uid = 10130; Binder.getCallingUid() = 10130; getNameForUid: com.intsig.BizCardReader; getPackagesForUid: [com.intsig.BizCardReader]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:127)
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+09-03 07:41:32.818  1563 10484 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

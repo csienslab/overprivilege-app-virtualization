@@ -1,0 +1,19 @@
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 5172 PermLabel 10128 AMS.checkPermission: Binder.getCallingPid() = 5172; uid = 10128; Binder.getCallingUid() = 10128; getNameForUid: ks.com.freecouponmerchant; getPackagesForUid: [ks.com.freecouponmerchant]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:127)
+
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-25 05:44:17.946  1564  1847 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-25 05:44:17.946  2142  2201 I QcrilOemhookMsgTunnel: [0]processOemHookResponse serial no: 1046 error: 0length=0

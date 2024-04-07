@@ -1,0 +1,121 @@
+08-08 22:28:07.298  6316  6316 I oid.apps.photo: Rejecting re-init on previously-failed class java.lang.Class<tmz>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/app/AppOpsManager$OnOpNotedCallback;
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at java.lang.Object java.lang.Class.newInstance() (Class.java:-2)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at android.app.Application android.app.AppComponentFactory.instantiateApplication(java.lang.ClassLoader, java.lang.String) (AppComponentFactory.java:50)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at android.app.Application androidx.core.app.CoreComponentFactory.instantiateApplication(java.lang.ClassLoader, java.lang.String) (PG:1)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at android.app.Application android.app.Instrumentation.newApplication(java.lang.ClassLoader, java.lang.String, android.content.Context) (Instrumentation.java:1121)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at android.app.Application android.app.LoadedApk.makeApplication(boolean, android.app.Instrumentation) (LoadedApk.java:1061)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5856)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.app.ActivityThread.access$1100(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:200)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1651)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.os.Looper.loop() (Looper.java:193)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6692)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:493)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:858)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.app.AppOpsManager$OnOpNotedCallback" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.google.android.apps.photos-frlU15NbP4mKDhIaurdeMQ==/base.apk", zip file "/data/app/com.google.android.apps.photos-frlU15NbP4mKDhIaurdeMQ==/split_config.en.apk", zip file "/data/app/com.google.android.apps.photos-frlU15NbP4mKDhIaurdeMQ==/split_config.xhdpi.apk"],nativeLibraryDirectories=[/data/app/com.google.android.apps.photos-frlU15NbP4mKDhIaurdeMQ==/lib/arm64, /data/app/com.google.android.apps.photos-frlU15NbP4mKDhIaurdeMQ==/base.apk!/lib/arm64-v8a, /data/app/com.google.android.apps.photos-frlU15NbP4mKDhIaurdeMQ==/split_config.en.apk!/lib/arm64-v8a, /data/app/com.google.android.apps.photos-frlU15NbP4mKDhIaurdeMQ==/split_config.xhdpi.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:134)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at java.lang.Object java.lang.Class.newInstance() (Class.java:-2)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at android.app.Application android.app.AppComponentFactory.instantiateApplication(java.lang.ClassLoader, java.lang.String) (AppComponentFactory.java:50)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at android.app.Application androidx.core.app.CoreComponentFactory.instantiateApplication(java.lang.ClassLoader, java.lang.String) (PG:1)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at android.app.Application android.app.Instrumentation.newApplication(java.lang.ClassLoader, java.lang.String, android.content.Context) (Instrumentation.java:1121)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at android.app.Application android.app.LoadedApk.makeApplication(boolean, android.app.Instrumentation) (LoadedApk.java:1061)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5856)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.app.ActivityThread.access$1100(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:200)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1651)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.os.Looper.loop() (Looper.java:193)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6692)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:493)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:858)
+
+08-08 22:28:07.298  6316  6316 I oid.apps.photo: 
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 5805 PermLabel 10122 AMS.checkPermission: Binder.getCallingPid() = 5805; uid = 10122; Binder.getCallingUid() = 10122; getNameForUid: com.girls.novel; getPackagesForUid: [com.girls.novel]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:132)
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-08 22:28:07.298  1516  5029 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 5805 PermLabel 10122 AMS.checkPermission: Binder.getCallingPid() = 5805; uid = 10122; Binder.getCallingUid() = 10122; getNameForUid: com.girls.novel; getPackagesForUid: [com.girls.novel]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:132)
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-08 22:28:07.910  1516  2299 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 5805 PermLabel 10122 AMS.checkPermission: Binder.getCallingPid() = 5805; uid = 10122; Binder.getCallingUid() = 10122; getNameForUid: com.girls.novel; getPackagesForUid: [com.girls.novel]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:132)
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-08 22:28:50.161  1516  5048 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

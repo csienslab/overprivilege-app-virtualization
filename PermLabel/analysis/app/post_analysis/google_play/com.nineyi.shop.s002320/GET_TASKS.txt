@@ -1,0 +1,161 @@
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 12338 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 12338; uid = 10116; Binder.getCallingUid() = 10116; getNameForUid: com.nineyi.shop.s002320; getPackagesForUid: [com.nineyi.shop.s002320]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:139)
+
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-10 03:52:13.541  1570  8472 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 12338 PermLabel hookBinder_test 10116 interfaceBinder =android.app.IActivityManager; arg0 = 81; arg1 = android.os.Parcel@2de7c77; arg2 = android.os.Parcel@aadc0f9; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:70)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.getRunningAppProcesses(IActivityManager.java:5366)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at android.app.ActivityManager.getRunningAppProcesses(ActivityManager.java:3435)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CommonUtils.getAppProcessInfo(CommonUtils.java:2)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsReportDataCapture.populateEventApplicationData(CrashlyticsReportDataCapture.java:2)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsReportDataCapture.captureEventData(CrashlyticsReportDataCapture.java:6)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator.persistEvent(SessionReportingCoordinator.java:3)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator.persistNonFatalEvent(SessionReportingCoordinator.java:2)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsController$6.run(CrashlyticsController.java:6)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$2.call(CrashlyticsBackgroundWorker.java:2)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$2.call(CrashlyticsBackgroundWorker.java:1)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$3.then(CrashlyticsBackgroundWorker.java:1)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.android.gms.tasks.zzc.run(com.google.android.gms:play-services-tasks@@18.0.2:3)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.ExecutorUtils$1$1.onRun(ExecutorUtils.java:1)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.BackgroundPriorityRunnable.run(BackgroundPriorityRunnable.java:2)
+
+08-10 03:52:13.541 12338 12402 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 12338 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 12338; uid = 10116; Binder.getCallingUid() = 10116; getNameForUid: com.nineyi.shop.s002320; getPackagesForUid: [com.nineyi.shop.s002320]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:139)
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-10 03:52:13.607  1570  8015 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 12338 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 12338; uid = 10116; Binder.getCallingUid() = 10116; getNameForUid: com.nineyi.shop.s002320; getPackagesForUid: [com.nineyi.shop.s002320]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:139)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getActiveNetworkInfo(ConnectivityService.java:1178)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:85)
+
+08-10 03:52:13.623  1570  8015 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 12338 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 12338; uid = 10116; Binder.getCallingUid() = 10116; getNameForUid: com.nineyi.shop.s002320; getPackagesForUid: [com.nineyi.shop.s002320]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:139)
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-10 03:52:13.623  1570  8472 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 12338 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 12338; uid = 10116; Binder.getCallingUid() = 10116; getNameForUid: com.nineyi.shop.s002320; getPackagesForUid: [com.nineyi.shop.s002320]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:139)
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-10 03:52:18.627  1570  7308 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 28032 PermLabel 10116 AMS.checkPermission: Binder.getCallingPid() = 28032; uid = 10116; Binder.getCallingUid() = 10116; getNameForUid: com.nineyi.shop.s002320; getPackagesForUid: [com.nineyi.shop.s002320]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:139)
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-10 04:14:03.469  1570  7896 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

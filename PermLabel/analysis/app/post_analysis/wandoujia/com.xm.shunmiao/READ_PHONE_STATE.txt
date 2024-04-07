@@ -1,0 +1,2345 @@
+07-26 01:43:32.774  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 permission_group_mapping =android.permission.READ_PHONE_STATE Telephone
+
+07-26 01:43:32.790  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 all_declared permissions =android.permission.CAMERA android.permission.VIBRATE android.permission.WRITE_SECURE_SETTINGS android.permission.READ_PHONE_STATE android.permission.MANAGE_EXTERNAL_STORAGE android.permission.READ_EXTERNAL_STORAGE android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_NETWORK_STATE android.permission.ACCESS_WIFI_STATE android.permission.KILL_BACKGROUND_PROCESSES android.permission.SET_TIME android.permission.INTERNET android.permission.FLASHLIGHT android.permission.READ_LOGS android.permission.REQUEST_INSTALL_PACKAGES android.permission.FOREGROUND_SERVICE android.permission.WAKE_LOCK android.permission.RECEIVE_BOOT_COMPLETED android.permission.CHANGE_WIFI_STATE 
+
+07-26 01:43:32.790  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 declared normal_permissions =android.permission.VIBRATE android.permission.ACCESS_NETWORK_STATE android.permission.ACCESS_WIFI_STATE android.permission.KILL_BACKGROUND_PROCESSES android.permission.INTERNET android.permission.FLASHLIGHT android.permission.FOREGROUND_SERVICE android.permission.WAKE_LOCK android.permission.RECEIVE_BOOT_COMPLETED android.permission.CHANGE_WIFI_STATE 
+
+07-26 01:43:32.791  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.READ_EXTERNAL_STORAGE android.permission.WRITE_EXTERNAL_STORAGE 
+
+07-26 01:43:32.791  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 declared dangerous_group =Camera Telephone Storage Storage 
+
+07-26 01:43:32.791  5120  5241 W msgr.DefaultNetworkConfig: com.facebook.orca: getShouldCheckCertsInternal: true
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 5630 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@f090ae6]; stacktrace=java.lang.Exception
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.tencent.tinker.loader.shareutil.ShareTinkerInternals.getProcessNameInternal(ShareTinkerInternals.java:3)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.tencent.tinker.loader.shareutil.ShareTinkerInternals.getProcessName(ShareTinkerInternals.java:2)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.tencent.tinker.loader.shareutil.ShareTinkerInternals.isInPatchProcess(ShareTinkerInternals.java:3)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.tencent.tinker.loader.TinkerLoader.tryLoadPatchFilesInternal(TinkerLoader.java:5)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.tencent.tinker.loader.TinkerLoader.tryLoad(TinkerLoader.java:4)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.tencent.tinker.loader.app.TinkerApplication.loadTinker(TinkerApplication.java:4)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.tencent.tinker.loader.app.TinkerApplication.onBaseContextAttached(TinkerApplication.java:1)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.tencent.tinker.loader.app.TinkerApplication.attachBaseContext(TinkerApplication.java:5)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.app.Application.attach(Application.java:212)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.stub.StubApp.attachBaseContext(SourceFile:199)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.app.Application.attach(Application.java:212)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.newApplication(Instrumentation.java:1122)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.app.LoadedApk.makeApplication(LoadedApk.java:1061)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5856)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:33.699  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:33.699  5630  5630 W Tinker.TinkerLoader: tryLoadPatchFiles:patch dir not exist:/data/user/0/com.xm.shunmiao/tinker
+
+07-26 01:43:35.360  5739  5889 I Bugle   : Initializing EmojiCompat
+
+07-26 01:43:35.360  1508  1577 I LSPosed-Bridge: 5630 PermLabel 10141 AMS.checkPermission: Binder.getCallingPid() = 1893; uid = 10141; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qti.qualcomm.datastatusnotification, com.qti.confuridialer, com.android.phone, com.qti.xdivert, com.android.providers.telephony, com.qualcomm.qti.uim, org.codeaurora.ims, com.qualcomm.qti.telephonyservice, com.android.mms.service, com.qualcomm.simcontacts, com.android.stk, com.qualcomm.qti.lpa, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:35.360  1508  1577 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:144)
+
+07-26 01:43:35.360  1508  1577 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:35.360  1508  1577 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:35.360  1508  1577 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+07-26 01:43:35.360  1508  1577 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-26 01:43:35.360  1508  1577 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses packageName com.xm.shunmiao at index 0 in process 5630
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 5630 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@a6f6206]; stacktrace=java.lang.Exception
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.a.a(AppUtils.java:3)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.f.a(TelescopePlugin.java:6)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.209  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.209  5630  5630 I AliHaAdapter: init telescope, appId is 333369753@android appKey is 333369753 appVersion is 5623 package name com.xm.shunmiao
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses processName: com.xm.shunmiao pid: 5630
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses importance: 100 pid: 5630
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses packageName com.xm.shunmiao at index 0 in process 5630
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 5630 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@229fadb]; stacktrace=java.lang.Exception
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.util.h.c(ProcessUtils.java:4)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.util.h.a(ProcessUtils.java:2)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.ReportManager.getPathPrefix(ReportManager.java:1)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.ReportManager$b.run(ReportManager.java:4)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.ReportManager.runInReportThread(ReportManager.java:2)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.ReportManager.initSuperLog(ReportManager.java:3)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at e.a.a.a.a$a.run(Telescope.java:29)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.265  5630  5958 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses packageName com.xm.shunmiao at index 0 in process 5630
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 5630 PermLabel hookBinder_test 10141 interfaceBinder =android.os.storage.IStorageManager; arg0 = 30; arg1 = android.os.Parcel@26281b8; arg2 = android.os.Parcel@bb23a62; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:69)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at android.os.storage.IStorageManager$Stub$Proxy.getVolumeList(IStorageManager.java:909)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at android.os.storage.StorageManager.getVolumeList(StorageManager.java:1169)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at android.os.Environment$UserEnvironment.getExternalDirs(Environment.java:91)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at android.os.Environment.getExternalStorageState(Environment.java:896)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.util.f.a(FileUtils.java:14)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.util.f.b(FileUtils.java:1)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.ReportManager.getPathPrefix(ReportManager.java:4)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.ReportManager$b.run(ReportManager.java:4)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.ReportManager.runInReportThread(ReportManager.java:2)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.ReportManager.initSuperLog(ReportManager.java:3)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at e.a.a.a.a$a.run(Telescope.java:29)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.267  5630  5958 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 5630 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@9c369b7]; stacktrace=java.lang.Exception
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at com.ali.telescope.util.h.c(ProcessUtils.java:4)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at com.ali.telescope.util.h.a(ProcessUtils.java:2)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at com.ali.telescope.util.h.b(ProcessUtils.java:1)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at com.ali.telescope.util.k.a(TeleScopeSharePreferences.java:5)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at com.ali.telescope.internal.plugins.f.a.c(UploadPlugin.java:1)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at com.ali.telescope.internal.plugins.f.a.a(UploadPlugin.java:11)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at e.a.a.e.b.c$a.run(PluginManager.java:6)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.267  5630  5959 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl Binder.getCallingPid() = 5630; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl Binder.getCallingPid() = 5630; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl Binder.getCallingPid() = 5630; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.b(SourceFile:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.b(SourceFile:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.b(SourceFile:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.a.a.e.e(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.a.a.e.e(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.a.a.e.e(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.c(SourceFile:18)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.c(SourceFile:18)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.c(SourceFile:18)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.s(SourceFile:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.s(SourceFile:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.s(SourceFile:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.getValue(SourceFile:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.getValue(SourceFile:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.getValue(SourceFile:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:6)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:6)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:6)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: askedperm = []; permName: android.permission.READ_PHONE_STATE; android.os.Process.myPid() = 5630; type = 1
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: askedperm = []; permName: android.permission.READ_PHONE_STATE; android.os.Process.myPid() = 5630; type = 1
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: askedperm = []; permName: android.permission.READ_PHONE_STATE; android.os.Process.myPid() = 5630; type = 1
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: pid = 5630; uid = 10141; Binder.getCallingPid() =5630; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: pid = 5630; uid = 10141; Binder.getCallingPid() =5630; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: pid = 5630; uid = 10141; Binder.getCallingPid() =5630; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:207)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:207)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:207)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.b(SourceFile:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.b(SourceFile:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.b(SourceFile:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.a.a.e.e(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.a.a.e.e(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.a.a.e.e(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.c(SourceFile:18)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.c(SourceFile:18)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.c(SourceFile:18)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.s(SourceFile:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.s(SourceFile:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.s(SourceFile:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.getValue(SourceFile:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.getValue(SourceFile:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.getValue(SourceFile:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:6)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:6)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:6)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.300  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: pid = 5630; uid = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:224)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:4)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.ta.a.b.d.b(SourceFile:1)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.a.a.e.e(SourceFile:2)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.c(SourceFile:18)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.s(SourceFile:7)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.getValue(SourceFile:3)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:6)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.301  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 5630 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@7a511a2]; stacktrace=java.lang.Exception
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.ta.a.e.a.d(SourceFile:3)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.ta.a.e.a.d(SourceFile:6)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.h(SourceFile:4)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:9)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.322  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses =android.app.ActivityManager$RunningAppProcessInfo@1e6a5ee
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses processName: com.xm.shunmiao pid: 5630
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses importance: 100 pid: 5630
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 5630 PermLabel getRunningAppProcesses packageName com.xm.shunmiao at index 0 in process 5630
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 5630 PermLabel hookBinder_test 10141 interfaceBinder =android.content.IContentProvider; arg0 = 21; arg1 = android.os.Parcel@d3f90; arg2 = android.os.Parcel@4433c45; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:69)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at android.content.ContentProviderProxy.call(ContentProviderNative.java:649)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at android.provider.Settings$NameValueCache.putStringForUser(Settings.java:2022)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at android.provider.Settings$System.putStringForUser(Settings.java:2587)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at android.provider.Settings$System.putString(Settings.java:2570)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.h(SourceFile:2)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at com.ta.utdid2.device.c.a(SourceFile:2)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at com.ta.utdid2.device.c$1.i(SourceFile:1)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at com.ta.utdid2.device.c$5.run(SourceFile:3)
+
+07-26 01:43:36.328  5630  5967 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 5630 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@1e6a5ee]; stacktrace=java.lang.Exception
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.a.a(AppUtils.java:3)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:10)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.328  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.328  5630  5630 I AliHaAdapter: init tlog, appKey is 333369753 appVersion is 5623 logLevel is W namePrefix is com.xm.shunmiao
+
+07-26 01:43:36.439  5630  5630 W Tinker.TinkerLoader: [PendingLog @ 2023-07-26 01:43:33.699] tryLoadPatchFiles:patch dir not exist:/data/user/0/com.xm.shunmiao/tinker
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl Binder.getCallingPid() = 5630; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.b.a(PermissionX.java:2)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:3)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.976  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: Bugle: SubscriptionMetadataUtils get: unexpected subId = -1, replacing with -1
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: crxa: FULL
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at bfes.h(PG:6)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at bhvd.<init>(PG:2)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at bhve.a(PG:1)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at aycz.ai(PG:3)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at aycz.aj(PG:27)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at aycz.z(PG:2)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at avuj.j(PG:1)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at avuh.call(Unknown Source:2)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at cpsc.a(PG:1)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at cppf.a(PG:3)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at cvid.a(PG:1)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at cvhb.run(PG:4)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at cvif.run(PG:1)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at bzdh.run(PG:1)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at bzcj.run(PG:2)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at java.lang.Thread.run(Thread.java:764)
+
+07-26 01:43:36.977  5739  5890 W SubscriptionMetadataUti: 	at bzdn.run(PG:5)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: pid = 5630; uid = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:224)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.b.a(PermissionX.java:2)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:3)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:36.977  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:36.977  2264  5996 I Fitness : (REDACTED) FitCleanupIntentOperation received Intent %s
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl Binder.getCallingPid() = 5630; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.contract.ActivityResultContracts$RequestMultiplePermissions.getSynchronousResult(ActivityResultContracts.java:5)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.contract.ActivityResultContracts$RequestMultiplePermissions.getSynchronousResult(ActivityResultContracts.java:1)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at androidx.activity.ComponentActivity$2.onLaunch(ComponentActivity.java:2)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.ActivityResultRegistry$3.launch(ActivityResultRegistry.java:2)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.ActivityResultLauncher.launch(ActivityResultLauncher.java:1)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.launchRequestPermissions(FragmentManager.java:4)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.requestPermissions(Fragment.java:2)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.InvisibleFragment.a(InvisibleFragment.java:3)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:6)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:14)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:37.014  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: pid = 5630; uid = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:224)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.contract.ActivityResultContracts$RequestMultiplePermissions.getSynchronousResult(ActivityResultContracts.java:5)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.contract.ActivityResultContracts$RequestMultiplePermissions.getSynchronousResult(ActivityResultContracts.java:1)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at androidx.activity.ComponentActivity$2.onLaunch(ComponentActivity.java:2)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.ActivityResultRegistry$3.launch(ActivityResultRegistry.java:2)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.ActivityResultLauncher.launch(ActivityResultLauncher.java:1)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.launchRequestPermissions(FragmentManager.java:4)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.requestPermissions(Fragment.java:2)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.InvisibleFragment.a(InvisibleFragment.java:3)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:6)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:14)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:37.015  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 requestPermissions (Activity): pid = 5630; permName: android.permission.READ_EXTERNAL_STORAGE; stacktrace=java.lang.Exception
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$3.beforeHookedMethod(requestPerm.java:241)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:79)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.requestPermissions(Unknown Source:18)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.core.app.ActivityCompat.requestPermissions(ActivityCompat.java:7)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.activity.ComponentActivity$2.onLaunch(ComponentActivity.java:11)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.ActivityResultRegistry$3.launch(ActivityResultRegistry.java:2)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.ActivityResultLauncher.launch(ActivityResultLauncher.java:1)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.launchRequestPermissions(FragmentManager.java:4)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.requestPermissions(Fragment.java:2)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.InvisibleFragment.a(InvisibleFragment.java:3)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:6)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:14)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 5630 PermLabel 10141 requestPermissions (Activity): pid = 5630; permName: android.permission.READ_PHONE_STATE; stacktrace=java.lang.Exception
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$3.beforeHookedMethod(requestPerm.java:241)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:79)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at LSPHooker_.requestPermissions(Unknown Source:18)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.core.app.ActivityCompat.requestPermissions(ActivityCompat.java:7)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.activity.ComponentActivity$2.onLaunch(ComponentActivity.java:11)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.ActivityResultRegistry$3.launch(ActivityResultRegistry.java:2)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.activity.result.ActivityResultLauncher.launch(ActivityResultLauncher.java:1)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.launchRequestPermissions(FragmentManager.java:4)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.requestPermissions(Fragment.java:2)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.InvisibleFragment.a(InvisibleFragment.java:3)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:6)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:14)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:43:37.024  5630  5630 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:43:37.030  1508  5693 I LSPosed-Bridge: 5630 PermLabel 10141 startActivityAsUser permName: android.permission.CAMERA
+
+07-26 01:43:37.030  1508  5693 I LSPosed-Bridge: 5630 PermLabel 10141 startActivityAsUser permName: android.permission.READ_EXTERNAL_STORAGE
+
+07-26 01:43:37.030  1508  5693 I LSPosed-Bridge: 5630 PermLabel 10141 startActivityAsUser permName: android.permission.READ_PHONE_STATE
+
+07-26 01:43:37.030  1508  5693 I LSPosed-Bridge: 5630 PermLabel 10141 startActivityAsUser permName: android.permission.WRITE_EXTERNAL_STORAGE
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: askedperm = [android.permission.CAMERA, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE, android.permission.WRITE_EXTERNAL_STORAGE]; permName: android.permission.MODIFY_AUDIO_SETTINGS; android.os.Process.myPid() = 5630; type = 0
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: pid = 5630; uid = 10141; Binder.getCallingPid() =5630; Binder.getCallingUid() = 10141; permName: android.permission.MODIFY_AUDIO_SETTINGS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:207)
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:55.009  5630  7335 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-573519621:15)
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: askedperm = [android.permission.CAMERA, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE, android.permission.WRITE_EXTERNAL_STORAGE]; permName: android.permission.BLUETOOTH; android.os.Process.myPid() = 5630; type = 0
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 5630 PermLabel 10141 ContextImpl.checkPermission: pid = 5630; uid = 10141; Binder.getCallingPid() =5630; Binder.getCallingUid() = 10141; permName: android.permission.BLUETOOTH; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:207)
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 	at il.c(chromium-Monochrome.aab-stable-573519621:5)
+
+07-26 01:43:55.027  5630  7335 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-573519621:29)
+
+07-26 01:44:04.734  7860  8188 I Finsky  : [422] qvu.C(6): IQ: Pruning inactive install requests
+
+07-26 01:44:04.734  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 permission_group_mapping =android.permission.READ_PHONE_STATE Telephone
+
+07-26 01:44:04.742  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 permission_type_mapping =android.permission.REQUEST_INSTALL_PACKAGES 2; 
+
+07-26 01:44:04.742   555   555 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-26 01:44:04.742  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 all_declared permissions =android.permission.CAMERA android.permission.VIBRATE android.permission.WRITE_SECURE_SETTINGS android.permission.READ_PHONE_STATE android.permission.MANAGE_EXTERNAL_STORAGE android.permission.READ_EXTERNAL_STORAGE android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_NETWORK_STATE android.permission.ACCESS_WIFI_STATE android.permission.KILL_BACKGROUND_PROCESSES android.permission.SET_TIME android.permission.INTERNET android.permission.FLASHLIGHT android.permission.READ_LOGS android.permission.REQUEST_INSTALL_PACKAGES android.permission.FOREGROUND_SERVICE android.permission.WAKE_LOCK android.permission.RECEIVE_BOOT_COMPLETED android.permission.CHANGE_WIFI_STATE 
+
+07-26 01:44:04.743  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 declared normal_permissions =android.permission.VIBRATE android.permission.ACCESS_NETWORK_STATE android.permission.ACCESS_WIFI_STATE android.permission.KILL_BACKGROUND_PROCESSES android.permission.INTERNET android.permission.FLASHLIGHT android.permission.FOREGROUND_SERVICE android.permission.WAKE_LOCK android.permission.RECEIVE_BOOT_COMPLETED android.permission.CHANGE_WIFI_STATE 
+
+07-26 01:44:04.743  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_PHONE_STATE android.permission.READ_EXTERNAL_STORAGE android.permission.WRITE_EXTERNAL_STORAGE 
+
+07-26 01:44:04.743  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 declared dangerous_group =Camera Telephone Storage Storage 
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 8154 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@f090ae6]; stacktrace=java.lang.Exception
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.tencent.tinker.loader.shareutil.ShareTinkerInternals.getProcessNameInternal(ShareTinkerInternals.java:3)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.tencent.tinker.loader.shareutil.ShareTinkerInternals.getProcessName(ShareTinkerInternals.java:2)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.tencent.tinker.loader.shareutil.ShareTinkerInternals.isInPatchProcess(ShareTinkerInternals.java:3)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.tencent.tinker.loader.TinkerLoader.tryLoadPatchFilesInternal(TinkerLoader.java:5)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.tencent.tinker.loader.TinkerLoader.tryLoad(TinkerLoader.java:4)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.tencent.tinker.loader.app.TinkerApplication.loadTinker(TinkerApplication.java:4)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.tencent.tinker.loader.app.TinkerApplication.onBaseContextAttached(TinkerApplication.java:1)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.tencent.tinker.loader.app.TinkerApplication.attachBaseContext(TinkerApplication.java:5)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.app.Application.attach(Application.java:212)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.stub.StubApp.attachBaseContext(SourceFile:199)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.app.Application.attach(Application.java:212)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.newApplication(Instrumentation.java:1122)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.app.LoadedApk.makeApplication(LoadedApk.java:1061)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5856)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:05.598  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:06.686  1508  2926 I LSPosed-Bridge: 8154 PermLabel 10141 AMS.checkPermission: Binder.getCallingPid() = 1893; uid = 10141; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qti.qualcomm.datastatusnotification, com.qti.confuridialer, com.android.phone, com.qti.xdivert, com.android.providers.telephony, com.qualcomm.qti.uim, org.codeaurora.ims, com.qualcomm.qti.telephonyservice, com.android.mms.service, com.qualcomm.simcontacts, com.android.stk, com.qualcomm.qti.lpa, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_STATE; type = 1; res = 0; stacktrace=java.lang.Exception
+
+07-26 01:44:06.686  1508  2926 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:144)
+
+07-26 01:44:06.686  1508  2926 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:06.686  1508  2926 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:06.686  1508  2926 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+07-26 01:44:06.686  1508  2926 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-26 01:44:06.686  1508  2926 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses =android.app.ActivityManager$RunningAppProcessInfo@b8a99a9
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses processName: com.xm.shunmiao pid: 8154
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses importance: 100 pid: 8154
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses packageName com.xm.shunmiao at index 0 in process 8154
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 8154 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@b8a99a9]; stacktrace=java.lang.Exception
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.a.a(AppUtils.java:3)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.f.a(TelescopePlugin.java:6)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:07.481  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:07.481  8154  8154 I AliHaAdapter: init telescope, appId is 333369753@android appKey is 333369753 appVersion is 5623 package name com.xm.shunmiao
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses =android.app.ActivityManager$RunningAppProcessInfo@ce03f19
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses processName: com.xm.shunmiao pid: 8154
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses importance: 100 pid: 8154
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses packageName com.xm.shunmiao at index 0 in process 8154
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 8154 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@ce03f19]; stacktrace=java.lang.Exception
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at com.ali.telescope.util.h.c(ProcessUtils.java:4)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at com.ali.telescope.util.h.a(ProcessUtils.java:2)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at com.ali.telescope.util.h.b(ProcessUtils.java:1)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at com.ali.telescope.util.k.a(TeleScopeSharePreferences.java:5)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at com.ali.telescope.internal.plugins.f.a.c(UploadPlugin.java:1)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at com.ali.telescope.internal.plugins.f.a.a(UploadPlugin.java:11)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at e.a.a.e.b.c$a.run(PluginManager.java:6)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:07.591  8154  8530 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 8154 PermLabel hookBinder_test 10141 interfaceBinder =android.app.IActivityManager; arg0 = 49; arg1 = android.os.Parcel@98f9892; arg2 = android.os.Parcel@aede1d; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:69)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.checkPermission(IActivityManager.java:4722)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:4)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.ta.a.b.d.a(SourceFile:1)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.ta.a.d.e.h(SourceFile:2)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.ta.a.d.e.g(SourceFile:1)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.q(SourceFile:12)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:4)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:07.591  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses =android.app.ActivityManager$RunningAppProcessInfo@dd9aefd
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses processName: com.xm.shunmiao pid: 8154
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses importance: 100 pid: 8154
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses packageName com.xm.shunmiao at index 0 in process 8154
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 8154 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@dd9aefd]; stacktrace=java.lang.Exception
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.ta.a.e.a.d(SourceFile:3)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.ta.a.e.a.d(SourceFile:6)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.h(SourceFile:4)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.ta.utdid2.device.a.getUtdid(SourceFile:9)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.ta.utdid2.device.UTDevice.getUtdid(SourceFile:2)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.f(DeviceUtils.java:1)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:8)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:07.651  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 8154 PermLabel getRunningAppProcesses packageName com.xm.shunmiao at index 0 in process 8154
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 8154 PermLabel permName: android.permission.READ_PHONE_STATE; getRunningAppProcesses =[android.app.ActivityManager$RunningAppProcessInfo@f973df9]; stacktrace=java.lang.Exception
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$2.afterHookedMethod(hookBinder_test.java:109)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.a.a(AppUtils.java:3)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.c.e.a(TLogPlugin.java:10)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:8)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at e.b.a.a.a.a(AliHaCore.java:4)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.alibaba.ha.adapter.a.a(AliHaAdapter.java:46)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.x0(SplashActivity.kt:12)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.y0(SplashActivity.kt:3)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.q0(SplashActivity.kt:2)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.SplashActivity.onCreate(Unknown Source:3)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:07.667  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:07.667  8154  8154 I AliHaAdapter: init tlog, appKey is 333369753 appVersion is 5623 logLevel is W namePrefix is com.xm.shunmiao
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 ContextImpl Binder.getCallingPid() = 8154; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; res = 0; stacktrace=java.lang.Exception
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 ContextImpl Binder.getCallingPid() = 8154; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; res = 0; stacktrace=java.lang.Exception
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.b.a(PermissionX.java:2)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.b.a(PermissionX.java:2)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:3)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:3)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 ContextImpl.checkPermission: askedperm = []; permName: android.permission.READ_PHONE_STATE; android.os.Process.myPid() = 8154; type = 1
+
+07-26 01:44:08.458  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 ContextImpl.checkPermission: askedperm = []; permName: android.permission.READ_PHONE_STATE; android.os.Process.myPid() = 8154; type = 1
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 ContextImpl.checkPermission: pid = 8154; uid = 10141; Binder.getCallingPid() =8154; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = 0; stacktrace=java.lang.Exception
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 ContextImpl.checkPermission: pid = 8154; uid = 10141; Binder.getCallingPid() =8154; Binder.getCallingUid() = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = 0; stacktrace=java.lang.Exception
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:207)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:207)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.b.a(PermissionX.java:2)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.b.a(PermissionX.java:2)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:3)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:3)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 ContextImpl.checkPermission: pid = 8154; uid = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = 0; stacktrace=java.lang.Exception
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 8154 PermLabel 10141 ContextImpl.checkPermission: pid = 8154; uid = 10141; permName: android.permission.READ_PHONE_STATE; type = 1; res = 0; stacktrace=java.lang.Exception
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:224)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:224)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(ContextCompat.java:1)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.b.a(PermissionX.java:2)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.b.a(PermissionX.java:2)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:3)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.h.request(RequestNormalPermissions.java:3)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.g.a(RequestChain.java:6)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.permissionx.guolindev.request.e.a(PermissionBuilder.java:5)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.view.LoginActivity.q0(LoginActivity.kt:16)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.base.BaseActivity.onCreate(BaseActivity.kt:7)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.xm.shunmiao.projectcore.base.ProjectCoreBaseActivity.onCreate(ProjectCoreBaseActivity.kt:4)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.huawen.core.b.b$a.handleMessage(Cockroach.kt:3)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:08.459  8154  8154 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-26 01:44:37.725  1508  5991 I LSPosed-Bridge: 8154 PermLabel 10141 AMS.checkPermission: Binder.getCallingPid() = 1893; uid = 10141; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qti.qualcomm.deviceinfo, com.qualcomm.qti.autoregistration, com.qualcomm.qti.ims, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qti.qualcomm.datastatusnotification, com.qti.confuridialer, com.android.phone, com.qti.xdivert, com.android.providers.telephony, com.qualcomm.qti.uim, org.codeaurora.ims, com.qualcomm.qti.telephonyservice, com.android.mms.service, com.qualcomm.simcontacts, com.android.stk, com.qualcomm.qti.lpa, com.qualcomm.qti.networksetting]; permName: android.permission.READ_PHONE_STATE; type = 1; res = 0; stacktrace=java.lang.Exception
+
+07-26 01:44:37.725  1508  5991 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:144)
+
+07-26 01:44:37.725  1508  5991 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:37.725  1508  5991 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-26 01:44:37.725  1508  5991 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+07-26 01:44:37.725  1508  5991 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-26 01:44:37.725  1508  5991 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 8154 PermLabel 10141; permName: android.permission.READ_PHONE_STATE; getSubscriberId res = null; stacktrace=java.lang.Exception
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$4.afterHookedMethod(hookBinder_test.java:124)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at LSPHooker_.getSubscriberId(Unknown Source:8)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.e.d.c(DeviceUtils.java:5)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.rest.a.a(RestReqDataBuilder.java:24)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.rest.b.a(RestReqSend.java:2)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.alibaba.motu.tbrest.b.a(SendService.java:10)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.ali.telescope.internal.report.b.a(SendManager.java:10)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.ali.telescope.internal.plugins.f.a.a(UploadPlugin.java:67)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.ali.telescope.internal.plugins.f.a.b(UploadPlugin.java:11)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.ali.telescope.internal.plugins.f.a.a(UploadPlugin.java:7)
+
+07-26 01:44:37.734  8154 11732 I LSPosed-Bridge: 	at com.ali.telescope.internal.plugins.f.a$a.run(UploadPlugin.java:3)

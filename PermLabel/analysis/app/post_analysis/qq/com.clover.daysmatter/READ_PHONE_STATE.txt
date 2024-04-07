@@ -1,0 +1,305 @@
+06-25 12:22:02.128  1568  1581 I LSPosed-Bridge: 5233 PermLabel 10117 AMS.checkPermission: Binder.getCallingPid() = 1889; uid = 10117; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [org.codeaurora.ims, com.qti.xdivert, com.android.phone, com.android.stk, com.qualcomm.qti.telephonyservice, com.android.providers.telephony, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting, com.qti.confuridialer, com.qualcomm.qti.ims, com.android.mms.service, com.qualcomm.qti.uim, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.128  1568  1581 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+06-25 12:22:02.128  1568  1581 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.128  1568  1581 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-25 12:22:02.128  1568  1581 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-25 12:22:02.128  1568  1581 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-25 12:22:02.128  1568  1581 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-25 12:22:02.128   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+06-25 12:22:02.128   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 1889 PermLabel 1001 ContextImpl Binder.getCallingPid() = 5233; Binder.getCallingUid() = 10117; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:192)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at android.app.ContextImpl.enforcePermission(ContextImpl.java:1822)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:117)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:101)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkCallingOrSelfReadPhoneState(TelephonyPermissions.java:74)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.phone.PhoneInterfaceManager.getDeviceId(PhoneInterfaceManager.java:3490)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.ITelephony$Stub.onTransact(ITelephony.java:1712)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 1889 PermLabel 1001 ContextImpl.checkPermission: pid = 5233; uid = 10117; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:216)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at android.app.ContextImpl.enforcePermission(ContextImpl.java:1822)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:117)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:101)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkCallingOrSelfReadPhoneState(TelephonyPermissions.java:74)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.phone.PhoneInterfaceManager.getDeviceId(PhoneInterfaceManager.java:3490)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.ITelephony$Stub.onTransact(ITelephony.java:1712)
+
+06-25 12:22:02.128  1889  3350 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-25 12:22:02.168  1568  1858 I LSPosed-Bridge: 5233 PermLabel 10117 AMS.checkPermission: Binder.getCallingPid() = 1889; uid = 10117; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [org.codeaurora.ims, com.qti.xdivert, com.android.phone, com.android.stk, com.qualcomm.qti.telephonyservice, com.android.providers.telephony, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting, com.qti.confuridialer, com.qualcomm.qti.ims, com.android.mms.service, com.qualcomm.qti.uim, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.168  1568  1858 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+06-25 12:22:02.168  1568  1858 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.168  1568  1858 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-25 12:22:02.168  1568  1858 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-25 12:22:02.168  1568  1858 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-25 12:22:02.168  1568  1858 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-25 12:22:02.268  1568  1581 I LSPosed-Bridge: 5233 PermLabel 10117 AMS.checkPermission: Binder.getCallingPid() = 1889; uid = 10117; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [org.codeaurora.ims, com.qti.xdivert, com.android.phone, com.android.stk, com.qualcomm.qti.telephonyservice, com.android.providers.telephony, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting, com.qti.confuridialer, com.qualcomm.qti.ims, com.android.mms.service, com.qualcomm.qti.uim, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.268  1568  1581 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+06-25 12:22:02.268  1568  1581 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.268  1568  1581 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-25 12:22:02.268  1568  1581 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-25 12:22:02.268  1568  1581 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-25 12:22:02.268  1568  1581 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 1889 PermLabel 1001 ContextImpl Binder.getCallingPid() = 5233; Binder.getCallingUid() = 10117; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:192)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at android.app.ContextImpl.enforcePermission(ContextImpl.java:1822)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:117)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:101)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkCallingOrSelfReadPhoneState(TelephonyPermissions.java:74)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at com.android.phone.PhoneInterfaceManager.getDeviceId(PhoneInterfaceManager.java:3490)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at com.android.internal.telephony.ITelephony$Stub.onTransact(ITelephony.java:1712)
+
+06-25 12:22:02.268  1889  3350 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 5233 PermLabel 10117 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.clover.daysmatter; Result: -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.clover.daysmatter.o0ooO0o0.OooO0O0(Unknown Source:8)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.c.a(:1)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.c(Unknown Source:28)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.a(Unknown Source:7)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.b(Unknown Source:3)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.a.a.a(Unknown Source:69)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.face.APSecuritySdk$1.run(Unknown Source:13)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.f.c.run(Unknown Source:39)
+
+06-25 12:22:02.274  5233  2579 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 5233 PermLabel 10117 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.clover.daysmatter; Result: -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.clover.daysmatter.o0ooO0o0.OooO0O0(Unknown Source:8)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.c.a(:2)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.c(Unknown Source:28)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.a(Unknown Source:7)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.b(Unknown Source:3)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.a.a.a(Unknown Source:69)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.face.APSecuritySdk$1.run(Unknown Source:13)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.f.c.run(Unknown Source:39)
+
+06-25 12:22:02.275  5233  2579 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 5233 PermLabel 10117 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.clover.daysmatter; Result: -1; stacktrace=java.lang.Exception
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.clover.daysmatter.o0ooO0o0.OooO0O0(Unknown Source:8)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.c.a(:14)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.c(Unknown Source:28)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.a(Unknown Source:7)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.b(Unknown Source:3)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.a.a.a(Unknown Source:69)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.face.APSecuritySdk$1.run(Unknown Source:13)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.f.c.run(Unknown Source:39)
+
+06-25 12:22:02.299  5233  2579 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-25 12:22:04.352   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+06-25 12:22:04.352  1568  3084 I LSPosed-Bridge: 5233 PermLabel 10117 AMS.checkPermission: Binder.getCallingPid() = 1889; uid = 10117; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [org.codeaurora.ims, com.qti.xdivert, com.android.phone, com.android.stk, com.qualcomm.qti.telephonyservice, com.android.providers.telephony, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.lpa, com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.autoregistration, com.qualcomm.qti.networksetting, com.qti.confuridialer, com.qualcomm.qti.ims, com.android.mms.service, com.qualcomm.qti.uim, com.qti.qualcomm.datastatusnotification, com.qualcomm.simcontacts, com.qti.qualcomm.deviceinfo]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+06-25 12:22:04.352  1568  3084 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:137)
+
+06-25 12:22:04.352  1568  3084 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:04.352  1568  3084 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-25 12:22:04.352  1568  3084 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-25 12:22:04.352  1568  3084 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-25 12:22:04.352  1568  3084 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-25 12:22:04.352   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+06-25 12:22:04.358   552   552 I chatty  : uid=1000(system) /system/bin/surfaceflinger identical 3 lines
+
+06-25 12:22:04.358   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 5233 PermLabel 10117 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.clover.daysmatter; Result: -1; stacktrace=java.lang.Exception
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.clover.daysmatter.o0ooO0o0.OooO0O0(Unknown Source:8)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.c.a(:1)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.c(Unknown Source:28)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.a(Unknown Source:7)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.b(Unknown Source:3)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.a.a.a(Unknown Source:69)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.face.APSecuritySdk$1.run(Unknown Source:13)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.f.c.run(Unknown Source:39)
+
+06-25 12:22:04.358  5233  2579 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 5233 PermLabel 10117 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.clover.daysmatter; Result: -1; stacktrace=java.lang.Exception
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.clover.daysmatter.o0ooO0o0.OooO0O0(Unknown Source:8)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.c.a(:2)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.c(Unknown Source:28)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.a(Unknown Source:7)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.b(Unknown Source:3)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.a.a.a(Unknown Source:69)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.face.APSecuritySdk$1.run(Unknown Source:13)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.f.c.run(Unknown Source:39)
+
+06-25 12:22:04.360  5233  2579 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-25 12:22:04.389   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 5233 PermLabel 10117 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: com.clover.daysmatter; Result: -1; stacktrace=java.lang.Exception
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:138)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.clover.daysmatter.o0ooO0o0.OooO0O0(Unknown Source:8)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.c.a(:14)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.c(Unknown Source:28)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.a(Unknown Source:7)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.d.e.b(Unknown Source:3)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.a.a.a(Unknown Source:69)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.face.APSecuritySdk$1.run(Unknown Source:13)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at com.alipay.apmobilesecuritysdk.f.c.run(Unknown Source:39)
+
+06-25 12:22:04.389  5233  2579 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+06-25 12:22:04.389   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0

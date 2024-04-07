@@ -1,0 +1,17 @@
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 5536 PermLabel 10124 AMS.checkPermission: Binder.getCallingPid() = 5536; uid = 10124; Binder.getCallingUid() = 10124; getNameForUid: com.tripadvisor.tripadvisor.daodao; getPackagesForUid: [com.tripadvisor.tripadvisor.daodao]; permName: android.permission.RECEIVE_BOOT_COMPLETED; type = 0; res = -1; stacktrace=java.lang.Exception
+
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:122)
+
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 	at com.android.server.job.JobSchedulerService$JobSchedulerStub.canPersistJobs(JobSchedulerService.java:2507)
+
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 	at com.android.server.job.JobSchedulerService$JobSchedulerStub.schedule(JobSchedulerService.java:2544)
+
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 	at android.app.job.IJobScheduler$Stub.onTransact(IJobScheduler.java:60)
+
+06-26 11:10:31.981  1564  5806 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

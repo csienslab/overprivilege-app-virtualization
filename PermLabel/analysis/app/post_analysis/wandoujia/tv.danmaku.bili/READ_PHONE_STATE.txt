@@ -1,0 +1,2711 @@
+07-09 18:25:36.317  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 permission_group_mapping =android.permission.READ_PHONE_STATE Telephone
+
+07-09 18:25:36.362  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 all_declared permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.QUERY_ALL_PACKAGES android.permission.SCHEDULE_EXACT_ALARM android.permission.HIGH_SAMPLING_RATE_SENSORS android.permission.ACCESS_MEDIA_LOCATION android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.BLUETOOTH_CONNECT android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.ACCESS_ALL_EXTERNAL_STORAGE android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.WRITE_MEDIA_STORAGE android.permission.SYSTEM_ALERT_WINDOW android.permission.REQUEST_INSTALL_PACKAGES android.permission.FOREGROUND_SERVICE com.bbk.launcher2.permission.READ_SETTINGS com.bbk.launcher2.permission.WRITE_SETTINGS android.permission.BLUETOOTH_ADMIN android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.WRITE_SETTINGS android.permission.WAKE_LOCK com.bilibili.bplus.im.binder android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.ACCESS_DOWNLOAD_MANAGER android.permission.REORDER_TASKS android.permission.RECORD_AUDIO android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS MediaStore.Images.Media.INTERNAL_CONTENT_URI MediaStore.Images.Media.EXTERNAL_CONTENT_URI com.huawei.meetime.CAAS_SHARE_SERVICE android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE tv.danmaku.bili.permission.BLKV android.permission.RECEIVE_BOOT_COMPLETED tv.danmaku.bili.permission.PROCESS_PUSH_MSG tv.danmaku.bili.permission.PUSH_PROVIDER com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.vivo.abe.permission.launcher.notification.num com.vivo.notification.permission.BADGE_ICON tv.danmaku.bili.permission.MIPUSH_RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO com.google.android.apps.photos.permission.GOOGLE_PHOTOS android.permission.GET_TASKS 
+
+07-09 18:25:36.362  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 declared normal_permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.FOREGROUND_SERVICE android.permission.BLUETOOTH_ADMIN android.permission.WAKE_LOCK android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE android.permission.RECEIVE_BOOT_COMPLETED android.permission.GET_TASKS 
+
+07-09 18:25:36.363  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO 
+
+07-09 18:25:36.363  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 declared dangerous_group =Camera Storage Calendar Calendar Storage Location Location Telephone Microphone 
+
+07-09 18:37:20.964  1546  6430 I LSPosed-Bridge: 5725 PermLabel 10127 AMS.checkPermission: Binder.getCallingPid() = 1904; uid = 10127; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.simcontacts, com.qualcomm.qti.telephonyservice, com.android.stk, com.qualcomm.qti.networksetting, com.qualcomm.qti.lpa, com.qualcomm.qcrilmsgtunnel, com.android.providers.telephony, com.qti.xdivert, com.qualcomm.qti.ims, com.qti.confuridialer, com.qualcomm.qti.autoregistration, com.android.mms.service, com.qti.qualcomm.deviceinfo, com.qti.qualcomm.datastatusnotification, com.android.phone, org.codeaurora.ims, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.uim]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:20.964  1546  6430 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+07-09 18:37:20.964  1546  6430 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:20.964  1546  6430 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:20.964  1546  6430 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+07-09 18:37:20.964  1546  6430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-09 18:37:20.964  1546  6430 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.ui.PermissionsChecker.checkSelfPermissions(BL:2)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.ui.PermissionsChecker.checkSelfPermissions(BL:2)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.app.preferences.u$a.a(BL:8)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.app.preferences.u$a.a(BL:8)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at tv.danmaku.bili.router.i.bootInProcess(BL:5)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at tv.danmaku.bili.router.i.bootInProcess(BL:5)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.gripper.bootstrap.n.a(BL:1)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.gripper.bootstrap.n.a(BL:1)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.wi(BL:3)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.wi(BL:3)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.s1(Unknown Source:0)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.s1(Unknown Source:0)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at gripper.generated.in.invoke(Unknown Source:6)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at gripper.generated.in.invoke(Unknown Source:6)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.c.f(BL:3)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.c.f(BL:3)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.n.a(BL:1)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.n.a(BL:1)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.ReportTimeoutTaskExecutor.a(BL:4)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.ReportTimeoutTaskExecutor.a(BL:4)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.InvokeTaskExecutor.a(BL:7)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.InvokeTaskExecutor.a(BL:7)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:5)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:5)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:1)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:1)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.f(BL:1)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.f(BL:1)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.e(Unknown Source:0)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.e(Unknown Source:0)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.g.run(Unknown Source:2)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.g.run(Unknown Source:2)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: askedperm = []; permName: android.permission.READ_PHONE_STATE; android.os.Process.myPid() = 5725; type = 1
+
+07-09 18:37:21.116  5725 26848 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: askedperm = []; permName: android.permission.READ_PHONE_STATE; android.os.Process.myPid() = 5725; type = 1
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; Binder.getCallingPid() =5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; Binder.getCallingPid() =5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:193)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:193)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.ui.PermissionsChecker.checkSelfPermissions(BL:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.ui.PermissionsChecker.checkSelfPermissions(BL:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.app.preferences.u$a.a(BL:8)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.app.preferences.u$a.a(BL:8)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at tv.danmaku.bili.router.i.bootInProcess(BL:5)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at tv.danmaku.bili.router.i.bootInProcess(BL:5)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.gripper.bootstrap.n.a(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.gripper.bootstrap.n.a(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.wi(BL:3)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.wi(BL:3)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.s1(Unknown Source:0)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.s1(Unknown Source:0)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.in.invoke(Unknown Source:6)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.in.invoke(Unknown Source:6)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.c.f(BL:3)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.c.f(BL:3)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.n.a(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.n.a(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.ReportTimeoutTaskExecutor.a(BL:4)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.ReportTimeoutTaskExecutor.a(BL:4)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.InvokeTaskExecutor.a(BL:7)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.InvokeTaskExecutor.a(BL:7)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:5)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:5)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.f(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.f(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.e(Unknown Source:0)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.e(Unknown Source:0)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.g.run(Unknown Source:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.g.run(Unknown Source:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.ui.PermissionsChecker.checkSelfPermissions(BL:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.ui.PermissionsChecker.checkSelfPermissions(BL:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.app.preferences.u$a.a(BL:8)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.app.preferences.u$a.a(BL:8)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at tv.danmaku.bili.router.i.bootInProcess(BL:5)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at tv.danmaku.bili.router.i.bootInProcess(BL:5)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.gripper.bootstrap.n.a(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.gripper.bootstrap.n.a(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.wi(BL:3)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.wi(BL:3)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.s1(Unknown Source:0)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.hx.s1(Unknown Source:0)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.in.invoke(Unknown Source:6)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at gripper.generated.in.invoke(Unknown Source:6)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.c.f(BL:3)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.c.f(BL:3)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.n.a(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.n.a(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.ReportTimeoutTaskExecutor.a(BL:4)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.task.ReportTimeoutTaskExecutor.a(BL:4)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.InvokeTaskExecutor.a(BL:7)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.InvokeTaskExecutor.a(BL:7)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:5)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:5)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.ParallelNodeExecutor$addWorker$1.invoke(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.f(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.f(BL:1)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.e(Unknown Source:0)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.h.e(Unknown Source:0)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.g.run(Unknown Source:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at com.bilibili.lib.gripper.core.internal.node.g.run(Unknown Source:2)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:37:21.117  5725 26848 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:37:21.981 26970 26970 I LSPosed-Bridge: 26970 PermLabel 10127 permission_group_mapping =android.permission.READ_PHONE_STATE Telephone
+
+07-09 18:37:21.981 26970 26970 I LSPosed-Bridge: 26970 PermLabel 10127 permission_type_mapping =android.permission.WRITE_SETTINGS 2; 
+
+07-09 18:37:21.981 26970 26970 W System.err: android.content.pm.PackageManager$NameNotFoundException: com.bilibili.bplus.im.binder
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:90)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+07-09 18:37:21.981 26970 26970 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:21.992 26970 26970 W System.err: android.content.pm.PackageManager$NameNotFoundException: com.google.android.apps.photos.permission.GOOGLE_PHOTOS
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:90)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+07-09 18:37:21.992 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 permission_group_mapping =android.permission.ACCESS_COARSE_LOCATION Location
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:21.992 26970 26970 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:21.992 26970 26970 I LSPosed-Bridge: 26970 PermLabel 10127 all_declared permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.QUERY_ALL_PACKAGES android.permission.SCHEDULE_EXACT_ALARM android.permission.HIGH_SAMPLING_RATE_SENSORS android.permission.ACCESS_MEDIA_LOCATION android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.BLUETOOTH_CONNECT android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.ACCESS_ALL_EXTERNAL_STORAGE android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.WRITE_MEDIA_STORAGE android.permission.SYSTEM_ALERT_WINDOW android.permission.REQUEST_INSTALL_PACKAGES android.permission.FOREGROUND_SERVICE com.bbk.launcher2.permission.READ_SETTINGS com.bbk.launcher2.permission.WRITE_SETTINGS android.permission.BLUETOOTH_ADMIN android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.WRITE_SETTINGS android.permission.WAKE_LOCK com.bilibili.bplus.im.binder android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.ACCESS_DOWNLOAD_MANAGER android.permission.REORDER_TASKS android.permission.RECORD_AUDIO android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS MediaStore.Images.Media.INTERNAL_CONTENT_URI MediaStore.Images.Media.EXTERNAL_CONTENT_URI com.huawei.meetime.CAAS_SHARE_SERVICE android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE tv.danmaku.bili.permission.BLKV android.permission.RECEIVE_BOOT_COMPLETED tv.danmaku.bili.permission.PROCESS_PUSH_MSG tv.danmaku.bili.permission.PUSH_PROVIDER com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.vivo.abe.permission.launcher.notification.num com.vivo.notification.permission.BADGE_ICON tv.danmaku.bili.permission.MIPUSH_RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO com.google.android.apps.photos.permission.GOOGLE_PHOTOS android.permission.GET_TASKS 
+
+07-09 18:37:21.992 26970 26970 I LSPosed-Bridge: 26970 PermLabel 10127 declared normal_permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.FOREGROUND_SERVICE android.permission.BLUETOOTH_ADMIN android.permission.WAKE_LOCK android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE android.permission.RECEIVE_BOOT_COMPLETED android.permission.GET_TASKS 
+
+07-09 18:37:21.993 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 permission_group_mapping =android.permission.ACCESS_FINE_LOCATION Location
+
+07-09 18:37:21.993 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 permission_group_mapping =android.permission.ACCESS_FINE_LOCATION Location
+
+07-09 18:37:21.993 26970 26970 I LSPosed-Bridge: 26970 PermLabel 10127 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO 
+
+07-09 18:37:21.993 26970 26970 I LSPosed-Bridge: 26970 PermLabel 10127 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO 
+
+07-09 18:37:21.993 26970 26970 I LSPosed-Bridge: 26970 PermLabel 10127 declared dangerous_group =Camera Storage Calendar Calendar Storage Location Location Telephone Microphone 
+
+07-09 18:37:21.993 26970 26970 I LSPosed-Bridge: 26970 PermLabel 10127 declared dangerous_group =Camera Storage Calendar Calendar Storage Location Location Telephone Microphone 
+
+07-09 18:37:21.993 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 permission_group_mapping =android.permission.READ_PHONE_STATE Telephone
+
+07-09 18:37:21.993 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 permission_group_mapping =android.permission.READ_PHONE_STATE Telephone
+
+07-09 18:37:22.018 26980 26980 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:22.018 26980 26980 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:22.018 26980 26980 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:22.018 26980 26980 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:22.018 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 all_declared permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.QUERY_ALL_PACKAGES android.permission.SCHEDULE_EXACT_ALARM android.permission.HIGH_SAMPLING_RATE_SENSORS android.permission.ACCESS_MEDIA_LOCATION android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.BLUETOOTH_CONNECT android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.ACCESS_ALL_EXTERNAL_STORAGE android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.WRITE_MEDIA_STORAGE android.permission.SYSTEM_ALERT_WINDOW android.permission.REQUEST_INSTALL_PACKAGES android.permission.FOREGROUND_SERVICE com.bbk.launcher2.permission.READ_SETTINGS com.bbk.launcher2.permission.WRITE_SETTINGS android.permission.BLUETOOTH_ADMIN android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.WRITE_SETTINGS android.permission.WAKE_LOCK com.bilibili.bplus.im.binder android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.ACCESS_DOWNLOAD_MANAGER android.permission.REORDER_TASKS android.permission.RECORD_AUDIO android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS MediaStore.Images.Media.INTERNAL_CONTENT_URI MediaStore.Images.Media.EXTERNAL_CONTENT_URI com.huawei.meetime.CAAS_SHARE_SERVICE android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE tv.danmaku.bili.permission.BLKV android.permission.RECEIVE_BOOT_COMPLETED tv.danmaku.bili.permission.PROCESS_PUSH_MSG tv.danmaku.bili.permission.PUSH_PROVIDER com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.vivo.abe.permission.launcher.notification.num com.vivo.notification.permission.BADGE_ICON tv.danmaku.bili.permission.MIPUSH_RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO com.google.android.apps.photos.permission.GOOGLE_PHOTOS android.permission.GET_TASKS 
+
+07-09 18:37:22.018 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 declared normal_permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.FOREGROUND_SERVICE android.permission.BLUETOOTH_ADMIN android.permission.WAKE_LOCK android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE android.permission.RECEIVE_BOOT_COMPLETED android.permission.GET_TASKS 
+
+07-09 18:37:22.019 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO 
+
+07-09 18:37:22.019 26980 26980 I LSPosed-Bridge: 26980 PermLabel 10127 declared dangerous_group =Camera Storage Calendar Calendar Storage Location Location Telephone Microphone 
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.d.g.a(BL:2)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.auth.AuthnHelper.getNetworkType(BL:3)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.g(BL:1)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.login.OnePassLoginGuideHelperV2$Companion.e(BL:14)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.login.c.b(BL:1)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.bilibili.pegasus.promo.index.interest.InterestChoseManagerKt$tryInterestChoose$1.invokeSuspend(BL:34)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.p0.d(BL:10)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.p0.e(BL:5)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.p0.a(BL:8)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.CancellableContinuationImpl.e(BL:2)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.CancellableContinuationImpl.l(BL:6)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.CancellableContinuationImpl.m(BL:1)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.CancellableContinuationImpl.resumeWith(BL:1)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.coroutineextension.BiliCallExtKt$a.onDataSuccess(BL:1)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.bilibili.okretro.BiliApiDataCallback.onResponse(BL:9)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$c.run(BL:1)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:22.942  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:23.381 27160 27160 I LSPosed-Bridge: 27160 PermLabel 10127 permission_group_mapping =android.permission.ACCESS_FINE_LOCATION Location
+
+07-09 18:37:23.381 27160 27160 I LSPosed-Bridge: 27160 PermLabel 10127 permission_group_mapping =android.permission.READ_PHONE_STATE Telephone
+
+07-09 18:37:23.393 27160 27160 W System.err: android.content.pm.PackageManager$NameNotFoundException: com.google.android.apps.photos.permission.GOOGLE_PHOTOS
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:90)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:23.393 27160 27160 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:23.393 27160 27160 I LSPosed-Bridge: 27160 PermLabel 10127 all_declared permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.QUERY_ALL_PACKAGES android.permission.SCHEDULE_EXACT_ALARM android.permission.HIGH_SAMPLING_RATE_SENSORS android.permission.ACCESS_MEDIA_LOCATION android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.BLUETOOTH_CONNECT android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.ACCESS_ALL_EXTERNAL_STORAGE android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.WRITE_MEDIA_STORAGE android.permission.SYSTEM_ALERT_WINDOW android.permission.REQUEST_INSTALL_PACKAGES android.permission.FOREGROUND_SERVICE com.bbk.launcher2.permission.READ_SETTINGS com.bbk.launcher2.permission.WRITE_SETTINGS android.permission.BLUETOOTH_ADMIN android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.WRITE_SETTINGS android.permission.WAKE_LOCK com.bilibili.bplus.im.binder android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.ACCESS_DOWNLOAD_MANAGER android.permission.REORDER_TASKS android.permission.RECORD_AUDIO android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS MediaStore.Images.Media.INTERNAL_CONTENT_URI MediaStore.Images.Media.EXTERNAL_CONTENT_URI com.huawei.meetime.CAAS_SHARE_SERVICE android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE tv.danmaku.bili.permission.BLKV android.permission.RECEIVE_BOOT_COMPLETED tv.danmaku.bili.permission.PROCESS_PUSH_MSG tv.danmaku.bili.permission.PUSH_PROVIDER com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.vivo.abe.permission.launcher.notification.num com.vivo.notification.permission.BADGE_ICON tv.danmaku.bili.permission.MIPUSH_RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO com.google.android.apps.photos.permission.GOOGLE_PHOTOS android.permission.GET_TASKS 
+
+07-09 18:37:23.394 27160 27160 I LSPosed-Bridge: 27160 PermLabel 10127 declared normal_permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.FOREGROUND_SERVICE android.permission.BLUETOOTH_ADMIN android.permission.WAKE_LOCK android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE android.permission.RECEIVE_BOOT_COMPLETED android.permission.GET_TASKS 
+
+07-09 18:37:23.394 27160 27160 I LSPosed-Bridge: 27160 PermLabel 10127 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO 
+
+07-09 18:37:23.394 27160 27160 I LSPosed-Bridge: 27160 PermLabel 10127 declared dangerous_group =Camera Storage Calendar Calendar Storage Location Location Telephone Microphone 
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.d.g.a(BL:2)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.auth.AuthnHelper.getNetworkType(BL:3)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.b(BL:1)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.e(BL:2)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.login.d.d(BL:3)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.main2.StartupFragmentV2$e.run(BL:4)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:25.022  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.utils.MiscHelperKt.c(BL:1)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.hw.NetworkKt.g(BL:10)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.hw.NetworkKt.f(BL:5)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.b(BL:10)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.a(BL:3)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.l(BL:16)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.h(BL:1)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.a(Unknown Source:0)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.b.run(Unknown Source:0)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:26.159  5725  5994 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.utils.MiscHelperKt.c(BL:1)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.hw.NetworkKt.g(BL:10)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.hw.NetworkKt.f(BL:5)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.b(BL:10)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.a(BL:3)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.l(BL:16)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.h(BL:1)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.a(Unknown Source:0)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.b.run(Unknown Source:0)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:26.160  5725  5994 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.app.AppKt.g(BL:6)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.app.AppKt.g(BL:6)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.b(BL:18)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.b(BL:18)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.a(BL:3)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.a(BL:3)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.l(BL:16)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.l(BL:16)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.h(BL:1)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.h(BL:1)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.a(Unknown Source:0)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.a(Unknown Source:0)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.b.run(Unknown Source:0)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.b.run(Unknown Source:0)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.app.AppKt.g(BL:6)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.app.AppKt.g(BL:6)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.b(BL:18)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.b(BL:18)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.a(BL:3)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.a(BL:3)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.l(BL:16)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.l(BL:16)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.h(BL:1)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.h(BL:1)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.a(Unknown Source:0)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.a(Unknown Source:0)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.b.run(Unknown Source:0)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.b.run(Unknown Source:0)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-09 18:37:26.192  5725  5994 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.app.AppKt.g(BL:11)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.b(BL:18)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.a(BL:3)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.l(BL:16)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.h(BL:1)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.a(Unknown Source:0)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.b.run(Unknown Source:0)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:26.193  5725  5994 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at androidx.core.content.ContextCompat.checkSelfPermission(BL:2)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.app.AppKt.g(BL:11)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.b(BL:18)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.data.DataKt.a(BL:3)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.l(BL:16)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.h(BL:1)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.Fingerprint.a(Unknown Source:0)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at com.bilibili.lib.biliid.internal.fingerprint.b.run(Unknown Source:0)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:26.194  5725  5994 I LSPosed-Bridge: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+
+07-09 18:37:26.193  5725  5725 W thread_back_io: type=1400 audit(0.0:1566): avc: denied { read } for name="u:object_r:serialno_prop:s0" dev="tmpfs" ino=14620 scontext=u:r:untrusted_app:s0:c127,c256,c512,c768 tcontext=u:object_r:serialno_prop:s0 tclass=file permissive=0
+
+07-09 18:37:26.193  5725  5725 W thread_back_io: type=1400 audit(0.0:1567): avc: denied { read } for name="u:object_r:serialno_prop:s0" dev="tmpfs" ino=14620 scontext=u:r:untrusted_app:s0:c127,c256,c512,c768 tcontext=u:object_r:serialno_prop:s0 tclass=file permissive=0
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Q(BL:1)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:6)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:22)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:29.370  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:29.370   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.d.g.a(BL:2)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.auth.AuthnHelper.getNetworkType(BL:3)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.f(BL:1)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2$a.a(BL:11)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.e.c(BL:5)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.c(BL:1)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.d(BL:1)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.b(Unknown Source:3)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.c9(BL:2)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.onCreate(BL:19)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:34.225  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:37.437   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:37.437  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:37.437   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-09 18:37:40.503 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 permission_group_mapping =android.permission.READ_PHONE_STATE Telephone
+
+07-09 18:37:40.503 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 permission_type_mapping =android.permission.WRITE_SETTINGS 2; 
+
+07-09 18:37:40.503 28278 28278 W System.err: android.content.pm.PackageManager$NameNotFoundException: com.bilibili.bplus.im.binder
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:315)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at com.example.permlabel.requestPerm.handleLoadPackage(requestPerm.java:90)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at de.robv.android.xposed.IXposedHookLoadPackage$Wrapper.handleLoadPackage(Unknown Source:2)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at de.robv.android.xposed.callbacks.XC_LoadPackage.call(Unknown Source:6)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at de.robv.android.xposed.callbacks.XCallback.callAll(Unknown Source:26)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at I.afterHookedMethod(Unknown Source:1)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at LSPHooker_.getClassLoader(Unknown Source:8)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5759)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:200)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1651)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:40.503 28278 28278 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:40.515 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 all_declared permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.QUERY_ALL_PACKAGES android.permission.SCHEDULE_EXACT_ALARM android.permission.HIGH_SAMPLING_RATE_SENSORS android.permission.ACCESS_MEDIA_LOCATION android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.BLUETOOTH_CONNECT android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.ACCESS_ALL_EXTERNAL_STORAGE android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.WRITE_MEDIA_STORAGE android.permission.SYSTEM_ALERT_WINDOW android.permission.REQUEST_INSTALL_PACKAGES android.permission.FOREGROUND_SERVICE com.bbk.launcher2.permission.READ_SETTINGS com.bbk.launcher2.permission.WRITE_SETTINGS android.permission.BLUETOOTH_ADMIN android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.WRITE_SETTINGS android.permission.WAKE_LOCK com.bilibili.bplus.im.binder android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.ACCESS_DOWNLOAD_MANAGER android.permission.REORDER_TASKS android.permission.RECORD_AUDIO android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS MediaStore.Images.Media.INTERNAL_CONTENT_URI MediaStore.Images.Media.EXTERNAL_CONTENT_URI com.huawei.meetime.CAAS_SHARE_SERVICE android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE tv.danmaku.bili.permission.BLKV android.permission.RECEIVE_BOOT_COMPLETED tv.danmaku.bili.permission.PROCESS_PUSH_MSG tv.danmaku.bili.permission.PUSH_PROVIDER com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.vivo.abe.permission.launcher.notification.num com.vivo.notification.permission.BADGE_ICON tv.danmaku.bili.permission.MIPUSH_RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO com.google.android.apps.photos.permission.GOOGLE_PHOTOS android.permission.GET_TASKS 
+
+07-09 18:37:40.515 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 all_declared permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.QUERY_ALL_PACKAGES android.permission.SCHEDULE_EXACT_ALARM android.permission.HIGH_SAMPLING_RATE_SENSORS android.permission.ACCESS_MEDIA_LOCATION android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.BLUETOOTH_CONNECT android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.ACCESS_ALL_EXTERNAL_STORAGE android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.WRITE_MEDIA_STORAGE android.permission.SYSTEM_ALERT_WINDOW android.permission.REQUEST_INSTALL_PACKAGES android.permission.FOREGROUND_SERVICE com.bbk.launcher2.permission.READ_SETTINGS com.bbk.launcher2.permission.WRITE_SETTINGS android.permission.BLUETOOTH_ADMIN android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.WRITE_SETTINGS android.permission.WAKE_LOCK com.bilibili.bplus.im.binder android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.ACCESS_DOWNLOAD_MANAGER android.permission.REORDER_TASKS android.permission.RECORD_AUDIO android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS MediaStore.Images.Media.INTERNAL_CONTENT_URI MediaStore.Images.Media.EXTERNAL_CONTENT_URI com.huawei.meetime.CAAS_SHARE_SERVICE android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE tv.danmaku.bili.permission.BLKV android.permission.RECEIVE_BOOT_COMPLETED tv.danmaku.bili.permission.PROCESS_PUSH_MSG tv.danmaku.bili.permission.PUSH_PROVIDER com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE com.vivo.abe.permission.launcher.notification.num com.vivo.notification.permission.BADGE_ICON tv.danmaku.bili.permission.MIPUSH_RECEIVE com.asus.msa.SupplementaryDID.ACCESS freemme.permission.msa com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO com.google.android.apps.photos.permission.GOOGLE_PHOTOS android.permission.GET_TASKS 
+
+07-09 18:37:40.515 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 declared normal_permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.FOREGROUND_SERVICE android.permission.BLUETOOTH_ADMIN android.permission.WAKE_LOCK android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE android.permission.RECEIVE_BOOT_COMPLETED android.permission.GET_TASKS 
+
+07-09 18:37:40.515 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 declared normal_permissions =com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA android.permission.ACCESS_WIFI_STATE com.android.launcher.permission.INSTALL_SHORTCUT com.android.launcher.permission.UNINSTALL_SHORTCUT android.permission.VIBRATE android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.INTERNET android.permission.CHANGE_WIFI_MULTICAST_STATE android.permission.FOREGROUND_SERVICE android.permission.BLUETOOTH_ADMIN android.permission.WAKE_LOCK android.permission.DOWNLOAD_WITHOUT_NOTIFICATION android.permission.REORDER_TASKS android.permission.SET_WALLPAPER android.permission.MODIFY_AUDIO_SETTINGS android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE android.permission.RECEIVE_BOOT_COMPLETED android.permission.GET_TASKS 
+
+07-09 18:37:40.515 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO 
+
+07-09 18:37:40.515 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 declared dangerous_permissions =android.permission.CAMERA android.permission.READ_EXTERNAL_STORAGE android.permission.READ_CALENDAR android.permission.WRITE_CALENDAR android.permission.WRITE_EXTERNAL_STORAGE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_FINE_LOCATION android.permission.READ_PHONE_STATE android.permission.RECORD_AUDIO 
+
+07-09 18:37:40.515 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 declared dangerous_group =Camera Storage Calendar Calendar Storage Location Location Telephone Microphone 
+
+07-09 18:37:40.515 28278 28278 I LSPosed-Bridge: 28278 PermLabel 10127 declared dangerous_group =Camera Storage Calendar Calendar Storage Location Location Telephone Microphone 
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.d.g.a(BL:2)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.auth.AuthnHelper.getNetworkType(BL:3)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.f(BL:1)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2$a.a(BL:11)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.e.c(BL:5)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.c(BL:1)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.d(BL:1)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.b(Unknown Source:3)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.c9(BL:2)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.onCreate(BL:19)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:40.929  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:41.878  1546  4750 I LSPosed-Bridge: 28278 PermLabel 10127 AMS.checkPermission: Binder.getCallingPid() = 1904; uid = 10127; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.simcontacts, com.qualcomm.qti.telephonyservice, com.android.stk, com.qualcomm.qti.networksetting, com.qualcomm.qti.lpa, com.qualcomm.qcrilmsgtunnel, com.android.providers.telephony, com.qti.xdivert, com.qualcomm.qti.ims, com.qti.confuridialer, com.qualcomm.qti.autoregistration, com.android.mms.service, com.qti.qualcomm.deviceinfo, com.qti.qualcomm.datastatusnotification, com.android.phone, org.codeaurora.ims, com.qualcomm.qti.callfeaturessetting, com.qualcomm.qti.uim]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:37:41.878  1546  4750 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+07-09 18:37:41.878  1546  4750 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:41.878  1546  4750 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:37:41.878  1546  4750 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+07-09 18:37:41.878  1546  4750 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-09 18:37:41.878  1546  4750 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-09 18:37:41.878   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:44.223  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:52.185  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.d.g.a(BL:2)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.auth.AuthnHelper.getNetworkType(BL:3)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.f(BL:1)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2$a.a(BL:11)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.e.c(BL:5)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.c(BL:1)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.d(BL:1)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.b(Unknown Source:3)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.c9(BL:2)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.onCreate(BL:19)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:37:55.260  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:38:01.991   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:38:01.991  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMSI(BL:1)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.c$a.getOid(BL:1)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.devices.a.a(BL:10)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.dispatcher.storage.db.a.<init>(BL:13)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.a.b(BL:4)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.a.g(BL:4)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.report.ReportHelper.viewReport(BL:28)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.report.ReportHelper.resume(BL:8)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.widget.BaseSafeFragment.onResume(BL:5)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.performResume(BL:5)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStateManager.resume(BL:11)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(BL:7)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(BL:3)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.moveToState(BL:5)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(BL:3)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.dispatchResume(BL:4)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentController.dispatchResume(BL:1)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentActivity.onResumeFragments(BL:2)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentActivity.onPostResume(BL:2)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.onPostResume(BL:1)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performResume(Activity.java:7317)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3777)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3817)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:38:05.700  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMSI(BL:1)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.c$a.getOid(BL:1)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.devices.a.a(BL:10)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.dispatcher.storage.db.a.<init>(BL:13)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.a.b(BL:4)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.track.a.g(BL:4)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.report.ReportHelper.viewReport(BL:28)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.report.ReportHelper.resume(BL:8)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.widget.BaseSafeFragment.onResume(BL:5)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.performResume(BL:5)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStateManager.resume(BL:11)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(BL:7)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(BL:3)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.moveToState(BL:5)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(BL:3)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.dispatchResume(BL:4)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentController.dispatchResume(BL:1)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentActivity.onResumeFragments(BL:2)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentActivity.onPostResume(BL:2)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.onPostResume(BL:1)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performResume(Activity.java:7317)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3777)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3817)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:38:05.701  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.U(BL:12)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.B(BL:12)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService.J2(BL:25)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService.W0(BL:1)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.GamePlayerFragment.Ps(BL:31)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.GamePlayerFragment.onViewCreatedSafe(BL:3)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.widget.BaseSafeFragment.onViewCreated(BL:2)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.performViewCreated(BL:1)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStateManager.createView(BL:28)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(BL:19)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(BL:31)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(BL:9)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.execSingleAction(BL:5)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.a.commitNowAllowingStateLoss(BL:2)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.GameListPlayerManager.startPlay(BL:17)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.GameListPlayerManager.startPlay(BL:19)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.ui.newgame4.NewGameFragmentV4.playVideo(BL:3)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.ui.newgame4.NewGameFragmentV4$c.onAutoPlayStart(BL:1)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.VideoPlayScrollListener.autoPlay(BL:8)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.VideoPlayScrollListener.k(BL:1)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.VideoPlayScrollListener.j(Unknown Source:0)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d0.onGlobalLayout(Unknown Source:4)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.view.ViewTreeObserver.dispatchOnGlobalLayout(ViewTreeObserver.java:945)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2363)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1465)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7205)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1004)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.view.Choreographer.doCallbacks(Choreographer.java:816)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.view.Choreographer.doFrame(Choreographer.java:751)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:990)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:38:06.781  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:38:09.217   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-09 18:38:09.217   552   552 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:38:09.217  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:38:16.320  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:38:30.492  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.d.g.a(BL:2)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.auth.AuthnHelper.getNetworkType(BL:3)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.f(BL:1)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2$a.a(BL:11)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.e.c(BL:5)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.c(BL:1)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.d(BL:1)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.b(Unknown Source:3)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.c9(BL:2)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.onCreate(BL:19)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:38:59.786  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 5725 PermLabel 10127 AMS.checkPermission: Binder.getCallingPid() = 5725; uid = 10127; Binder.getCallingUid() = 10127; getNameForUid: tv.danmaku.bili; getPackagesForUid: [tv.danmaku.bili]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:125)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getActiveNetworkInfo(ConnectivityService.java:1178)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:85)
+
+07-09 18:39:50.295  1546  1665 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.U(BL:12)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.B(BL:12)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService.J2(BL:25)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService.W0(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.GamePlayerFragment.Ps(BL:31)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.GamePlayerFragment.onViewCreatedSafe(BL:3)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.widget.BaseSafeFragment.onViewCreated(BL:2)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.Fragment.performViewCreated(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStateManager.createView(BL:28)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(BL:19)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(BL:31)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(BL:9)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.FragmentManager.execSingleAction(BL:5)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.fragment.app.a.commitNowAllowingStateLoss(BL:2)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.GameListPlayerManager.startPlay(BL:17)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.GameListPlayerManager.startPlay(BL:21)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.detail.ui.GameDetailFragmentV4.Wu(BL:17)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.detail.ui.GameDetailFragmentV4.ru(BL:3)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.detail.ui.GameDetailFragmentV4.bt(Unknown Source:0)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.detail.ui.m.onChanged(Unknown Source:4)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.lifecycle.LiveData.d(BL:6)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.lifecycle.LiveData.e(BL:8)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.lifecycle.LiveData.setValue(BL:4)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at androidx.lifecycle.MutableLiveData.setValue(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.ui.gamedetail4.GameDetailViewModelV4$o.a(BL:2)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.ui.gamedetail4.GameDetailViewModelV4$o.onSuccess(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.okretro.BiliApiCallback.onResponse(BL:5)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$c.run(BL:1)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:39:50.295  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.G(BL:2)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.C(BL:1)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.n(Unknown Source:0)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.v.a(Unknown Source:6)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.a(BL:5)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.VideoPlayHandler.p(BL:3)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService.aa(BL:4)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService.R9(BL:1)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$e.n(BL:1)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.core.s0.bb(BL:1)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.core.s0.K9(Unknown Source:0)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.core.o0.a(Unknown Source:4)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.core.s0.ab(BL:7)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.core.s0.xa(BL:4)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.core.s0.q9(Unknown Source:0)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.core.f0.onInfo(Unknown Source:2)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.videoplayer.coreV2.t.W1(BL:1)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.videoplayer.coreV2.t.K0(Unknown Source:0)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.videoplayer.coreV2.n.onInfo(Unknown Source:2)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.videoplayer.coreV2.adapter.ijk.d.onInfo(BL:12)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.ijk.media.player.AbstractMediaPlayer.notifyOnInfo(BL:2)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.ijk.media.player.IjkMediaPlayer$EventHandler.handleMessage(BL:16)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:45:36.438  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getImeiOrMeid(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getImeiOrMeid(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMEI(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMEI(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.g(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.g(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.i(BL:6)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.i(BL:6)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.api.interceptor.BiligameRiskManagerRequestInterceptor.addCommonParam(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.api.interceptor.BiligameRiskManagerRequestInterceptor.addCommonParam(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.addCommonParamToBody(BL:12)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.addCommonParamToBody(BL:12)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.intercept(BL:6)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.intercept(BL:6)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall.execute(BL:24)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall.execute(BL:24)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$a.run(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$a.run(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getImeiOrMeid(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getImeiOrMeid(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMEI(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMEI(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.g(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.g(BL:1)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.i(BL:6)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.i(BL:6)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.api.interceptor.BiligameRiskManagerRequestInterceptor.addCommonParam(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.biligame.api.interceptor.BiligameRiskManagerRequestInterceptor.addCommonParam(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.addCommonParamToBody(BL:12)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.addCommonParamToBody(BL:12)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.intercept(BL:6)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.intercept(BL:6)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall.execute(BL:24)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall.execute(BL:24)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$a.run(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$a.run(BL:2)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:45:53.703  5725 26928 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl Binder.getCallingPid() = 5725; Binder.getCallingUid() = 10127; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:186)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getImeiOrMeid(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getImeiOrMeid(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMEI(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMEI(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.g(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.g(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.i(BL:6)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.i(BL:6)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.api.interceptor.BiligameRiskManagerRequestInterceptor.addCommonParam(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.api.interceptor.BiligameRiskManagerRequestInterceptor.addCommonParam(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.addCommonParamToUrl(BL:6)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.addCommonParamToUrl(BL:6)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.intercept(BL:4)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.intercept(BL:4)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall.execute(BL:24)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall.execute(BL:24)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$a.run(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$a.run(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 5725 PermLabel 10127 ContextImpl.checkPermission: pid = 5725; uid = 10127; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:210)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.a(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getImeiOrMeid(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getImeiOrMeid(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMEI(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.droid.PhoneUtils.getIMEI(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.g(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.g(BL:1)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.i(BL:6)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.helper.d.i(BL:6)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.api.interceptor.BiligameRiskManagerRequestInterceptor.addCommonParam(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.biligame.api.interceptor.BiligameRiskManagerRequestInterceptor.addCommonParam(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.addCommonParamToUrl(BL:6)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.addCommonParamToUrl(BL:6)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.intercept(BL:4)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.interceptor.DefaultRequestInterceptor.intercept(BL:4)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall.execute(BL:24)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall.execute(BL:24)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$a.run(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at com.bilibili.okretro.call.BiliCall$a.run(BL:2)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:45:53.704  5725 26886 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.w(BL:8)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService.T2(BL:12)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.bilibili.biligame.video.e.onClick(BL:5)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at android.view.View.performClick(View.java:6597)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at android.view.View.performClickInternal(View.java:6574)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at android.view.View.access$3100(View.java:778)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at android.view.View$PerformClick.run(View.java:25889)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:46:14.763  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:53:41.448  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.d.g.a(BL:2)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.auth.AuthnHelper.getNetworkType(BL:3)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.f(BL:1)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2$a.a(BL:11)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.e.c(BL:5)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.c(BL:1)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.d(BL:1)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.b(Unknown Source:3)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.c9(BL:2)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.onCreate(BL:19)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:53:45.011  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIspFromLocal(BL:6)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getIsp(BL:1)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.isp.FdIspManager.getProvider(BL:1)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.getIsp(BL:1)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.demiware.e.a(BL:3)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.bilibili.fd_service.FreeDataManager.checkDemiwareCondition(BL:2)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.bilibili.playerbizcommon.features.network.PlayerNetworkService$mVideoPlayEventListener$1.q(BL:4)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.E(BL:1)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.r(Unknown Source:0)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.w.a(Unknown Source:6)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.collection.a$b.j(BL:3)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerimpl.videodirector.VideosPlayDirectorService$f.d(BL:5)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Z(BL:5)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.X(BL:18)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler.Y(BL:1)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.biliplayerv2.service.NormalVideoPlayHandler$playPreloadRes$1.invokeSuspend(BL:20)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(BL:4)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at kotlinx.coroutines.o0.run(BL:21)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:54:14.136  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 5725 PermLabel 10127 PM.checkPermission permName:android.permission.READ_PHONE_STATE; Package name: tv.danmaku.bili; Result: -1; stacktrace=java.lang.Exception
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$1.afterHookedMethod(requestPerm.java:132)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:14)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.d.g.a(BL:2)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at com.cmic.sso.sdk.auth.AuthnHelper.getNetworkType(BL:3)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at com.bilibili.lib.accountsui.quick.c.f(BL:1)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2$a.a(BL:11)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.e.c(BL:5)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.c(BL:1)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.d(BL:1)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.quick.core.a.b(Unknown Source:3)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.c9(BL:2)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at tv.danmaku.bili.ui.loginv2.LoginActivityV2.onCreate(BL:19)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7136)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.Activity.performCreate(Activity.java:7127)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2894)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3049)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+07-09 18:54:17.713  5725  5725 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)

@@ -1,0 +1,61 @@
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 5199 PermLabel 10132 AMS.checkPermission: Binder.getCallingPid() = 5199; uid = 10132; Binder.getCallingUid() = 10132; getNameForUid: com.nineyi.shop.s040962; getPackagesForUid: [com.nineyi.shop.s040962]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:132)
+
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-09 01:14:07.229  1565  1578 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 5199 PermLabel hookBinder_test 10132 interfaceBinder =android.hardware.display.IDisplayManager; arg0 = 1; arg1 = android.os.Parcel@e67d7f7; arg2 = android.os.Parcel@22e97f6; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:63)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.hardware.display.IDisplayManager$Stub$Proxy.getDisplayInfo(IDisplayManager.java:404)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.hardware.display.DisplayManagerGlobal.getDisplayInfo(DisplayManagerGlobal.java:124)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.view.Display.updateDisplayInfoLocked(Display.java:1046)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.view.Display.getState(Display.java:1014)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:667)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:356)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:94)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3869)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1809)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-09 01:14:07.229  5199  5199 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)

@@ -1,0 +1,2453 @@
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 11443 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 11443; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:29:33.447  1564  1671 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:29:33.447  1564  1671 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=11443, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 11443 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:29:33.454 11443 11443 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 20484 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 20484; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 20484 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 20484; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:29:43.507  1564  5304 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:29:43.507  1564  5304 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=20484, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 20484 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:29:43.510 20484 20484 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 21015 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 21015; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:29:57.879  1564  3387 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:29:57.879  1564  3387 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=21015, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 21015 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:29:57.884 21015 21015 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:29:57.884   553   553 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 21586 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 21586; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 21586 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 21586; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:30:53.885  1564  1577 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:30:53.885  1564  1577 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=21586, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:30:53.885   553   553 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-04 07:30:53.888   553   553 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 21586 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:30:53.888 21586 21586 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 23215 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 23215; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 23215 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 23215; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:37:15.792  1564  1855 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:37:15.792  1564  1855 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=23215, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 23215 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:37:15.795 23215 23215 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 7533 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 7533; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 7533 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 7533; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:37:31.219  1564  1855 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:37:31.219  1564  1855 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=7533, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 7533 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:37:31.221  7533  7533 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 8211 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 8211; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:38:16.193  1564  7131 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:38:16.193  1564  7131 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=8211, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 8211 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:38:16.196  8211  8211 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 10074 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 10074; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 10074 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 10074; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:38:25.571  1564  8544 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:38:25.571  1564  8544 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=10074, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 10074 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:38:25.575 10074 10074 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 10549 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 10549; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:38:34.876  1564 16392 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:38:34.876  1564 16392 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=10549, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 10549 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:38:34.880 10549 10549 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 10987 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 10987; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:38:44.136  1564 16392 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:38:44.136  1564 16392 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=10987, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 10987 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:38:44.143 10987 10987 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 11401 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 11401; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:38:54.074  1564  3387 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:38:54.074  1564  3387 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=11401, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 11401 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:38:54.078 11401 11401 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 11847 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 11847; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:39:04.602  1564 16392 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:39:04.602  1564 16392 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=11847, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 11847 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:39:04.607 11847 11847 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 12337 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 12337; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:39:14.504  1564  3386 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:39:14.504  1564  3386 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=12337, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 12337 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:39:14.508 12337 12337 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 12839 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 12839; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 12839 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 12839; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:39:24.070  1564  1714 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 12839 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:39:24.077 12839 12839 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 13450 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 13450; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:39:33.453  1564  3387 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:39:33.453  1564  3387 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=13450, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 13450 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:39:33.456 13450 13450 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 13981 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 13981; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 13981 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 13981; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:39:43.194  1564  3314 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:39:43.194  1564  3314 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=13981, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 13981 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:39:43.197 13981 13981 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 14441 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 14441; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:39:53.051  1564  3387 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:39:53.051  1564  3387 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=14441, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 14441 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:39:53.054 14441 14441 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 14864 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 14864; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 14864 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 14864; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:40:03.786  1564  2087 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:40:03.786  1564  2087 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=14864, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 14864 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:40:03.789 14864 14864 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:40:03.789   553   553 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 15339 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 15339; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:40:18.167  1564  3314 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:40:18.167  1564  3314 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=15339, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 15339 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:40:18.172 15339 15339 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 15790 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 15790; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 15790 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 15790; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:40:28.450  1564  1854 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:40:28.450  1564  1854 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=15790, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 15790 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:40:28.453 15790 15790 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 16152 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 16152; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.KILL_BACKGROUND_PROCESSES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6803)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 16152 PermLabel 10115 AMS.checkPermission: Binder.getCallingPid() = 16152; uid = 10115; Binder.getCallingUid() = 10115; getNameForUid: popularize.android.ys.com.code; getPackagesForUid: [popularize.android.ys.com.code]; permName: android.permission.RESTART_PACKAGES; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:133)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.checkCallingPermission(ActivityManagerService.java:9353)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.killBackgroundProcesses(ActivityManagerService.java:6805)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1308)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-04 07:40:37.832  1564  3385 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-04 07:40:37.832  1564  3385 W ActivityManager: Permission Denial: killBackgroundProcesses() from pid=16152, uid=10115 requires android.permission.KILL_BACKGROUND_PROCESSES
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 16152 PermLabel 10115; permName: android.permission.KILL_BACKGROUND_PROCESSES, android.permission.RESTART_PACKAGES; killBackgroundProcesses args0: popularize.android.ys.com.code; res = null; stacktrace=java.lang.Exception
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$3.afterHookedMethod(hookBinder_test.java:112)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at LSPHooker_.killBackgroundProcesses(Unknown Source:11)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at popularize.android.ys.com.code.util.AppManager.AppExit(AppManager.java:139)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at popularize.android.ys.com.code.activity.LoginActivity.onKeyDown(LoginActivity.java:963)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2714)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3365)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.superDispatchKeyEvent(ComponentActivity.java:122)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:84)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.java:140)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:599)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3068)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5050)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4918)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4598)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4655)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4466)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4439)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4492)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4458)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4631)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4792)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:160)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-04 07:40:37.835 16152 16152 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)

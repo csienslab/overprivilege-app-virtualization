@@ -1,0 +1,82 @@
+{
+    "Declared": {
+        "Normal": [
+            10,
+            [
+                "android.permission.VIBRATE",
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.ACCESS_WIFI_STATE",
+                "android.permission.KILL_BACKGROUND_PROCESSES",
+                "android.permission.INTERNET",
+                "android.permission.FLASHLIGHT",
+                "android.permission.FOREGROUND_SERVICE",
+                "android.permission.WAKE_LOCK",
+                "android.permission.RECEIVE_BOOT_COMPLETED",
+                "android.permission.CHANGE_WIFI_STATE"
+            ]
+        ],
+        "Dangerous": [
+            4,
+            [
+                "android.permission.CAMERA",
+                "android.permission.READ_PHONE_STATE",
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.WRITE_EXTERNAL_STORAGE"
+            ]
+        ],
+        "All": [
+            19,
+            [
+                "android.permission.CAMERA",
+                "android.permission.VIBRATE",
+                "android.permission.WRITE_SECURE_SETTINGS",
+                "android.permission.READ_PHONE_STATE",
+                "android.permission.MANAGE_EXTERNAL_STORAGE",
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.ACCESS_WIFI_STATE",
+                "android.permission.KILL_BACKGROUND_PROCESSES",
+                "android.permission.SET_TIME",
+                "android.permission.INTERNET",
+                "android.permission.FLASHLIGHT",
+                "android.permission.READ_LOGS",
+                "android.permission.REQUEST_INSTALL_PACKAGES",
+                "android.permission.FOREGROUND_SERVICE",
+                "android.permission.WAKE_LOCK",
+                "android.permission.RECEIVE_BOOT_COMPLETED",
+                "android.permission.CHANGE_WIFI_STATE"
+            ]
+        ]
+    },
+    "Droidbot-obtained": {
+        "Normal": {
+            "android.permission.INTERNET": 0,
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.GET_TASKS": 1,
+            "android.permission.MODIFY_AUDIO_SETTINGS": 1,
+            "android.permission.BLUETOOTH": 1,
+            "android.permission.KILL_BACKGROUND_PROCESSES": 0
+        },
+        "Dangerous": {
+            "android.permission.READ_PHONE_STATE": 2
+        },
+        "filter_normal_self": {
+            "android.permission.INTERNET": 0,
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.GET_TASKS": 1,
+            "android.permission.KILL_BACKGROUND_PROCESSES": 0
+        },
+        "filter_normal_self_strict": {
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.GET_TASKS": 1,
+            "android.permission.KILL_BACKGROUND_PROCESSES": 0
+        },
+        "add_dangerous_request": {
+            "android.permission.READ_PHONE_STATE": 2,
+            "android.permission.CAMERA": 0,
+            "android.permission.READ_EXTERNAL_STORAGE": 0,
+            "android.permission.WRITE_EXTERNAL_STORAGE": 0
+        }
+    }
+}

@@ -1,0 +1,59 @@
+07-20 22:03:43.827  1513  1582 I LSPosed-Bridge: 7901 PermLabel 10140 AMS.checkPermission: Binder.getCallingPid() = 1888; uid = 10140; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qti.confuridialer, com.qualcomm.simcontacts, com.android.providers.telephony, com.qti.qualcomm.datastatusnotification, com.android.stk, com.android.mms.service, com.qualcomm.qti.lpa, com.qualcomm.qti.telephonyservice, com.qualcomm.qti.ims, com.qti.qualcomm.deviceinfo, com.qualcomm.qti.autoregistration, org.codeaurora.ims, com.qualcomm.qti.networksetting, com.qti.xdivert, com.android.phone, com.qualcomm.qti.uim]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-20 22:03:43.827  1513  1582 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:143)
+
+07-20 22:03:43.827  1513  1582 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-20 22:03:43.827  1513  1582 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-20 22:03:43.827  1513  1582 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+07-20 22:03:43.827  1513  1582 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-20 22:03:43.827  1513  1582 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 1888 PermLabel 1001 ContextImpl Binder.getCallingPid() = 7901; Binder.getCallingUid() = 10140; permName: android.permission.READ_PHONE_STATE; res = -1; stacktrace=java.lang.Exception
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:198)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at android.app.ContextImpl.enforcePermission(ContextImpl.java:1822)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at android.content.ContextWrapper.enforcePermission(ContextWrapper.java:765)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:117)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkReadPhoneState(TelephonyPermissions.java:101)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at com.android.internal.telephony.TelephonyPermissions.checkCallingOrSelfReadPhoneState(TelephonyPermissions.java:74)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at com.android.phone.PhoneInterfaceManager.getDeviceId(PhoneInterfaceManager.java:3490)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at com.android.internal.telephony.ITelephony$Stub.onTransact(ITelephony.java:1712)
+
+07-20 22:03:43.827  1888  3407 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-20 22:03:45.132   555   555 I chatty  : uid=1000(system) /system/bin/surfaceflinger identical 12 lines
+
+07-20 22:03:45.132   555   555 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+07-20 22:03:45.132  1513  1582 I LSPosed-Bridge: 7901 PermLabel 10140 AMS.checkPermission: Binder.getCallingPid() = 1888; uid = 10140; Binder.getCallingUid() = 1001; getNameForUid: android.uid.phone:1001; getPackagesForUid: [com.qualcomm.qcrilmsgtunnel, com.qualcomm.qti.callfeaturessetting, com.qti.confuridialer, com.qualcomm.simcontacts, com.android.providers.telephony, com.qti.qualcomm.datastatusnotification, com.android.stk, com.android.mms.service, com.qualcomm.qti.lpa, com.qualcomm.qti.telephonyservice, com.qualcomm.qti.ims, com.qti.qualcomm.deviceinfo, com.qualcomm.qti.autoregistration, org.codeaurora.ims, com.qualcomm.qti.networksetting, com.qti.xdivert, com.android.phone, com.qualcomm.qti.uim]; permName: android.permission.READ_PHONE_STATE; type = 1; res = -1; stacktrace=java.lang.Exception
+
+07-20 22:03:45.132  1513  1582 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:143)
+
+07-20 22:03:45.132  1513  1582 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-20 22:03:45.132  1513  1582 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-20 22:03:45.132  1513  1582 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+07-20 22:03:45.132  1513  1582 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-20 22:03:45.132  1513  1582 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-20 22:03:45.132   555   555 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0

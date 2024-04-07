@@ -1,0 +1,297 @@
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-18 21:56:41.152  1565  1852 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-18 21:59:39.988  1565  5288 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 11084 PermLabel 10133 ContextImpl.checkPermission: pid = 11084; uid = 10133; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:220)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at com.umeng.commonsdk.utils.UMUtils.checkPermission(UMUtils.java:4)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at com.umeng.commonsdk.utils.UMUtils.getNetworkAccessMode(UMUtils.java:2)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.e.g(Unknown Source:1)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.f.a(Unknown Source:21)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.y.d(Unknown Source:4)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.y$4.run(Unknown Source:24)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.b$a.run(Unknown Source:2)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-18 21:59:39.988 11084 15568 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-18 22:00:35.514  1565  4689 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-18 22:09:38.133  1565  5740 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-18 22:10:39.927  1565  1578 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 11084 PermLabel 10133 ContextImpl.checkPermission: pid = 11084; uid = 10133; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:220)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at com.umeng.commonsdk.utils.UMUtils.checkPermission(UMUtils.java:4)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at com.umeng.commonsdk.utils.UMUtils.getNetworkAccessMode(UMUtils.java:2)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.e.g(Unknown Source:1)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.f.a(Unknown Source:21)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.y.d(Unknown Source:4)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.y$4.run(Unknown Source:24)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.b$a.run(Unknown Source:2)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-18 22:10:39.927 11084 15568 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getNetworkInfo(ConnectivityService.java:1244)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:119)
+
+07-18 22:13:55.669  1565  4691 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-18 22:13:55.669  1565  1578 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 11084 PermLabel hookBinder_test 10133 interfaceBinder =android.net.IConnectivityManager; arg0 = 5; arg1 = android.os.Parcel@7c55d9e; arg2 = android.os.Parcel@5739fd9; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:66)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub$Proxy.getNetworkInfo(IConnectivityManager.java:1253)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at android.net.ConnectivityManager.getNetworkInfo(ConnectivityManager.java:1054)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at com.umeng.commonsdk.utils.UMUtils.getNetworkAccessMode(UMUtils.java:6)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.e.g(Unknown Source:1)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.f.a(Unknown Source:21)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.y.d(Unknown Source:4)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.y$4.run(Unknown Source:24)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at com.umeng.message.proguard.b$a.run(Unknown Source:2)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-18 22:23:18.628 11084 15568 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-18 22:23:18.628  1565  1674 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.enforceAccessPermission(ConnectivityService.java:1672)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.getNetworkInfo(ConnectivityService.java:1244)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:119)
+
+07-18 22:25:35.928  1565  5618 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 11084 PermLabel 10133 AMS.checkPermission: Binder.getCallingPid() = 11084; uid = 10133; Binder.getCallingUid() = 10133; getNameForUid: co.runner.app; getPackagesForUid: [co.runner.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:135)
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-18 22:25:35.928  1565  5794 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

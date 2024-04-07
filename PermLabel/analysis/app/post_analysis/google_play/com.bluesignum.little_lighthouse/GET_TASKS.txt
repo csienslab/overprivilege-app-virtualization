@@ -1,0 +1,63 @@
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 5696 PermLabel hookBinder_test 10117 interfaceBinder =android.content.pm.IPackageManager; arg0 = 13; arg1 = android.os.Parcel@4fcc0ec; arg2 = android.os.Parcel@4ee3cb5; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:63)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getApplicationInfo(IPackageManager.java:3104)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getApplicationInfoAsUser(ApplicationPackageManager.java:384)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:377)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at m.cr.a(:com.google.android.gms.dynamite_measurementdynamite@233013028@23.30.13 (100400-0):7)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at m.ek.c(:com.google.android.gms.dynamite_measurementdynamite@233013028@23.30.13 (100400-0):42)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at m.ek.d(:com.google.android.gms.dynamite_measurementdynamite@233013028@23.30.13 (100400-0):4)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at m.ek.g(:com.google.android.gms.dynamite_measurementdynamite@233013028@23.30.13 (100400-0):6)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at m.kj.onActivityResumed(:com.google.android.gms.dynamite_measurementdynamite@233013028@23.30.13 (100400-0):52)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at com.google.android.gms.measurement.internal.AppMeasurementDynamiteService.onActivityResumed(:com.google.android.gms.dynamite_measurementdynamite@233013028@23.30.13 (100400-0):29)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at m.df.a(:com.google.android.gms.dynamite_measurementdynamite@233013028@23.30.13 (100400-0):104)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at m.am.onTransact(:com.google.android.gms.dynamite_measurementdynamite@233013028@23.30.13 (100400-0):21)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at android.os.Binder.transact(Binder.java:667)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at com.google.android.gms.internal.measurement.o0.i(Unknown Source:7)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at com.google.android.gms.internal.measurement.d1.onActivityResumed(Unknown Source:12)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at com.google.android.gms.internal.measurement.w2.a(Unknown Source:22)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at com.google.android.gms.internal.measurement.s2.run(Unknown Source:12)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-13 14:21:35.105  5696  5888 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 5696 PermLabel 10117 AMS.checkPermission: Binder.getCallingPid() = 5696; uid = 10117; Binder.getCallingUid() = 10117; getNameForUid: com.bluesignum.little_lighthouse; getPackagesForUid: [com.bluesignum.little_lighthouse]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:132)
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-13 14:21:35.105  1565  1669 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

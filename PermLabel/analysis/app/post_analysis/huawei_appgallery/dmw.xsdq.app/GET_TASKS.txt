@@ -1,0 +1,77 @@
+07-08 22:08:50.321  5398  5765 W System.err: java.net.UnknownHostException: Unable to resolve host "ap1.qiyukf.com": No address associated with hostname
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 5398 PermLabel 10125 AMS.checkPermission: Binder.getCallingPid() = 5398; uid = 10125; Binder.getCallingUid() = 10125; getNameForUid: dmw.xsdq.app; getPackagesForUid: [dmw.xsdq.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:121)
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-08 22:08:50.321  1570  1582 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:126)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:105)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1154)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at com.qiyukf.unicorn.httpdns.util.b.a(LocalDNSUtil.java:2)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at com.qiyukf.unicorn.httpdns.a.a(HttpDnsService.java:52)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at com.qiyukf.unicorn.httpdns.a.a(HttpDnsService.java:75)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at com.qiyukf.unicorn.httpdns.a$1.run(HttpDnsService.java:1)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.lang.Thread.run(Thread.java:764)
+
+07-08 22:08:50.321  5398  5765 W System.err: java.net.UnknownHostException: Unable to resolve host "ap1.qiyukf.com": No address associated with hostname
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:126)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:105)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1154)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at com.qiyukf.unicorn.httpdns.util.b.a(LocalDNSUtil.java:2)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at com.qiyukf.unicorn.httpdns.a.a(HttpDnsService.java:81)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at com.qiyukf.unicorn.httpdns.a$1.run(HttpDnsService.java:1)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+07-08 22:08:50.321  5398  5765 W System.err: 	at java.lang.Thread.run(Thread.java:764)
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 5755 PermLabel 10125 AMS.checkPermission: Binder.getCallingPid() = 5755; uid = 10125; Binder.getCallingUid() = 10125; getNameForUid: dmw.xsdq.app; getPackagesForUid: [dmw.xsdq.app]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:121)
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+07-08 22:08:50.854  1570  4575 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

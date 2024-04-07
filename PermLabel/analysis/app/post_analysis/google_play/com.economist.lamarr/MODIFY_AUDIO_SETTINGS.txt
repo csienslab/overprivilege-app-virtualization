@@ -1,0 +1,151 @@
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 5441 PermLabel 10127 AMS.checkPermission: Binder.getCallingPid() = 5441; uid = 10127; Binder.getCallingUid() = 10127; getNameForUid: com.economist.lamarr; getPackagesForUid: [com.economist.lamarr]; permName: android.permission.MODIFY_AUDIO_SETTINGS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:118)
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at com.android.server.audio.AudioService.checkAudioSettingsPermission(AudioService.java:4696)
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at com.android.server.audio.AudioService.setMode(AudioService.java:2842)
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at android.media.IAudioService$Stub.onTransact(IAudioService.java:328)
+
+09-02 09:24:12.827  1545  5819 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-02 09:24:12.827  5294  5323 W SubscriptionMetadataUti: Bugle: SubscriptionMetadataUtils get: unexpected subId = -1, replacing with -1
+
+09-02 09:24:12.827  1545  5819 W AudioService: Audio Settings Permission Denial: setMode() from pid=5441, uid=10127
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 5441 PermLabel 10127 AMS.checkPermission: Binder.getCallingPid() = 5441; uid = 10127; Binder.getCallingUid() = 10127; getNameForUid: com.economist.lamarr; getPackagesForUid: [com.economist.lamarr]; permName: android.permission.MODIFY_AUDIO_SETTINGS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:118)
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at com.android.server.audio.AudioService.checkAudioSettingsPermission(AudioService.java:4696)
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at com.android.server.audio.AudioService.setSpeakerphoneOn(AudioService.java:3241)
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at android.media.IAudioService$Stub.onTransact(IAudioService.java:393)
+
+09-02 09:24:12.830  1545  5819 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-02 09:24:12.830  1545  5819 W AudioService: Audio Settings Permission Denial: setSpeakerphoneOn() from pid=5441, uid=10127
+
+09-02 09:24:27.754  1545  5825 I LSPosed-Bridge: 5441 PermLabel 10127 AMS.checkPermission: Binder.getCallingPid() = 5441; uid = 10127; Binder.getCallingUid() = 10127; getNameForUid: com.economist.lamarr; getPackagesForUid: [com.economist.lamarr]; permName: android.permission.MODIFY_AUDIO_SETTINGS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:24:27.754  1545  5825 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:118)
+
+09-02 09:24:27.754  1545  5825 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:27.754  1545  5825 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:24:27.754  1545  5825 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+09-02 09:24:27.754  1545  5825 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+09-02 09:24:27.754  1545  5825 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 5441 PermLabel hookBinder_test 10127 interfaceBinder =android.content.pm.IPackageManager; arg0 = 9; arg1 = android.os.Parcel@34eb3dd; arg2 = android.os.Parcel@1c3f65c; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:51)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at android.content.pm.IPackageManager$Stub$Proxy.getPermissionInfo(IPackageManager.java:3008)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at android.app.ApplicationPackageManager.getPermissionInfo(ApplicationPackageManager.java:306)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:170)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-584516321:15)
+
+09-02 09:24:27.756  5441  6200 I LSPosed-Bridge: 5441 PermLabel 10127 ContextImpl.checkPermission: askedperm = []; permName: android.permission.MODIFY_AUDIO_SETTINGS; android.os.Process.myPid() = 5441; type = 0
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 5441 PermLabel 10127 ContextImpl.checkPermission: pid = 5441; uid = 10127; Binder.getCallingPid() =5441; Binder.getCallingUid() = 10127; permName: android.permission.MODIFY_AUDIO_SETTINGS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 5441 PermLabel 10127 ContextImpl.checkPermission: pid = 5441; uid = 10127; Binder.getCallingPid() =5441; Binder.getCallingUid() = 10127; permName: android.permission.MODIFY_AUDIO_SETTINGS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:187)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:187)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-584516321:15)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-584516321:15)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 5441 PermLabel 10127 ContextImpl.checkPermission: pid = 5441; uid = 10127; permName: android.permission.MODIFY_AUDIO_SETTINGS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 5441 PermLabel 10127 ContextImpl.checkPermission: pid = 5441; uid = 10127; permName: android.permission.MODIFY_AUDIO_SETTINGS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:204)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:204)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.app.ContextImpl.checkSelfPermission(ContextImpl.java:1801)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkSelfPermission(ContextWrapper.java:759)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-584516321:15)
+
+09-02 09:24:27.757  5441  6200 I LSPosed-Bridge: 	at org.chromium.media.AudioManagerAndroid.init(chromium-Monochrome.aab-stable-584516321:15)

@@ -1,0 +1,43 @@
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 6805 PermLabel 10144 AMS.checkPermission: Binder.getCallingPid() = 6805; uid = 10144; Binder.getCallingUid() = 10144; getNameForUid: com.downdogapp; getPackagesForUid: [com.downdogapp]; permName: android.permission.ACCESS_WIFI_STATE; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:114)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.hasWifiNetworkListenPermission(ConnectivityService.java:4510)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.listenForNetwork(ConnectivityService.java:4522)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:911)
+
+09-05 06:30:27.114  1566  3242 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 7965 PermLabel 10144 AMS.checkPermission: Binder.getCallingPid() = 7965; uid = 10144; Binder.getCallingUid() = 10144; getNameForUid: com.downdogapp; getPackagesForUid: [com.downdogapp]; permName: android.permission.ACCESS_WIFI_STATE; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:114)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at android.app.ContextImpl.checkPermission(ContextImpl.java:1751)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at android.app.ContextImpl.checkCallingOrSelfPermission(ContextImpl.java:1791)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1841)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.hasWifiNetworkListenPermission(ConnectivityService.java:4510)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at com.android.server.ConnectivityService.listenForNetwork(ConnectivityService.java:4522)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at android.net.IConnectivityManager$Stub.onTransact(IConnectivityManager.java:911)
+
+09-05 06:30:41.984  1566  5911 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

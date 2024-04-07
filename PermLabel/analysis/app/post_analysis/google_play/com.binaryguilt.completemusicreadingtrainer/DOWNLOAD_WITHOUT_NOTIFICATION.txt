@@ -1,0 +1,121 @@
+09-02 09:06:40.412  9091  1517 I LSPosed-Bridge: 9091 PermLabel DOWNLOAD_WITHOUT_NOTIFICATION Request = https://files.completemusicreadingtrainer.com/com.binaryguilt.completemusicreadingtrainer.soundbank.piano_vintage.48.2; stacktrace=java.lang.Exception
+
+09-02 09:06:40.412  9091  1517 I LSPosed-Bridge: 	at com.example.permlabel.hookDownload_test$2.afterHookedMethod(hookDownload_test.java:78)
+
+09-02 09:06:40.412  9091  1517 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:06:40.412  9091  1517 I LSPosed-Bridge: 	at LSPHooker_.constructor(Unknown Source:11)
+
+09-02 09:06:40.412  9091  1517 I LSPosed-Bridge: 	at i2.n.run(SourceFile:81)
+
+09-02 09:06:40.493   560   560 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+09-02 09:06:40.493  1516  4598 I LSPosed-Bridge: 9091 PermLabel 10125 AMS.checkPermission: Binder.getCallingPid() = 2706; uid = 10125; Binder.getCallingUid() = 10026; getNameForUid: android.media:10026; getPackagesForUid: [com.android.providers.downloads, com.android.mtp, com.android.providers.media, com.android.providers.downloads.ui]; permName: android.permission.DOWNLOAD_WITHOUT_NOTIFICATION; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:06:40.493  1516  4598 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:118)
+
+09-02 09:06:40.493  1516  4598 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:06:40.493  1516  4598 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:06:40.493  1516  4598 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+09-02 09:06:40.493  1516  4598 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+09-02 09:06:40.493  1516  4598 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-02 09:06:40.493   560   560 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 9091 PermLabel hookBinder_test 10125 interfaceBinder =android.app.IActivityManager; arg0 = 27; arg1 = android.os.Parcel@57cbe4c; arg2 = android.os.Parcel@af71e81; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:51)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.refContentProvider(IActivityManager.java:4221)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at android.app.ActivityThread.releaseProvider(ActivityThread.java:6155)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at android.app.ContextImpl$ApplicationContentResolver.releaseProvider(ContextImpl.java:2587)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at android.content.ContentResolver.insert(ContentResolver.java:1599)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at android.app.DownloadManager.enqueue(DownloadManager.java:1024)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at LSPHooker_.enqueue(Unknown Source:11)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at i2.n.run(SourceFile:245)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 9091 PermLabel 10125 enqueue DOWNLOAD_WITHOUT_NOTIFICATION Request = android.app.DownloadManager$Request@63dd0c5; Binder.getCallingUid(): 10125; res=670; stacktrace=java.lang.Exception
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at com.example.permlabel.hookDownload_test$1.afterHookedMethod(hookDownload_test.java:71)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at LSPHooker_.enqueue(Unknown Source:11)
+
+09-02 09:06:40.555  9091  1517 I LSPosed-Bridge: 	at i2.n.run(SourceFile:245)
+
+09-02 09:16:14.556  9091 21079 I LSPosed-Bridge: 9091 PermLabel DOWNLOAD_WITHOUT_NOTIFICATION Request = https://files.completemusicreadingtrainer.com/com.binaryguilt.completemusicreadingtrainer.soundbank.rhodes.48.2; stacktrace=java.lang.Exception
+
+09-02 09:16:14.556  9091 21079 I LSPosed-Bridge: 	at com.example.permlabel.hookDownload_test$2.afterHookedMethod(hookDownload_test.java:78)
+
+09-02 09:16:14.556  9091 21079 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:16:14.556  9091 21079 I LSPosed-Bridge: 	at LSPHooker_.constructor(Unknown Source:11)
+
+09-02 09:16:14.556  9091 21079 I LSPosed-Bridge: 	at i2.n.run(SourceFile:81)
+
+09-02 09:16:14.587  1516  7398 I LSPosed-Bridge: 9091 PermLabel 10125 AMS.checkPermission: Binder.getCallingPid() = 2706; uid = 10125; Binder.getCallingUid() = 10026; getNameForUid: android.media:10026; getPackagesForUid: [com.android.providers.downloads, com.android.mtp, com.android.providers.media, com.android.providers.downloads.ui]; permName: android.permission.DOWNLOAD_WITHOUT_NOTIFICATION; type = 0; res = -1; stacktrace=java.lang.Exception
+
+09-02 09:16:14.587  1516  7398 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:118)
+
+09-02 09:16:14.587  1516  7398 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:16:14.587  1516  7398 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 09:16:14.587  1516  7398 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+09-02 09:16:14.587  1516  7398 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+09-02 09:16:14.587  1516  7398 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-02 09:16:14.635  9091 21079 I LSPosed-Bridge: 9091 PermLabel 10125 enqueue DOWNLOAD_WITHOUT_NOTIFICATION Request = android.app.DownloadManager$Request@a870f0f; Binder.getCallingUid(): 10125; res=671; stacktrace=java.lang.Exception
+
+09-02 09:16:14.635  9091 21079 I LSPosed-Bridge: 	at com.example.permlabel.hookDownload_test$1.afterHookedMethod(hookDownload_test.java:71)
+
+09-02 09:16:14.635  9091 21079 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:16:14.635  9091 21079 I LSPosed-Bridge: 	at LSPHooker_.enqueue(Unknown Source:11)
+
+09-02 09:16:14.635  9091 21079 I LSPosed-Bridge: 	at i2.n.run(SourceFile:245)
+
+09-02 09:21:14.398   560   560 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+09-02 09:21:14.398  9091 30417 I LSPosed-Bridge: 9091 PermLabel DOWNLOAD_WITHOUT_NOTIFICATION Request = https://files.completemusicreadingtrainer.com/com.binaryguilt.completemusicreadingtrainer.soundbank.piano.48.-1; stacktrace=java.lang.Exception
+
+09-02 09:21:14.398  9091 30417 I LSPosed-Bridge: 	at com.example.permlabel.hookDownload_test$2.afterHookedMethod(hookDownload_test.java:78)
+
+09-02 09:21:14.398  9091 30417 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:21:14.398  9091 30417 I LSPosed-Bridge: 	at LSPHooker_.constructor(Unknown Source:11)
+
+09-02 09:21:14.398  9091 30417 I LSPosed-Bridge: 	at i2.n.run(SourceFile:81)
+
+09-02 09:21:16.976  9091 30479 I LSPosed-Bridge: 9091 PermLabel DOWNLOAD_WITHOUT_NOTIFICATION Request = https://files.completemusicreadingtrainer.com/com.binaryguilt.completemusicreadingtrainer.soundbank.piano.48.-1; stacktrace=java.lang.Exception
+
+09-02 09:21:16.976  9091 30479 I LSPosed-Bridge: 	at com.example.permlabel.hookDownload_test$2.afterHookedMethod(hookDownload_test.java:78)
+
+09-02 09:21:16.976  9091 30479 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 09:21:16.976  9091 30479 I LSPosed-Bridge: 	at LSPHooker_.constructor(Unknown Source:11)
+
+09-02 09:21:16.976  9091 30479 I LSPosed-Bridge: 	at i2.n.run(SourceFile:81)

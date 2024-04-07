@@ -1,0 +1,181 @@
+09-02 21:53:39.525  1567  7296 I LSPosed-Bridge: 6098 PermLabel 10114 AMS.checkPermission: Binder.getCallingPid() = 2253; uid = 10114; Binder.getCallingUid() = 10010; getNameForUid: com.google.uid.shared:10010; getPackagesForUid: [com.google.android.gms, com.google.android.gsf, com.google.android.backuptransport]; permName: android.permission.GET_ACCOUNTS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+09-02 21:53:39.525  1567  7296 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:120)
+
+09-02 21:53:39.525  1567  7296 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 21:53:39.525  1567  7296 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 21:53:39.525  1567  7296 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+09-02 21:53:39.525  1567  7296 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+09-02 21:53:39.525  1567  7296 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 6098 PermLabel hookBinder_test 10114 interfaceBinder =android.app.IActivityManager; arg0 = 33; arg1 = android.os.Parcel@166e165; arg2 = android.os.Parcel@58047ca; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:45)
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.unbindService(IActivityManager.java:4377)
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1695)
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:717)
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:717)
+
+09-02 21:53:39.525  6098  7838 I LSPosed-Bridge: 	at Nr.run(chromium-Monochrome.aab-stable-584516321:211)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: askedperm = []; permName: android.permission.GET_ACCOUNTS; android.os.Process.myPid() = 6098; type = 1
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: askedperm = []; permName: android.permission.GET_ACCOUNTS; android.os.Process.myPid() = 6098; type = 1
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: askedperm = []; permName: android.permission.GET_ACCOUNTS; android.os.Process.myPid() = 6098; type = 1
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: pid = 6098; uid = 10114; Binder.getCallingPid() =6098; Binder.getCallingUid() = 10114; permName: android.permission.GET_ACCOUNTS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: pid = 6098; uid = 10114; Binder.getCallingPid() =6098; Binder.getCallingUid() = 10114; permName: android.permission.GET_ACCOUNTS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: pid = 6098; uid = 10114; Binder.getCallingPid() =6098; Binder.getCallingUid() = 10114; permName: android.permission.GET_ACCOUNTS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:183)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:183)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:183)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.a(Unknown Source:8)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.a(Unknown Source:8)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.a(Unknown Source:8)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.g(Unknown Source:7)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.g(Unknown Source:7)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.g(Unknown Source:7)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4.c(Unknown Source:1603)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4.c(Unknown Source:1603)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4.c(Unknown Source:1603)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4$b.run(Unknown Source:6)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4$b.run(Unknown Source:6)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4$b.run(Unknown Source:6)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: pid = 6098; uid = 10114; permName: android.permission.GET_ACCOUNTS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: pid = 6098; uid = 10114; permName: android.permission.GET_ACCOUNTS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 6098 PermLabel 10114 ContextImpl.checkPermission: pid = 6098; uid = 10114; permName: android.permission.GET_ACCOUNTS; type = 1; res = -1; stacktrace=java.lang.Exception
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.example.permlabel.requestPerm$2.afterHookedMethod(requestPerm.java:200)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at android.content.ContextWrapper.checkPermission(ContextWrapper.java:738)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.a(Unknown Source:8)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.a(Unknown Source:8)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.a(Unknown Source:8)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.g(Unknown Source:7)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.g(Unknown Source:7)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.m3.g(Unknown Source:7)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4.c(Unknown Source:1603)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4.c(Unknown Source:1603)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4.c(Unknown Source:1603)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4$b.run(Unknown Source:6)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4$b.run(Unknown Source:6)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at com.forter.mobile.fortersdk.h4$b.run(Unknown Source:6)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+09-02 21:53:40.440  6098  7912 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)

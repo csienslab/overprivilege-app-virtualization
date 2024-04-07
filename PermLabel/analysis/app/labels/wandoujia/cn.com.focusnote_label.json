@@ -1,0 +1,51 @@
+{
+    "Declared": {
+        "Normal": [
+            4,
+            [
+                "android.permission.VIBRATE",
+                "android.permission.INTERNET",
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.ACCESS_WIFI_STATE"
+            ]
+        ],
+        "Dangerous": [
+            3,
+            [
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.CAMERA"
+            ]
+        ],
+        "All": [
+            8,
+            [
+                "android.permission.VIBRATE",
+                "android.permission.INTERNET",
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.MY_READ_INSTALLED_PACKAGES",
+                "android.permission.ACCESS_WIFI_STATE",
+                "android.permission.CAMERA"
+            ]
+        ]
+    },
+    "Droidbot-obtained": {
+        "Normal": {
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.INTERNET": 0,
+            "android.permission.MODIFY_AUDIO_SETTINGS": 1,
+            "android.permission.BLUETOOTH": 1
+        },
+        "Dangerous": {},
+        "filter_normal_self": {
+            "android.permission.ACCESS_NETWORK_STATE": 0,
+            "android.permission.INTERNET": 0
+        },
+        "filter_normal_self_strict": {
+            "android.permission.ACCESS_NETWORK_STATE": 0
+        },
+        "add_dangerous_request": {}
+    }
+}

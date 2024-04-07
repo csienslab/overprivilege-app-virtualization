@@ -1,0 +1,601 @@
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:15:05.799  1572  5836 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 5762 PermLabel hookBinder_test 10129 interfaceBinder =android.app.IActivityManager; arg0 = 27; arg1 = android.os.Parcel@cf70f49; arg2 = android.os.Parcel@79cc9bc; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:62)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.refContentProvider(IActivityManager.java:4221)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at android.app.ActivityThread.releaseProvider(ActivityThread.java:6179)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at android.app.ContextImpl$ApplicationContentResolver.releaseUnstableProvider(ContextImpl.java:2599)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at android.content.ContentResolver.query(ContentResolver.java:846)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at android.content.ContentResolver.query(ContentResolver.java:753)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at XU0.a(chromium-Monochrome.aab-stable-579016621:264)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at F9.f(chromium-Monochrome.aab-stable-579016621:63)
+
+08-12 04:15:05.799  5762  6190 I LSPosed-Bridge: 	at C9.run(chromium-Monochrome.aab-stable-579016621:34)
+
+08-12 04:18:01.047   556   556 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:18:01.047  1572  1596 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:18:01.047   556   556 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:18:01.113  1572  1596 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:18:56.493  1572  5287 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:18:56.545  1572  5946 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:19:57.964  1572  5958 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:19:58.010  1572  5946 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:21:23.281  1572  3432 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 5762 PermLabel hookBinder_test 10129 interfaceBinder =android.app.IActivityManager; arg0 = 81; arg1 = android.os.Parcel@26d6fb5; arg2 = android.os.Parcel@7eae024; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:62)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.getRunningAppProcesses(IActivityManager.java:5366)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at android.app.ActivityManager.getRunningAppProcesses(ActivityManager.java:3435)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CommonUtils.j(CommonUtils.java:9)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsReportDataCapture.i(CrashlyticsReportDataCapture.java:7)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsReportDataCapture.c(CrashlyticsReportDataCapture.java:45)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator.q(SessionReportingCoordinator.java:20)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator.s(SessionReportingCoordinator.java:33)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsController$6.run(CrashlyticsController.java:43)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$2.a(CrashlyticsBackgroundWorker.java:3)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$2.call(CrashlyticsBackgroundWorker.java:1)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$3.a(CrashlyticsBackgroundWorker.java:3)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.android.gms.tasks.zzc.run(com.google.android.gms:play-services-tasks@@18.0.1:27)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.ExecutorUtils$1$1.a(ExecutorUtils.java:3)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.BackgroundPriorityRunnable.run(BackgroundPriorityRunnable.java:6)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 5762 PermLabel hookBinder_test 10129 interfaceBinder =android.view.IWindowSession; arg0 = 2; arg1 = android.os.Parcel@c89493a; arg2 = android.os.Parcel@b9fe64a; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:62)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.view.IWindowSession$Stub$Proxy.addToDisplay(IWindowSession.java:825)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:766)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:356)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:94)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.app.Dialog.show(Dialog.java:329)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at digifit.android.common.presentation.widget.dialog.base.BrandAwareBaseDialog.show(BrandAwareBaseDialog.kt:1)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at digifit.virtuagym.foodtracker.presentation.screen.access.view.AccessForm.E(AccessForm.kt:14)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at digifit.virtuagym.foodtracker.presentation.screen.access.presenter.AccessFormPresenter$RegisterEmailResponseAction.i(AccessFormPresenter.kt:105)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at digifit.virtuagym.foodtracker.presentation.screen.access.presenter.AccessFormPresenter$RegisterEmailResponseAction.call(AccessFormPresenter.kt:3)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at rx.Single$11.l(Single.java:3)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at rx.internal.operators.OnSubscribeOnAssemblySingle$OnAssemblySingleSubscriber.l(OnSubscribeOnAssemblySingle.java:3)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at rx.internal.operators.SingleObserveOn$ObserveOnSingleSubscriber.call(SingleObserveOn.java:20)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at rx.android.schedulers.LooperScheduler$ScheduledAction.run(LooperScheduler.java:3)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-12 04:21:23.281  5762  5762 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 5762 PermLabel getRunningAppProcesses =android.app.ActivityManager$RunningAppProcessInfo@6896ce7
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 5762 PermLabel getRunningAppProcesses processName: digifit.virtuagym.foodtracker pid: 5762
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 5762 PermLabel getRunningAppProcesses importance: 100 pid: 5762
+
+08-12 04:21:23.281  5762  5900 I LSPosed-Bridge: 5762 PermLabel getRunningAppProcesses packageName digifit.virtuagym.foodtracker at index 0 in process 5762
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:21:23.293  1572  5197 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:21:34.066  1572  5287 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:34.066   556   556 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:21:34.078  1572  3432 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:21:44.367  1572  5287 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:21:44.383  1572  5197 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:21:54.317  1572  3432 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 5762 PermLabel hookBinder_test 10129 interfaceBinder =android.view.IWindowSession; arg0 = 5; arg1 = android.os.Parcel@b9fe64a; arg2 = android.os.Parcel@26d6fb5; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:62)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.view.IWindowSession$Stub$Proxy.remove(IWindowSession.java:927)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.view.ViewRootImpl.dispatchDetachedFromWindow(ViewRootImpl.java:3854)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.view.ViewRootImpl.doDie(ViewRootImpl.java:6775)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.view.ViewRootImpl.die(ViewRootImpl.java:6752)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.view.WindowManagerGlobal.removeViewLocked(WindowManagerGlobal.java:458)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:396)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:126)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.app.Dialog.dismissDialog(Dialog.java:375)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.app.Dialog.dismiss(Dialog.java:358)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at digifit.virtuagym.foodtracker.presentation.screen.access.view.AccessForm.a(AccessForm.kt:21)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at digifit.virtuagym.foodtracker.presentation.screen.access.presenter.AccessFormPresenter$RegisterEmailResponseAction.i(AccessFormPresenter.kt:21)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at digifit.virtuagym.foodtracker.presentation.screen.access.presenter.AccessFormPresenter$RegisterEmailResponseAction.call(AccessFormPresenter.kt:3)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at rx.Single$11.l(Single.java:3)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at rx.internal.operators.OnSubscribeOnAssemblySingle$OnAssemblySingleSubscriber.l(OnSubscribeOnAssemblySingle.java:3)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at rx.internal.operators.SingleObserveOn$ObserveOnSingleSubscriber.call(SingleObserveOn.java:20)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at rx.android.schedulers.LooperScheduler$ScheduledAction.run(LooperScheduler.java:3)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.os.Handler.handleCallback(Handler.java:873)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.os.Looper.loop(Looper.java:193)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at android.app.ActivityThread.main(ActivityThread.java:6692)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+
+08-12 04:21:54.317  5762  5762 I LSPosed-Bridge: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+08-12 04:21:54.356   556   556 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 5762 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 5762; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:21:54.356  1572  3432 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 5762 PermLabel hookBinder_test 10129 interfaceBinder =android.app.IActivityManager; arg0 = 81; arg1 = android.os.Parcel@b9fe64a; arg2 = android.os.Parcel@26d6fb5; arg3 = 0; res = true; stacktrace=java.lang.Exception
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.example.permlabel.hookBinder_test$1.afterHookedMethod(hookBinder_test.java:62)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at LSPHooker_.transact(Unknown Source:28)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub$Proxy.getRunningAppProcesses(IActivityManager.java:5366)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at android.app.ActivityManager.getRunningAppProcesses(ActivityManager.java:3435)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at java.lang.reflect.Method.invoke(Native Method)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at org.lsposed.lspd.nativebridge.HookBridge.invokeOriginalMethod(Native Method)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:110)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at LSPHooker_.getRunningAppProcesses(Unknown Source:8)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CommonUtils.j(CommonUtils.java:9)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsReportDataCapture.i(CrashlyticsReportDataCapture.java:7)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsReportDataCapture.c(CrashlyticsReportDataCapture.java:45)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator.q(SessionReportingCoordinator.java:20)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator.s(SessionReportingCoordinator.java:33)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsController$6.run(CrashlyticsController.java:43)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$2.a(CrashlyticsBackgroundWorker.java:3)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$2.call(CrashlyticsBackgroundWorker.java:1)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$3.a(CrashlyticsBackgroundWorker.java:3)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.android.gms.tasks.zzc.run(com.google.android.gms:play-services-tasks@@18.0.1:27)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.ExecutorUtils$1$1.a(ExecutorUtils.java:3)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at com.google.firebase.crashlytics.internal.common.BackgroundPriorityRunnable.run(BackgroundPriorityRunnable.java:6)
+
+08-12 04:21:54.356  5762  5900 I LSPosed-Bridge: 	at java.lang.Thread.run(Thread.java:764)
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 21659 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 21659; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:22:06.941  1572  2092 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 25213 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 25213; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:24:04.982  1572  5931 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 25213 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 25213; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:24:27.132  1572  4430 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 25213 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 25213; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:24:27.142  1572  4430 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 30069 PermLabel 10129 AMS.checkPermission: Binder.getCallingPid() = 30069; uid = 10129; Binder.getCallingUid() = 10129; getNameForUid: digifit.virtuagym.foodtracker; getPackagesForUid: [digifit.virtuagym.foodtracker]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:131)
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+08-12 04:26:49.476  1572  4430 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)

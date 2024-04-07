@@ -1,0 +1,33 @@
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 5214 PermLabel 10131 AMS.checkPermission: Binder.getCallingPid() = 5214; uid = 10131; Binder.getCallingUid() = 10131; getNameForUid: com.hsv.freeadblockerbrowser.sharedID:10131; getPackagesForUid: [com.hsv.freeadblockerbrowser]; permName: android.permission.GET_TASKS; type = 0; res = -1; stacktrace=java.lang.Exception
+
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:128)
+
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.isGetTasksAllowed(ActivityManagerService.java:10902)
+
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.getRunningAppProcesses(ActivityManagerService.java:16139)
+
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:1088)
+
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-18 16:24:16.590  1565  3022 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
+
+06-18 16:24:16.590   551   551 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+
+06-18 16:24:16.590  1565  1716 I LSPosed-Bridge: 5214 PermLabel 10131 AMS.checkPermission: Binder.getCallingPid() = 5214; uid = 10131; Binder.getCallingUid() = 10131; getNameForUid: com.hsv.freeadblockerbrowser.sharedID:10131; getPackagesForUid: [com.hsv.freeadblockerbrowser]; permName: android.permission.ACCESS_NETWORK_STATE; type = 0; res = 0; stacktrace=java.lang.Exception
+
+06-18 16:24:16.590  1565  1716 I LSPosed-Bridge: 	at com.example.permlabel.requirePerm$1$2.afterHookedMethod(requirePerm.java:128)
+
+06-18 16:24:16.590  1565  1716 I LSPosed-Bridge: 	at de.robv.android.xposed.XposedBridge$AdditionalHookInfo.callback(Unknown Source:147)
+
+06-18 16:24:16.590  1565  1716 I LSPosed-Bridge: 	at LSPHooker_.checkPermission(Unknown Source:25)
+
+06-18 16:24:16.590  1565  1716 I LSPosed-Bridge: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:664)
+
+06-18 16:24:16.590  1565  1716 I LSPosed-Bridge: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3346)
+
+06-18 16:24:16.590  1565  1716 I LSPosed-Bridge: 	at android.os.Binder.execTransact(Binder.java:731)
