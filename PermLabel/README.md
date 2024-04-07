@@ -13,14 +13,11 @@
 └─analysis                      (Generating the results of PermLabel)
    ├─app
    │  ├─labels                  (Detailed labeling of permissions for each tested apps)
-   │  ├─logcats_filtered
    │  ├─outputs                 (Results of overprivileged permissions)
    │  └─post_analysis           (Statistics of API and library usage through call stacks)
    └─malware
       ├─labels
-      ├─logcats_filtered
       ├─outputs
-      ├─utils
       └─versions                (Versions of malware sampels)
 ```
 
