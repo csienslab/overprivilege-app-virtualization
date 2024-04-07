@@ -1,6 +1,6 @@
 # PermLabel
 ## Workflow 
-<img src="https://github.com/sylvia84312/overprivilege-app-virtualization/blob/master/materials/imgs/PermLabel%20workflow.png"  width="40%" height="20%">
+<img src="https://github.com/csienslab/overprivilege-app-virtualization/blob/main/materials/imgs/PermLabel%20workflow.png"  width="40%" height="20%">
 
 ## File Structure
 
