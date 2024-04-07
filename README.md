@@ -1,7 +1,7 @@
 # Over-privilege Risks of App Virtualization in Android
 Shou-Ching Hsiao, Shih-Wei Li, Hsu-Chun Hsiao
 
-Proceedings of the Fourteenth ACM Conference on Data and Application Security and Privacy (CODASPY '24), June 19--21, 2024, Porto, Portugal
+To appear in the Proceedings of the Fourteenth ACM Conference on Data and Application Security and Privacy (CODASPY '24), June 19--21, 2024, Porto, Portugal
 
 - Full paper (TBD)
 - Published paper (TBD)
