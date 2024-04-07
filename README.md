@@ -24,4 +24,4 @@ Proceedings of the Fourteenth ACM Conference on Data and Application Security an
 ```
 
 * The illustrative samples in the paper are listed in the ```paper_samples.xlsx``` under the material folder. 
-* To view the full samples, please refer to the outputs.
+* To view the full samples, please refer to the [outputs](PermLabel/analysis/app/outputs).
