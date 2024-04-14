@@ -23,5 +23,5 @@ To appear in the Proceedings of the Fourteenth ACM Conference on Data and Applic
    └─perm-check
 ```
 
-* The illustrative samples in the paper are listed in the ```paper_samples.xlsx``` under the material folder. 
-* To view the full samples, please refer to the [outputs](PermLabel/analysis/app/outputs).
+* The illustrative samples in the paper are listed in the ```paper_samples.xlsx``` under the materials folder. 
+* To view the full testbed and the further details of results, please refer to the [outputs](PermLabel/analysis/app/outputs).
