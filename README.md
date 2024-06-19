@@ -3,9 +3,7 @@ Shou-Ching Hsiao, Shih-Wei Li, Hsu-Chun Hsiao
 
 To appear in the Proceedings of the Fourteenth ACM Conference on Data and Application Security and Privacy (CODASPY '24), June 19--21, 2024, Porto, Portugal
 
-- Full paper (TBD)
-- Published paper (TBD)
-- Presentation video (TBD)
+- [Paper](https://dl.acm.org/doi/abs/10.1145/3626232.3653274)
 - Slide (TBD)
 
 ## File Structure
